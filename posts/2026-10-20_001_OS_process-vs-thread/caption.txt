@@ -1,0 +1,28 @@
+🇰🇷 프로세스 vs 스레드, 차이 설명할 수 있어?
+⠀
+프로세스는 OS로부터 독립된 메모리를 받은 '실행 중인 프로그램',
+스레드는 그 안에서 자원을 함께 쓰며 일하는 '실행 흐름'이에요.
+⠀
+👉 스레드끼리 Code·Data·Heap은 공유하고, Stack과 레지스터(PC)는 각자 따로!
+⠀
+⠀
+🇺🇸 Process vs Thread — can you explain the difference?
+⠀
+A process is a running program with its own memory from the OS.
+A thread is a flow of execution inside it that shares those resources.
+⠀
+👉 Threads share Code, Data and Heap, but each has its own Stack and registers (PC).
+⠀
+⠀
+🇲🇳 Процесс ба урсгал (thread) — ялгааг нь тайлбарлаж чадах уу?
+⠀
+Процесс бол үйлдлийн системээс тусдаа санах ой авсан, ажиллаж буй програм.
+Урсгал бол процесс дотор түүний нөөцийг хуваалцан ажилладаг гүйцэтгэлийн урсгал.
+⠀
+👉 Урсгалууд Code·Data·Heap-ийг хуваалцдаг ч Stack болон регистр (PC) нь тус бүрдээ байдаг.
+⠀
+⠀
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #OSlenlab #Threadlenlab

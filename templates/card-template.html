@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<!-- Lenlab | CS card template · 1080×1350 · fonts from npm CDN (pretendard, @fontsource/jetbrains-mono) -->
+<style>
+@font-face{font-family:Pretendard;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/woff2/Pretendard-Regular.woff2)}
+@font-face{font-family:Pretendard;font-weight:500;src:url(https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/woff2/Pretendard-Medium.woff2)}
+@font-face{font-family:Pretendard;font-weight:700;src:url(https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/woff2/Pretendard-Bold.woff2)}
+@font-face{font-family:Pretendard;font-weight:800;src:url(https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/woff2/Pretendard-ExtraBold.woff2)}
+@font-face{font-family:JBM;font-weight:500;src:url(https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5/files/jetbrains-mono-latin-500-normal.woff2)}
+@font-face{font-family:JBM;font-weight:700;src:url(https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5/files/jetbrains-mono-latin-700-normal.woff2)}
+@font-face{font-family:LibreBask;font-weight:700;src:url(https://cdn.jsdelivr.net/npm/@fontsource/libre-baskerville@5/files/libre-baskerville-latin-700-normal.woff2)}
+:root{--bg:#1E272E;--panel:#252F37;--code:#172026;--white:#F5F6FA;--blue:#0984E3;--cyan:#00CEC9;--mute:rgba(245,246,250,.62);--dim:rgba(245,246,250,.42);--line:rgba(245,246,250,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#000;font-family:Pretendard,'Noto Sans CJK KR',sans-serif;color:var(--white);word-break:keep-all;overflow-wrap:break-word}
+.slide{width:1080px;height:1350px;background:var(--bg);display:flex;flex-direction:column;padding:64px 80px 56px;margin-bottom:20px;position:relative;overflow:hidden}
+header{display:flex;justify-content:space-between;align-items:center;padding-bottom:26px;border-bottom:2px solid var(--line);flex:none}
+.tag{display:flex;align-items:center;gap:14px;font-family:JBM;font-weight:700;font-size:25px;letter-spacing:.14em;color:var(--cyan)}
+.tag::before{content:"";width:16px;height:16px;background:var(--cyan)}
+.tag span{color:var(--white)}
+.meta{font-family:JBM;font-size:24px;color:var(--mute);letter-spacing:.08em}
+main{flex:1;min-height:0;display:flex;flex-direction:column;padding:44px 0 36px;gap:26px}
+main.center{justify-content:center}
+footer{display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:2px solid var(--line);flex:none;height:150px}
+.handle{font-family:JBM;font-weight:700;font-size:24px;letter-spacing:.08em;color:var(--mute)}
+.lang{font-family:JBM;font-weight:700;font-size:20px;letter-spacing:.2em;color:var(--cyan);margin-bottom:8px}
+.lang.b{color:var(--blue)}
+.en{font-size:30px;line-height:1.45;color:var(--mute)}
+.mn{font-size:28px;line-height:1.45;color:var(--dim)}
+.blue{color:var(--blue)} .cyan{color:var(--cyan)}
+.panel{background:var(--panel);border-radius:26px;padding:34px 40px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.mono{font-family:JBM}
+b{color:var(--white);font-weight:700}
+</style></head><body>
+<template id="logo"><svg width="104" height="104" viewBox="0 0 200 200"><circle cx="100" cy="100" r="99" fill="none" stroke="#0984E3" stroke-width="2"/><circle cx="100" cy="100" r="91" fill="#1E272E"/><text x="100" y="113" text-anchor="middle" font-family="LibreBask,Georgia,serif" font-weight="700" font-size="52" fill="#F5F6FA">LEN</text><rect x="56" y="124" width="88" height="2" fill="#00CEC9"/><text x="103" y="148" text-anchor="middle" font-family="JBM,monospace" font-weight="500" font-size="15" letter-spacing="6.75" fill="#00CEC9">lab</text></svg></template>
+</body></html>
