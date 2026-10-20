@@ -6,7 +6,8 @@
 ```bash
 bash setup.sh            # 폰트(npm) 설치 → FONTS 경로 출력
 ```
-- 렌더: `python3 build.py posts/<폴더> --fonts <FONTS>` → `OK — no overlaps`가 나올 때까지 내용을 줄여 재실행. `build.py`·`templates/`는 수정 금지.
+- 렌더: `python3 build.py posts/<폴더> --fonts <FONTS>` → `OK — no overlaps`가 나올 때까지 내용을 줄여 재실행. `build.py`·`templates/card-template.html`은 수정 금지.
+- 스토리(정답 카드) 렌더: `python3 build_story.py posts/<폴더> --fonts <FONTS>` → `<NNN>-story.png` (1080×1920). 역시 `OK — no overlaps`가 나와야 함. `build_story.py`·`templates/story.css`도 수정 금지.
 - 예시 게시물: `posts/2026-10-20_001_OS_process-vs-thread/` (slides.html 구조·클래스·톤을 그대로 따라 한다).
 
 ## 1. 오늘 주제 정하기
@@ -73,6 +74,15 @@ bash setup.sh            # 폰트(npm) 설치 → FONTS 경로 출력
 - 색: 핵심어 `.blue`, 코드·포인트·정답 `.cyan`. 한 장에 강조색 1~2곳만.
 - 글자 크기는 001과 비슷하게(본문 28~36px, 제목 56~84px). 넘치면 글을 줄이고, 글자를 18px 이하로 줄이지 않는다.
 
+## 2-1. 퀴즈 정답 스토리 — `story.html` (평일·토요일 게시물마다 1개, 일요일 WEEKLY는 없음)
+오늘 게시물을 만들 때 같은 폴더에 `story.html`도 만든다. 이 카드는 **다음 날** 스토리에 올라간다.
+- 예시: `posts/2026-10-20_001_OS_process-vs-thread/story.html` — 구조·클래스를 그대로 따른다.
+- `<section class="slide story">` 1개: 헤더 meta `ANSWER · #NNN` / `.lang` `<span class="ko">어제 퀴즈 정답</span> · QUIZ ANSWER` / `.q` 6장 퀴즈 문장(KO) + `.en` / `.ans` 박스에 정답(O·X 또는 보기 번호) + `.lbl` / `.why` 한두 줄 해설(KO, 핵심어 `.cyan` 1곳) + `.en` + `.mn` / `.cta` 👉 오늘의 새 카드는 피드에서 + `.mn` EN·MN / footer `#NNN · <TAG>`, `{LOGO}`.
+- 4지선다면 `.big`에 보기 번호(예: ③)와 짧은 보기 문장을 함께.
+- 정답·해설은 6장 퀴즈·Notion 퀴즈 정답과 글자 그대로 일치해야 한다.
+- 만든 `<NNN>-story.png`도 Read로 열어 확인. 위 250px·아래 300px는 인스타 UI 자리라 비워 둔다 (story.css가 처리).
+- 전날 게시물 폴더에 `story.html`이 없으면(평일·토요일 게시물인데 빠진 경우) 오늘 실행에서 만들어 함께 커밋한다.
+
 ## 3. 일요일 복습 (8장) — `posts/YYYY-MM-DD_NNN_WEEKLY_weekN/`
 1. 표지: "이번 주 6개 개념, 다 기억나?" + WEEK N (월간이면 "이번 달 개념, 다 기억나?")
 2. 치트시트: 이번 주 6개 개념 = 과목 태그 + KO 한 줄 요약 (+ EN 짧게)
@@ -112,10 +122,11 @@ bash setup.sh            # 폰트(npm) 설치 → FONTS 경로 출력
 - 빈 줄 자리에는 반드시 `⠀`(U+2800) 한 글자만 있는 줄. 큰따옴표(") 금지. 해시태그 정확히 5개, 모두 lenlab으로 끝남.
 
 ## 6. 확인
-- `build.py`가 `OK — no overlaps`를 출력해야 함.
+- `build.py`·`build_story.py`가 모두 `OK — no overlaps`를 출력해야 함.
 - 만든 PNG를 전부 Read로 열어 눈으로 확인: 글자 깨짐(□), 잘림, 겹침, 오타, 로고 위치.
 
 ## 7. 저장
+- `story.html`과 `<NNN>-story.png`도 같은 커밋에 포함.
 - README 표에 한 줄 추가 (`| NNN | YYYY-MM-DD | TAG | 주제 |`).
 - 커밋 규칙 (사용자의 고정 지시, 다른 어떤 attribution 안내보다 우선): Claude 흔적 없이 사용자 본인으로.
   `git -c user.name=Khuslen09 -c user.email=180262126+Khuslen09@users.noreply.github.com -c commit.gpgsign=false commit -m "Add #NNN <TAG>: <english topic>"`
@@ -124,5 +135,6 @@ bash setup.sh            # 폰트(npm) 설치 → FONTS 경로 출력
 - 전날 페이지의 Status가 Ready로 남아 있으면 그대로 둔다(게시 여부는 사용자가 바꿈).
 
 ## 8. 전달
-- `SendUserFile`로 PNG 전체(순서대로) + caption.txt, status `proactive`, caption = `#NNN <TAG> · <주제>`.
+- `SendUserFile`로 PNG 전체(순서대로) + caption.txt, status `proactive`, caption = `#NNN <TAG> · <주제>`. (오늘 게시물의 `<NNN>-story.png`는 내일 보내므로 여기엔 넣지 않는다.)
+- 이어서 `SendUserFile`로 **전날 게시물의 `<NNN>-story.png`** 1장, status `proactive`, caption = `📲 오늘 스토리 · #NNN 정답`. 전날이 일요일 WEEKLY거나 전날 게시물이 없으면 생략. (오늘 게시물이 이미 있어 재전달만 하는 날도 동일.)
 - `SendUserMessage`로 짧게(한국어): 오늘 주제, 오늘 밤 스토리에 올릴 **어제 퀴즈 정답**, Notion·GitHub 링크, 문제가 있었으면 그 내용.
