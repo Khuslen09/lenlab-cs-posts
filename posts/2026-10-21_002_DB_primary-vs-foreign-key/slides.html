@@ -1,0 +1,113 @@
+<!-- #002 DB · Primary Key vs Foreign Key — body only; build.py wraps it with templates/card-template.html -->
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DB</div><div class="meta">#002 · 2026.10.21</div></header>
+  <main class="center">
+    <div><div class="lang">EN</div><div style="font-family:JBM;font-weight:700;font-size:64px;line-height:1.15">Primary Key <span class="blue">vs</span><br>Foreign Key</div></div>
+    <div><div class="lang">KO</div><div style="font-size:84px;font-weight:800;line-height:1.22;letter-spacing:-.03em"><span class="blue">기본키</span>와 <span class="cyan">외래키</span>,<br>차이 설명할 수 있어?</div></div>
+    <div><div class="lang">MN</div><div style="font-size:40px;line-height:1.4;color:var(--mute)">Үндсэн түлхүүр ба гадаад түлхүүр —<br>ялгааг нь тайлбарлаж чадах уу?</div></div>
+  </main>
+  <footer><div class="handle">01 / 06</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DB</div><div class="meta">02 / 06</div></header>
+  <main>
+    <div><div style="font-size:60px;font-weight:800;letter-spacing:-.03em">한 줄 정의</div><div class="en" style="margin-top:6px">Definition · Тодорхойлолт</div></div>
+    <div class="panel" style="border-left:6px solid var(--blue)">
+      <div class="mono blue" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">PRIMARY KEY · 기본키 · PK</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">테이블의 각 행을 <b class="blue">하나로 식별</b>하는 키. 중복 X · NULL X</div>
+      <div class="en">Uniquely identifies each row. No duplicates, no NULL.</div>
+      <div class="mn">Мөр бүрийг давхцалгүй ялгаж таних түлхүүр.</div>
+    </div>
+    <div class="panel" style="border-left:6px solid var(--cyan)">
+      <div class="mono cyan" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">FOREIGN KEY · 외래키 · FK</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">다른 테이블의 기본키를 <b class="cyan">참조</b>해 두 테이블을 연결하는 키</div>
+      <div class="en">References another table's primary key to link tables.</div>
+      <div class="mn">Өөр хүснэгтийн үндсэн түлхүүрийг заан холбодог түлхүүр.</div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-size:34px;font-weight:700">기본키 = <span class="blue">식별</span> · 외래키 = <span class="cyan">연결</span></div>
+      <div class="en" style="margin-top:6px">PK identifies · FK connects</div>
+    </div>
+  </main>
+  <footer><div class="handle">#002</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DB</div><div class="meta">03 / 06</div></header>
+  <main>
+    <div>
+      <div style="font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1.25"><span class="blue">학번</span> = 기본키 · <span class="cyan">학과코드</span> = 외래키</div>
+      <div class="en" style="margin-top:8px">Student ID = PK · Dept code = FK</div>
+      <div class="mn">Оюутны код = PK · Тэнхимийн код = FK</div>
+    </div>
+    <div style="border:2px solid var(--blue);border-radius:28px;padding:26px 30px;background:rgba(9,132,227,.07);display:flex;flex-direction:column;gap:12px">
+      <div class="mono blue" style="font-size:24px;font-weight:700;letter-spacing:.08em">DEPT · 학과 테이블</div>
+      <div class="mono" style="display:grid;grid-template-columns:1fr 1.4fr;gap:8px;font-size:26px">
+        <div class="blue" style="font-weight:700">dept_id 🔑PK</div><div style="color:var(--mute)">name</div>
+        <div class="panel" style="padding:10px 18px;border-radius:12px">10</div><div class="panel" style="padding:10px 18px;border-radius:12px">CSE</div>
+        <div class="panel" style="padding:10px 18px;border-radius:12px">20</div><div class="panel" style="padding:10px 18px;border-radius:12px">BIZ</div>
+      </div>
+    </div>
+    <div style="font-size:26px;text-align:center;color:var(--mute)"><span class="cyan" style="font-size:34px">▲</span> dept_id가 학과 테이블을 <b>가리킴</b> · FK points to PK · FK нь PK-г заана</div>
+    <div style="border:2px solid var(--cyan);border-radius:28px;padding:26px 30px;display:flex;flex-direction:column;gap:12px">
+      <div class="mono cyan" style="font-size:24px;font-weight:700;letter-spacing:.08em">STUDENT · 학생 테이블</div>
+      <div class="mono" style="display:grid;grid-template-columns:1.3fr 1fr 1.3fr;gap:8px;font-size:26px">
+        <div class="blue" style="font-weight:700">stu_id 🔑PK</div><div style="color:var(--mute)">name</div><div class="cyan" style="font-weight:700">dept_id FK</div>
+        <div class="panel" style="padding:10px 18px;border-radius:12px">1</div><div class="panel" style="padding:10px 18px;border-radius:12px">Lena</div><div class="panel" style="padding:10px 18px;border-radius:12px">10</div>
+        <div class="panel" style="padding:10px 18px;border-radius:12px">2</div><div class="panel" style="padding:10px 18px;border-radius:12px">Bat</div><div class="panel" style="padding:10px 18px;border-radius:12px">10</div>
+      </div>
+    </div>
+  </main>
+  <footer><div class="handle">#002</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DB</div><div class="meta">04 / 06</div></header>
+  <main>
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">SQL로 키 만들기</div><div class="en" style="margin-top:6px">Keys in SQL · SQL-д түлхүүр тодорхойлох</div></div>
+    <div class="panel" style="background:var(--code);padding:32px 38px">
+<pre class="mono" style="font-size:26px;line-height:1.6;color:var(--white)"><span class="blue">CREATE TABLE</span> student (
+  stu_id  INT <span class="blue">PRIMARY KEY</span>,
+  name    TEXT,
+  dept_id INT <span class="cyan">REFERENCES</span> dept(dept_id)
+);
+<span class="blue">INSERT INTO</span> student
+  <span class="blue">VALUES</span> (2, <span class="cyan">'Min'</span>, 99);
+<span style="color:var(--dim)">-- 오류: 99번 학과 없음 · FK error</span></pre>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">①</span> <b>PRIMARY KEY</b>: 같은 stu_id 다시 넣으면 거부</div><div class="mn" style="margin-left:40px">EN: Duplicate PK is rejected · MN: Давхардсан PK-г хүлээж авахгүй</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">②</span> <b>REFERENCES</b>: dept에 없는 값은 거부</div><div class="mn" style="margin-left:40px">EN: Value must exist in dept · MN: dept-д байхгүй утгыг хүлээж авахгүй</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">③</span> SQLite는 <b>PRAGMA foreign_keys=ON</b> 필요</div><div class="mn" style="margin-left:40px">EN: SQLite needs FK checks turned on · MN: SQLite-д FK шалгалтыг асаана</div></div>
+    </div>
+  </main>
+  <footer><div class="handle">#002</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DB</div><div class="meta">05 / 06</div></header>
+  <main style="gap:20px">
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">여기서 꼭 헷갈린다</div><div class="en" style="margin-top:6px">Check points · Анхаарах зүйлс</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">01</span>&nbsp; 개체 무결성 <span class="en" style="font-size:24px;font-weight:500">· Entity Integrity</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">기본키는 <b>NULL · 중복 불가</b> (NOT NULL + UNIQUE)</div><div class="mn" style="font-size:24px">Үндсэн түлхүүр хоосон (NULL) ба давхардсан байж болохгүй</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">02</span>&nbsp; 외래키는 중복 OK <span class="en" style="font-size:24px;font-weight:500">· 1 : N</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">한 학과(10)에 <b>학생 여러 명</b> → 같은 값 반복 가능</div><div class="mn" style="font-size:24px">Нэг тэнхимд олон оюутан — FK утга давхцаж болно</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">03</span>&nbsp; 참조 무결성 <span class="en" style="font-size:24px;font-weight:500">· Referential Integrity</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">참조되는 행은 함부로 삭제 X → <b class="cyan">ON DELETE</b> 옵션</div><div class="mn" style="font-size:24px">Заагдаж буй мөрийг шууд устгахгүй — ON DELETE тохиргоо</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">04</span>&nbsp; 기본키 ≠ 컬럼 1개 <span class="en" style="font-size:24px;font-weight:500">· Composite Key</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">여러 컬럼을 묶은 <b>복합키</b>도 기본키 1개</div><div class="mn" style="font-size:24px">Хэд хэдэн баганаас бүрдсэн нийлмэл түлхүүр ч нэг PK</div></div>
+  </main>
+  <footer><div class="handle">#002</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DB</div><div class="meta">06 / 06</div></header>
+  <main class="center" style="gap:30px">
+    <div class="lang" style="font-size:26px">QUIZ · O / X</div>
+    <div style="font-size:60px;font-weight:800;line-height:1.3;letter-spacing:-.03em">외래키(FK) 컬럼에는<br><span class="cyan">NULL</span>이 절대 들어갈 수 없다.</div>
+    <div><div class="en">A foreign key column can never be NULL.</div><div class="mn">Гадаад түлхүүрийн баганад NULL хэзээ ч байж болохгүй.</div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:10px">
+      <div style="border:3px solid var(--blue);border-radius:28px;height:200px;display:flex;align-items:center;justify-content:center;font-size:130px;font-weight:800;color:var(--blue)">O</div>
+      <div style="border:3px solid var(--cyan);border-radius:28px;height:200px;display:flex;align-items:center;justify-content:center;font-size:130px;font-weight:800;color:var(--cyan)">X</div>
+    </div>
+    <div><div style="font-size:30px;font-weight:700">💬 댓글로 정답 남기기 · 정답은 내일 스토리</div><div class="mn" style="margin-top:4px">Answer in the comments · Хариултаа коммент дээр үлдээгээрэй</div></div>
+  </main>
+  <footer><div class="handle">🔖 Save · 저장 · Хадгалах</div>{LOGO}</footer>
+</section>
