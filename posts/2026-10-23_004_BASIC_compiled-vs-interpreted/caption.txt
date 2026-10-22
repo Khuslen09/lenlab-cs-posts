@@ -1,0 +1,29 @@
+🇰🇷 컴파일 언어 vs 인터프리터 언어, 차이 설명할 수 있어?
+⠀
+컴파일 언어는 실행 전에 소스 전체를 기계어로 한 번에 번역해 실행 파일을 만들고,
+인터프리터 언어는 실행하면서 소스를 한 줄(문장)씩 번역하고 바로 실행해요.
+⠀
+👉 C는 오류가 있으면 번역 단계에서 멈추고, Python은 오류 줄에 도착해서야 멈춰요!
+⠀
+⠀
+🇺🇸 Compiled vs Interpreted languages — can you explain the difference?
+⠀
+A compiler translates the whole source into machine code before running and makes an executable.
+An interpreter translates and runs the source statement by statement while the program runs.
+⠀
+👉 C stops at compile time if there is a bug, while Python stops only when it reaches the bad line.
+⠀
+⠀
+🇲🇳 Хөрвүүлэгддэг ба тайлбарлагддаг хэл — ялгааг нь тайлбарлаж чадах уу?
+⠀
+Хөрвүүлэгч (compiler) ажиллуулахаас өмнө эх кодыг бүхэлд нь машины код руу хөрвүүлж, гүйцэтгэх файл үүсгэнэ.
+Тайлбарлагч (interpreter) програм ажиллах үед эх кодыг мөр мөрөөр нь хөрвүүлж, шууд ажиллуулна.
+⠀
+👉 C алдаатай бол хөрвүүлэх үедээ зогсдог бол Python алдаатай мөрөнд хүрээд л зогсдог.
+⠀
+⠀
+✅ 어제 퀴즈 정답: O — 딥러닝은 머신러닝의 한 분야! AI ⊃ 머신러닝 ⊃ 딥러닝이에요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #BASIClenlab #Compilerlenlab

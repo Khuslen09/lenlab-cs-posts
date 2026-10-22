@@ -1,0 +1,119 @@
+<!-- #004 BASIC · Compiled vs Interpreted — body only; build.py wraps it with templates/card-template.html -->
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · BASIC</div><div class="meta">#004 · 2026.10.23</div></header>
+  <main class="center">
+    <div><div class="lang">EN</div><div style="font-family:JBM;font-weight:700;font-size:64px;line-height:1.15">Compiled <span class="blue">vs</span> Interpreted</div></div>
+    <div><div class="lang">KO</div><div style="font-size:84px;font-weight:800;line-height:1.22;letter-spacing:-.03em"><span class="blue">컴파일</span> 언어 vs<br><span class="cyan">인터프리터</span> 언어,<br>차이 설명할 수 있어?</div></div>
+    <div><div class="lang">MN</div><div style="font-size:40px;line-height:1.4;color:var(--mute)">Хөрвүүлэгддэг ба тайлбарлагддаг хэл —<br>ялгааг нь тайлбарлаж чадах уу?</div></div>
+  </main>
+  <footer><div class="handle">01 / 06</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · BASIC</div><div class="meta">02 / 06</div></header>
+  <main>
+    <div><div style="font-size:60px;font-weight:800;letter-spacing:-.03em">한 줄 정의</div><div class="en" style="margin-top:6px">Definition · Тодорхойлолт</div></div>
+    <div class="panel" style="border-left:6px solid var(--blue)">
+      <div class="mono blue" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">COMPILER · 컴파일러 · ХӨРВҮҮЛЭГЧ</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">실행 전에 소스 <b class="blue">전체를 한 번에</b> 기계어로 번역 → 실행 파일 생성</div>
+      <div class="en">Translates the whole source into machine code before running.</div>
+      <div class="mn">Ажиллуулахаас өмнө эх кодыг бүхэлд нь машины код руу хөрвүүлнэ.</div>
+    </div>
+    <div class="panel" style="border-left:6px solid var(--cyan)">
+      <div class="mono cyan" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">INTERPRETER · 인터프리터 · ТАЙЛБАРЛАГЧ</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">실행하면서 소스를 <b class="cyan">한 줄(문장)씩</b> 번역하고 바로 실행</div>
+      <div class="en">Translates and runs the source statement by statement.</div>
+      <div class="mn">Эх кодыг мөр мөрөөр нь хөрвүүлж, шууд ажиллуулна.</div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-size:34px;font-weight:700">컴파일 = <span class="blue">먼저 번역, 빠른 실행</span> · 인터프리터 = <span class="cyan">바로 실행</span></div>
+      <div class="en" style="margin-top:6px">Translate first, run fast · Run right away</div>
+    </div>
+  </main>
+  <footer><div class="handle">#004</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · BASIC</div><div class="meta">03 / 06</div></header>
+  <main>
+    <div>
+      <div style="font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1.25"><span class="blue">번역서</span> vs <span class="cyan">동시통역</span></div>
+      <div class="en" style="margin-top:8px">Translated book vs Live interpreter</div>
+      <div class="mn">Орчуулсан ном ба шууд орчуулагч</div>
+    </div>
+    <div style="border:2px solid var(--blue);border-radius:28px;padding:28px;background:rgba(9,132,227,.07);display:flex;flex-direction:column;gap:16px">
+      <div class="mono blue" style="font-size:24px;font-weight:700;letter-spacing:.08em">COMPILED · 책 전체를 미리 번역</div>
+      <div style="display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;align-items:center">
+        <div class="panel" style="padding:18px;text-align:center;border-radius:16px"><div class="mono" style="font-size:26px;font-weight:700">hello.c</div><div style="font-size:22px;color:var(--mute);margin-top:4px">소스 · Source</div></div>
+        <div class="blue" style="font-size:36px;font-weight:800">→</div>
+        <div class="panel" style="padding:18px;text-align:center;border-radius:16px"><div class="mono" style="font-size:26px;font-weight:700">gcc</div><div style="font-size:22px;color:var(--mute);margin-top:4px">번역 1번</div></div>
+        <div class="blue" style="font-size:36px;font-weight:800">→</div>
+        <div class="panel" style="padding:18px;text-align:center;border-radius:16px"><div class="mono" style="font-size:26px;font-weight:700">./hello</div><div style="font-size:22px;color:var(--mute);margin-top:4px">실행 파일</div></div>
+      </div>
+      <div style="font-size:25px;text-align:center;color:var(--mute)">▲ 다음부턴 <b>번역 없이</b> 바로 실행 · No re-translation</div>
+    </div>
+    <div style="border:2px solid var(--cyan);border-radius:28px;padding:28px;display:flex;flex-direction:column;gap:16px">
+      <div class="mono cyan" style="font-size:24px;font-weight:700;letter-spacing:.08em">INTERPRETED · 통역사가 한 줄씩</div>
+      <div style="display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;align-items:center">
+        <div class="panel" style="padding:18px;text-align:center;border-radius:16px"><div class="mono" style="font-size:26px;font-weight:700">line 1</div><div style="font-size:22px;color:var(--mute);margin-top:4px">번역 → 실행</div></div>
+        <div class="cyan" style="font-size:36px;font-weight:800">→</div>
+        <div class="panel" style="padding:18px;text-align:center;border-radius:16px"><div class="mono" style="font-size:26px;font-weight:700">line 2</div><div style="font-size:22px;color:var(--mute);margin-top:4px">번역 → 실행</div></div>
+        <div class="cyan" style="font-size:36px;font-weight:800">→</div>
+        <div class="panel" style="padding:18px;text-align:center;border-radius:16px"><div class="mono" style="font-size:26px;font-weight:700">line 3</div><div style="font-size:22px;color:var(--mute);margin-top:4px">번역 → 실행</div></div>
+      </div>
+      <div style="font-size:25px;text-align:center;color:var(--mute)">▲ 실행할 <b>때마다</b> 통역 · Every run · Ажиллуулах бүрт</div>
+    </div>
+  </main>
+  <footer><div class="handle">#004</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · BASIC</div><div class="meta">04 / 06</div></header>
+  <main>
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">2번째 줄에 오류가 있다면?</div><div class="en" style="margin-top:6px">A bug on line 2 · 2-р мөрөнд алдаа байвал?</div></div>
+    <div class="panel" style="background:var(--code);padding:28px 36px">
+<pre class="mono" style="font-size:25px;line-height:1.55;color:var(--white)"><span style="color:var(--dim)"># err.py</span>
+print(<span class="cyan">"A"</span>)
+print(x)      <span style="color:var(--dim)"># x 없음 · undefined</span>
+<span class="blue">$</span> python3 err.py
+A             <span style="color:var(--dim)"># 1번째 줄은 실행됨</span>
+NameError: name 'x' is not defined
+
+<span style="color:var(--dim)">// err.c — printf("A"); printf("%d", x);</span>
+<span class="blue">$</span> gcc err.c -o err
+error: 'x' undeclared   <span style="color:var(--dim)">// A 출력 X</span></pre>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">①</span> Python: 오류 줄에 <b>도착해서야</b> 멈춤 → A는 출력</div><div class="mn" style="margin-left:40px">EN: Stops only when it reaches the bug · MN: Алдаатай мөрөнд хүрээд зогсоно</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">②</span> C: <b>번역 단계</b>에서 막힘 → 실행 파일 자체가 없음</div><div class="mn" style="margin-left:40px">EN: Fails at compile time, no executable · MN: Хөрвүүлэх үедээ зогсоно</div></div>
+    </div>
+  </main>
+  <footer><div class="handle">#004</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · BASIC</div><div class="meta">05 / 06</div></header>
+  <main style="gap:20px">
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">여기서 꼭 헷갈린다</div><div class="en" style="margin-top:6px">Check points · Анхаарах зүйлс</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">01</span>&nbsp; 속도 vs 편의 <span class="en" style="font-size:24px;font-weight:500">· Speed vs Ease</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">실행 속도는 보통 <b>컴파일</b>, 고치고 바로 확인은 <b>인터프리터</b></div><div class="mn" style="font-size:24px">Хурд: ихэвчлэн хөрвүүлэгддэг · Шууд турших: тайлбарлагддаг</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">02</span>&nbsp; Java는 둘 다 <span class="en" style="font-size:24px;font-weight:500">· Hybrid</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)"><b class="cyan">바이트코드</b>로 컴파일 → JVM이 해석 + JIT 컴파일</div><div class="mn" style="font-size:24px">Bytecode руу хөрвүүлээд JVM тайлбарлана (JIT)</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">03</span>&nbsp; Python도 번역함 <span class="en" style="font-size:24px;font-weight:500">· .pyc</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">CPython은 먼저 <b>바이트코드</b>로 바꾼 뒤 가상 머신이 실행</div><div class="mn" style="font-size:24px">CPython эхлээд bytecode болгож, виртуал машин ажиллуулна</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">04</span>&nbsp; 언어 ≠ 구현 <span class="en" style="font-size:24px;font-weight:500">· Language vs Implementation</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">컴파일·인터프리트는 언어보다 <b>실행 방식(구현)</b>의 특징</div><div class="mn" style="font-size:24px">Энэ нь хэлний бус, хэрэгжүүлэлтийн шинж чанар</div></div>
+  </main>
+  <footer><div class="handle">#004</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · BASIC</div><div class="meta">06 / 06</div></header>
+  <main class="center" style="gap:30px">
+    <div class="lang" style="font-size:26px">QUIZ · O / X</div>
+    <div style="font-size:60px;font-weight:800;line-height:1.3;letter-spacing:-.03em">컴파일 언어로 만든 프로그램은<br>실행할 때마다 소스를 <span class="cyan">다시 번역</span>한다.</div>
+    <div><div class="en">A compiled program re-translates its source every time it runs.</div><div class="mn">Хөрвүүлэгдсэн програм ажиллах бүртээ эх кодоо дахин хөрвүүлдэг.</div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:10px">
+      <div style="border:3px solid var(--blue);border-radius:28px;height:200px;display:flex;align-items:center;justify-content:center;font-size:130px;font-weight:800;color:var(--blue)">O</div>
+      <div style="border:3px solid var(--cyan);border-radius:28px;height:200px;display:flex;align-items:center;justify-content:center;font-size:130px;font-weight:800;color:var(--cyan)">X</div>
+    </div>
+    <div><div style="font-size:30px;font-weight:700">💬 댓글로 정답 남기기 · 정답은 내일 스토리</div><div class="mn" style="margin-top:4px">Answer in the comments · Хариултаа коммент дээр үлдээгээрэй</div></div>
+  </main>
+  <footer><div class="handle">🔖 Save · 저장 · Хадгалах</div>{LOGO}</footer>
+</section>
