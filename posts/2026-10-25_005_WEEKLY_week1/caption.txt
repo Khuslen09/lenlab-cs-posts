@@ -1,0 +1,28 @@
+🇰🇷 1주차 개념, 다 기억나요?
+⠀
+이번 주에 배운 4개 개념(프로세스·스레드, 기본키·외래키, AI·ML·DL, 컴파일·인터프리터)을
+한 장 치트시트와 퀴즈 5문제로 복습해요.
+⠀
+👉 제일 헷갈리는 것: 외래키는 NULL·중복 OK, 금지 규칙은 기본키만!
+⠀
+⠀
+🇺🇸 Week 1 review — do you still remember everything?
+⠀
+This week's 4 concepts (process vs thread, PK vs FK, AI/ML/DL, compiled vs interpreted)
+in one cheat sheet and 5 quiz questions.
+⠀
+👉 Most confused: a foreign key can be NULL or repeated — those bans apply to the primary key only!
+⠀
+⠀
+🇲🇳 1-р долоо хоногийн ойлголтуудаа санаж байна уу?
+⠀
+Энэ долоо хоногийн 4 ойлголт (процесс ба урсгал, PK ба FK, AI·ML·DL, хөрвүүлэгч ба тайлбарлагч)-ыг
+нэг товч тойм болон 5 асуултаар давтъя.
+⠀
+👉 Хамгийн их андуурдаг: гадаад түлхүүр NULL, давхцалтай байж болно — хориг нь зөвхөн үндсэн түлхүүрт!
+⠀
+⠀
+💬 몇 문제 맞혔는지 댓글로! · How many did you get? · Хэдийг нь зөв хариулсан бэ?
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #WEEKLYlenlab #Week1lenlab
