@@ -1,0 +1,29 @@
+🇰🇷 배열 vs 연결 리스트, 언제 뭘 써야 할까?
+⠀
+배열은 연속된 메모리에 차례로 저장해서 인덱스로 바로 꺼내 쓰고,
+연결 리스트는 노드(데이터 + 다음 주소)를 포인터로 줄줄이 이어 붙여요.
+⠀
+👉 조회는 배열 O(1) vs 리스트 O(n), 리스트 삽입·삭제 O(1)은 위치를 이미 알 때만!
+⠀
+⠀
+🇺🇸 Array vs Linked List — when should you use which?
+⠀
+An array stores elements side by side in contiguous memory, so you jump straight to any index.
+A linked list chains nodes (data + address of the next node) together with pointers.
+⠀
+👉 Lookup is O(1) for arrays vs O(n) for lists — and list insert/delete is O(1) only when you already have the node!
+⠀
+⠀
+🇲🇳 Массив ба холбоост жагсаалт — хэзээ алийг нь ашиглах вэ?
+⠀
+Массив элементүүдээ санах ойд дараалан хадгалдаг тул индексээр шууд ханддаг.
+Холбоост жагсаалт зангилаануудыг (өгөгдөл + дараагийн хаяг) заагчаар холбодог.
+⠀
+👉 Хандах хурд: массив O(1), жагсаалт O(n) — жагсаалтын оруулах·устгах O(1) нь байрлалаа мэдэж байвал л!
+⠀
+⠀
+✅ 어제 복습 퀴즈 정답: ③ ④ ① ② ④ — 스레드마다 따로 갖는 건 Stack, 기본키는 테이블당 1개예요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #DSlenlab #LinkedListlenlab
