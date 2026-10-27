@@ -1,0 +1,29 @@
+🇰🇷 OSI 7계층과 TCP/IP 4계층, 어떻게 대응될까요?
+⠀
+OSI 7계층은 통신 과정을 7단계로 나눠 설명하는 ISO의 참조 모델이고,
+TCP/IP 4계층(네트워크 접근·인터넷·전송·응용)은 실제 인터넷이 쓰는 모델이에요.
+⠀
+👉 TCP/IP 응용 = OSI 5·6·7계층, 네트워크 접근 = OSI 1·2계층!
+⠀
+⠀
+🇺🇸 OSI 7 layers vs TCP/IP 4 layers — how do they line up?
+⠀
+The OSI model is ISO's 7-layer reference model for explaining how communication works.
+The TCP/IP model (Link, Internet, Transport, Application) is what the real Internet runs on.
+⠀
+👉 TCP/IP Application = OSI layers 5–7, and Link = OSI layers 1–2!
+⠀
+⠀
+🇲🇳 OSI 7 давхарга ба TCP/IP 4 давхарга — хоорондоо хэрхэн харгалздаг вэ?
+⠀
+OSI бол харилцаа холбооны үйл явцыг 7 шатаар тайлбарладаг ISO-ийн лавлах загвар.
+TCP/IP загвар (холбоос, интернэт, тээвэр, хэрэглээ) нь бодит интернэтэд ашиглагддаг.
+⠀
+👉 TCP/IP-ийн хэрэглээ = OSI-ийн 5·6·7, холбоос = OSI-ийн 1·2 давхарга!
+⠀
+⠀
+✅ 어제 퀴즈 정답: X — PC는 다음 명령어의 주소를 저장하고, 지금 실행할 명령어 자체는 IR에 있어요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #NETlenlab #OSIlenlab
