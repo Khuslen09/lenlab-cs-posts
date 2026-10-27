@@ -1,0 +1,29 @@
+🇰🇷 CPU는 명령어를 어떻게 실행할까?
+⠀
+CPU는 계산하는 ALU, 명령어를 해석하는 제어장치, 초고속 저장 공간인 레지스터로 이뤄져 있어요.
+명령어는 인출(Fetch) → 해독(Decode) → 실행(Execute)을 반복하며 하나씩 처리돼요.
+⠀
+👉 PC는 다음 명령어의 주소, IR은 지금 실행할 명령어 자체!
+⠀
+⠀
+🇺🇸 How does a CPU actually run an instruction?
+⠀
+A CPU is made of the ALU (does the math), the control unit (decodes instructions) and registers (tiny, ultra-fast storage).
+It handles instructions one by one by repeating Fetch → Decode → Execute.
+⠀
+👉 The PC holds the address of the next instruction; the IR holds the current instruction itself!
+⠀
+⠀
+🇲🇳 Төв процессор (CPU) зааврыг хэрхэн гүйцэтгэдэг вэ?
+⠀
+CPU нь тооцоолдог ALU, зааврыг тайлдаг удирдлагын нэгж, маш хурдан санах ой болох регистрүүдээс бүрдэнэ.
+Заавар бүрийг татах (Fetch) → тайлах (Decode) → гүйцэтгэх (Execute) гэсэн мөчлөгөөр нэг нэгээр нь боловсруулна.
+⠀
+👉 PC дараагийн зааврын хаягийг, IR одоогийн зааврыг өөрийг нь хадгална!
+⠀
+⠀
+✅ 어제 퀴즈 정답: X — 연결 리스트는 head부터 next를 따라가야 해서 k번째 접근이 O(n)이에요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #ARCHlenlab #CPUlenlab
