@@ -1,0 +1,29 @@
+🇰🇷 퍼셉트론과 활성화 함수, 왜 필요할까요?
+⠀
+퍼셉트론은 입력에 가중치를 곱해 더하고 편향을 더해 출력을 내는 인공 뉴런이고,
+활성화 함수는 그 가중합을 출력으로 바꾸면서 신경망에 비선형성을 더해 줘요.
+⠀
+👉 활성화 함수가 없으면 층을 아무리 쌓아도 선형 층 하나와 같아요!
+⠀
+⠀
+🇺🇸 Perceptron & activation functions — why do we need them?
+⠀
+A perceptron is an artificial neuron that adds up weighted inputs plus a bias.
+An activation function turns that sum into the output and adds non-linearity to the network.
+⠀
+👉 Without activation functions, stacking layers is no better than a single linear layer!
+⠀
+⠀
+🇲🇳 Перцептрон ба идэвхжүүлэх функц — яагаад хэрэгтэй вэ?
+⠀
+Перцептрон бол оролтыг жингээр үржүүлж нэмээд хазайлт нэмдэг хиймэл нейрон.
+Идэвхжүүлэх функц нь тэр нийлбэрийг гаралт болгож, сүлжээнд шугаман бус чанар өгдөг.
+⠀
+👉 Идэвхжүүлэх функцгүй бол хичнээн давхарга нэмсэн ч нэг шугаман давхаргатай адил!
+⠀
+⠀
+✅ 어제 퀴즈 정답: O — TCP/IP 응용 계층 하나가 OSI 5·6·7계층(세션·표현·응용)을 묶어요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #DLlenlab #Perceptronlenlab
