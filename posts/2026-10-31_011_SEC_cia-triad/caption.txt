@@ -1,0 +1,29 @@
+🇰🇷 보안의 3요소 CIA, C·I·A 다 말할 수 있어?
+⠀
+기밀성(C)은 허가된 사람만 볼 수 있게, 무결성(I)은 허가 없이 바뀌지 않게,
+가용성(A)은 필요할 때 언제든 쓸 수 있게 지키는 거예요.
+⠀
+👉 엿보기는 C, 바꿔치기는 I, DDoS로 마비시키기는 A를 깨뜨려요!
+⠀
+⠀
+🇺🇸 The CIA triad — can you name all three?
+⠀
+Confidentiality keeps data visible only to authorized people, Integrity keeps it from being changed without permission,
+and Availability keeps it usable whenever it is needed.
+⠀
+👉 Eavesdropping breaks C, tampering breaks I, and a DDoS outage breaks A!
+⠀
+⠀
+🇲🇳 Аюулгүй байдлын 3 үндэс CIA — гурвууланг нь хэлж чадах уу?
+⠀
+Нууцлал (C) нь зөвхөн эрх бүхий хүн харах, бүрэн бүтэн байдал (I) нь зөвшөөрөлгүй өөрчлөгдөхгүй байх,
+хүртээмж (A) нь хэрэгтэй үед хэзээ ч ашиглах боломжтой байхыг хамгаална.
+⠀
+👉 Чагнах нь C-г, хуурамчаар өөрчлөх нь I-г, DDoS-оор зогсоох нь A-г эвддэг!
+⠀
+⠀
+✅ 어제 퀴즈 정답: ② 7 — p가 x의 주소를 가리키므로 *p = 7은 x를 7로 바꿔요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #SEClenlab #CIATriadlenlab
