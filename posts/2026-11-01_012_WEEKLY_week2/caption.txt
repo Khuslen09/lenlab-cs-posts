@@ -1,0 +1,29 @@
+🇰🇷 2주차 개념 6개, 다 기억나요?
+⠀
+이번 주에 배운 6개 개념(배열·연결 리스트, CPU 명령어 사이클, OSI·TCP/IP, 퍼셉트론, 포인터, CIA)을
+한 장 치트시트와 퀴즈 5문제로 복습해요.
+⠀
+👉 제일 헷갈리는 것: PC는 명령어가 아니라 다음 명령어의 주소, 명령어 자체는 IR에 있어요!
+⠀
+⠀
+🇺🇸 Week 2 review — do you still remember all 6 concepts?
+⠀
+This week's 6 concepts (array vs linked list, the CPU instruction cycle, OSI vs TCP/IP, perceptrons, pointers, CIA)
+in one cheat sheet and 5 quiz questions.
+⠀
+👉 Most confused: the PC holds the next instruction's address, not the instruction — that lives in the IR!
+⠀
+⠀
+🇲🇳 2-р долоо хоногийн 6 ойлголтоо санаж байна уу?
+⠀
+Энэ долоо хоногийн 6 ойлголт (массив ба холбоост жагсаалт, CPU-ийн зааврын мөчлөг, OSI ба TCP/IP, перцептрон, заагч, CIA)-ыг
+нэг товч тойм болон 5 асуултаар давтъя.
+⠀
+👉 Хамгийн их андуурдаг: PC нь заавар биш, дараагийн зааврын хаягийг хадгална — заавар өөрөө IR-д!
+⠀
+⠀
+✅ 어제 퀴즈 정답: ③ 가용성 — DDoS는 요청을 쏟아부어 서버를 마비시켜 필요할 때 서비스를 못 쓰게 만들어요.
+💬 몇 문제 맞혔는지 댓글로! · How many did you get? · Хэдийг нь зөв хариулсан бэ?
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #WEEKLYlenlab #Week2lenlab
