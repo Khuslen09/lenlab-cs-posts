@@ -1,0 +1,29 @@
+🇰🇷 빅오 표기법, 내 코드가 얼마나 빠른지 말할 수 있어?
+⠀
+빅오(Big-O)는 입력 크기 n이 커질 때 연산 횟수가 얼마나 빨리 늘어나는지, 그 증가율의 상한을 나타내요.
+상수와 낮은 차수는 버리고 가장 큰 항만 남겨서 3n² + 5n + 2는 O(n²)이 돼요.
+⠀
+👉 O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ) — 반복문이 중첩되면 곱하고, 차례로 오면 더해요!
+⠀
+⠀
+🇺🇸 Big-O notation — can you say how fast your code is?
+⠀
+Big-O describes an upper bound on how fast the number of steps grows as the input size n grows.
+Drop constants and lower-order terms and keep only the biggest one, so 3n² + 5n + 2 becomes O(n²).
+⠀
+👉 O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ) — nested loops multiply, sequential ones add!
+⠀
+⠀
+🇲🇳 Big-O тэмдэглэгээ — кодын хурдыг тайлбарлаж чадах уу?
+⠀
+Big-O нь оролтын хэмжээ n өсөхөд алхамын тоо хэр хурдан өсөхийн дээд хязгаарыг илэрхийлдэг.
+Тогтмол болон бага зэргийн гишүүдийг хаяж, хамгийн томыг нь үлдээдэг тул 3n² + 5n + 2 нь O(n²) болно.
+⠀
+👉 O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ) — давхар давталт үржинэ, дараалсан нь нэмэгдэнэ!
+⠀
+⠀
+✅ 어제 복습 퀴즈 정답: ② ③ ① ④ O — 배열 조회는 O(1), DDoS는 가용성 침해예요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #ALGOlenlab #BigOlenlab

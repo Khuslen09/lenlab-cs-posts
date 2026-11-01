@@ -1,0 +1,108 @@
+<!-- #013 ALGO · Big-O Notation — body only; build.py wraps it with templates/card-template.html -->
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · ALGO</div><div class="meta">#013 · 2026.11.02</div></header>
+  <main class="center">
+    <div><div class="lang">EN</div><div style="font-family:JBM;font-weight:700;font-size:64px;line-height:1.15">Big-O <span class="blue">Notation</span></div></div>
+    <div><div class="lang">KO</div><div style="font-size:84px;font-weight:800;line-height:1.22;letter-spacing:-.03em">내 코드가 얼마나 <span class="blue">빠른지</span>,<br><span class="cyan">O(n)</span>으로 말할 수 있어?</div></div>
+    <div><div class="lang">MN</div><div style="font-size:40px;line-height:1.4;color:var(--mute)">Кодын хурдыг O(n)-ээр<br>тайлбарлаж чадах уу?</div></div>
+  </main>
+  <footer><div class="handle">01 / 06</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · ALGO</div><div class="meta">02 / 06</div></header>
+  <main>
+    <div><div style="font-size:60px;font-weight:800;letter-spacing:-.03em">한 줄 정의</div><div class="en" style="margin-top:6px">Definition · Тодорхойлолт</div></div>
+    <div class="panel" style="border-left:6px solid var(--blue)">
+      <div class="mono blue" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">BIG-O · 빅오 표기법</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">입력 크기 n이 커질 때 연산 횟수가 늘어나는 <b class="blue">증가율의 상한</b></div>
+      <div class="en">An upper bound on how fast the work grows as input size n grows.</div>
+      <div class="mn">Оролтын хэмжээ n өсөхөд ажлын хэмжээ өсөх хурдны дээд хязгаар.</div>
+    </div>
+    <div class="panel" style="border-left:6px solid var(--cyan)">
+      <div class="mono cyan" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">RULE · 계산 규칙</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px"><b>상수</b>와 <b>낮은 차수</b>는 버리고 가장 큰 항만<br><span class="mono cyan" style="font-size:32px">3n² + 5n + 2 → O(n²)</span></div>
+      <div class="en">Drop constants and lower-order terms; keep the biggest term.</div>
+      <div class="mn">Тогтмол болон бага зэргийн гишүүдийг хаяж, хамгийн том гишүүнийг үлдээнэ.</div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-size:34px;font-weight:700">빅오 = 정확한 <span class="blue">시간</span>이 아니라 <span class="cyan">늘어나는 속도</span></div>
+    </div>
+  </main>
+  <footer><div class="handle">#013</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · ALGO</div><div class="meta">03 / 06</div></header>
+  <main style="gap:22px">
+    <div>
+      <div style="font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1.25">n = 16이면 <span class="cyan">몇 번</span> 일할까?</div>
+      <div class="en" style="margin-top:8px">How many steps when n = 16?</div>
+      <div class="mn">n = 16 үед хэдэн алхам хийх вэ?</div>
+    </div>
+    <div class="panel" style="padding:40px 40px;display:flex;flex-direction:column;gap:36px">
+      <div style="display:grid;grid-template-columns:200px 1fr 130px;align-items:center;gap:18px"><div class="mono" style="font-size:32px;font-weight:700">O(1)</div><div><div style="height:22px;width:6%;background:var(--cyan);border-radius:11px"></div><div style="font-size:26px;color:var(--mute);margin-top:8px">배열 인덱스 조회 · Array index</div></div><div class="mono" style="font-size:28px;text-align:right">1</div></div>
+      <div style="display:grid;grid-template-columns:200px 1fr 130px;align-items:center;gap:18px"><div class="mono" style="font-size:32px;font-weight:700">O(log n)</div><div><div style="height:22px;width:18%;background:var(--cyan);border-radius:11px"></div><div style="font-size:26px;color:var(--mute);margin-top:8px">이진 탐색 · Binary search</div></div><div class="mono" style="font-size:28px;text-align:right">4</div></div>
+      <div style="display:grid;grid-template-columns:200px 1fr 130px;align-items:center;gap:18px"><div class="mono" style="font-size:32px;font-weight:700">O(n)</div><div><div style="height:22px;width:30%;background:var(--cyan);border-radius:11px"></div><div style="font-size:26px;color:var(--mute);margin-top:8px">선형 탐색 · Linear search</div></div><div class="mono" style="font-size:28px;text-align:right">16</div></div>
+      <div style="display:grid;grid-template-columns:200px 1fr 130px;align-items:center;gap:18px"><div class="mono" style="font-size:32px;font-weight:700">O(n log n)</div><div><div style="height:22px;width:42%;background:var(--blue);border-radius:11px"></div><div style="font-size:26px;color:var(--mute);margin-top:8px">병합 정렬 · Merge sort</div></div><div class="mono" style="font-size:28px;text-align:right">64</div></div>
+      <div style="display:grid;grid-template-columns:200px 1fr 130px;align-items:center;gap:18px"><div class="mono" style="font-size:32px;font-weight:700">O(n²)</div><div><div style="height:22px;width:54%;background:var(--blue);border-radius:11px"></div><div style="font-size:26px;color:var(--mute);margin-top:8px">이중 반복문 · Nested loops</div></div><div class="mono" style="font-size:28px;text-align:right">256</div></div>
+      <div style="display:grid;grid-template-columns:200px 1fr 130px;align-items:center;gap:18px"><div class="mono" style="font-size:32px;font-weight:700">O(2ⁿ)</div><div><div style="height:22px;width:100%;background:var(--white);border-radius:11px"></div><div style="font-size:26px;color:var(--mute);margin-top:8px">부분집합 전부 탐색 · All subsets</div></div><div class="mono" style="font-size:28px;text-align:right">65536</div></div>
+    </div>
+    <div style="font-size:26px;text-align:center;color:var(--mute);margin-top:8px">▲ 위로 갈수록 효율적 · 막대는 로그 눈금 · Log scale · Логарифм хуваарь</div>
+  </main>
+  <footer><div class="handle">#013</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · ALGO</div><div class="meta">04 / 06</div></header>
+  <main>
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">Python으로 세어 보기</div><div class="en" style="margin-top:6px">Counting steps in Python · Python-д алхам тоолох</div></div>
+    <div class="panel" style="background:var(--code);padding:32px 38px">
+<pre class="mono" style="font-size:27px;line-height:1.6;color:var(--white)"><span class="blue">def</span> first(a):      <span class="cyan"># O(1)</span>
+    <span class="blue">return</span> a[0]
+
+<span class="blue">def</span> total(a):      <span class="cyan"># O(n)</span>
+    s = 0
+    <span class="blue">for</span> x <span class="blue">in</span> a: s += x
+    <span class="blue">return</span> s
+
+<span class="blue">def</span> pairs(a):      <span class="cyan"># O(n²)</span>
+    <span class="blue">return</span> [(x, y) <span class="blue">for</span> x <span class="blue">in</span> a <span class="blue">for</span> y <span class="blue">in</span> a]</pre>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">①</span> 리스트가 길어져도 한 번에 → <b>O(1)</b></div><div class="mn" style="margin-left:40px">EN: Same cost for any size · MN: Хэмжээнээс үл хамааран нэг алхам</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">②</span> 반복문 1개 = n번 → <b>O(n)</b></div><div class="mn" style="margin-left:40px">EN: One loop runs n times · MN: Нэг давталт n удаа</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">③</span> 중첩 반복 n × n → n=1000이면 <b>100만 쌍</b></div><div class="mn" style="margin-left:40px">EN: n=1000 gives 1,000,000 pairs · MN: n=1000 бол 1 сая хос</div></div>
+    </div>
+  </main>
+  <footer><div class="handle">#013</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · ALGO</div><div class="meta">05 / 06</div></header>
+  <main style="gap:20px">
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">여기서 꼭 헷갈린다</div><div class="en" style="margin-top:6px">Check points · Анхаарах зүйлс</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">01</span>&nbsp; 상수는 버린다 <span class="en" style="font-size:24px;font-weight:500">· Drop constants</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">반복문 2개를 따로 돌려도 2n → <b class="cyan">O(n)</b></div><div class="mn" style="font-size:24px">Хоёр тусдаа давталт: 2n → O(n)</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">02</span>&nbsp; 더하기 vs 곱하기 <span class="en" style="font-size:24px;font-weight:500">· Add vs Multiply</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">차례로 실행하면 <b>더하고</b>, 안에 중첩되면 <b>곱한다</b></div><div class="mn" style="font-size:24px">Дараалсан бол нэмнэ, давхар бол үржүүлнэ</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">03</span>&nbsp; O · Ω · Θ <span class="en" style="font-size:24px;font-weight:500">· Upper / Lower / Tight</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">O = 상한, Ω = 하한, Θ = 둘 다. 보통 <b>최악의 경우</b>를 O로 표기</div><div class="mn" style="font-size:24px">O = дээд, Ω = доод, Θ = хоёулаа хязгаар</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">04</span>&nbsp; n이 작을 땐 <span class="en" style="font-size:24px;font-weight:500">· Small n</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">빅오는 <b>n이 클 때</b>의 비교. 작은 입력에선 순위가 바뀔 수 있음</div><div class="mn" style="font-size:24px">Big-O нь n их үеийн харьцуулалт</div></div>
+  </main>
+  <footer><div class="handle">#013</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · ALGO</div><div class="meta">06 / 06</div></header>
+  <main class="center" style="gap:30px">
+    <div class="lang" style="font-size:26px">QUIZ · 4지선다</div>
+    <div style="font-size:58px;font-weight:800;line-height:1.3;letter-spacing:-.03em">n이 커질 때 가장 <span class="cyan">느리게 증가하는</span><br>시간 복잡도는?</div>
+    <div><div class="en">Which time complexity grows the slowest as n grows?</div><div class="mn">n өсөхөд аль хугацааны төвөгшил хамгийн удаан өсдөг вэ?</div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;font-size:34px;font-weight:700;text-align:left">
+      <div class="panel mono" style="padding:20px 28px">① O(n)</div>
+      <div class="panel mono" style="padding:20px 28px">② O(n²)</div>
+      <div class="panel mono" style="padding:20px 28px">③ O(log n)</div>
+      <div class="panel mono" style="padding:20px 28px">④ O(n log n)</div>
+    </div>
+    <div><div style="font-size:30px;font-weight:700">💬 댓글로 정답 남기기 · 정답은 내일 스토리</div><div class="mn" style="margin-top:4px">Answer in the comments · Хариултаа коммент дээр үлдээгээрэй</div></div>
+  </main>
+  <footer><div class="handle">🔖 Save · 저장 · Хадгалах</div>{LOGO}</footer>
+</section>
