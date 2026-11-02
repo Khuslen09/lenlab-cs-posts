@@ -1,0 +1,29 @@
+🇰🇷 내 변수는 힙에 있을까, 스택에 있을까?
+⠀
+프로그램 메모리는 코드(명령어), 데이터(전역·static 변수), 힙(동적 할당), 스택(지역 변수·매개변수) 4영역으로 나뉘어요.
+힙은 malloc·new로 직접 받아 직접 해제하고, 스택은 함수가 끝나면 자동으로 사라져요.
+⠀
+👉 포인터 p 자체는 스택, p가 가리키는 malloc 공간은 힙! 힙은 위로, 스택은 아래로 자라요.
+⠀
+⠀
+🇺🇸 Is my variable on the heap or the stack?
+⠀
+Program memory has four areas: Code (instructions), Data (global and static variables), Heap (dynamic allocation) and Stack (local variables and parameters).
+You allocate and free heap memory yourself with malloc or new, while stack memory disappears automatically when the function returns.
+⠀
+👉 The pointer p lives on the stack, but the malloc block it points to lives on the heap! The heap grows up, the stack grows down.
+⠀
+⠀
+🇲🇳 Миний хувьсагч heap-д үү, stack-д үү?
+⠀
+Програмын санах ой Code (машин код), Data (глобал ба static хувьсагч), Heap (динамик хуваарилалт), Stack (локал хувьсагч, параметр) гэсэн 4 хэсэгтэй.
+Heap-ийг malloc·new-ээр авч өөрөө чөлөөлдөг бол stack функц дуусахад автоматаар устдаг.
+⠀
+👉 p заагч өөрөө stack-д, түүний заасан malloc хэсэг heap-д байна! Heap дээшээ, stack доошоо өсдөг.
+⠀
+⠀
+✅ 어제 퀴즈 정답: ③ O(log n) — n이 2배가 돼도 일은 한 단계만 늘어나요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #SYSlenlab #MemoryLayoutlenlab
