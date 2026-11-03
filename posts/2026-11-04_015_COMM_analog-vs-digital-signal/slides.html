@@ -1,0 +1,108 @@
+<!-- #015 COMM · Analog vs Digital Signal — body only; build.py wraps it with templates/card-template.html -->
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · COMM</div><div class="meta">#015 · 2026.11.04</div></header>
+  <main class="center">
+    <div><div class="lang">EN</div><div style="font-family:JBM;font-weight:700;font-size:64px;line-height:1.15">Analog <span class="blue">vs</span> Digital Signal</div></div>
+    <div><div class="lang">KO</div><div style="font-size:84px;font-weight:800;line-height:1.22;letter-spacing:-.03em"><span class="blue">아날로그</span>와 <span class="cyan">디지털</span> 신호,<br>뭐가 다를까?</div></div>
+    <div><div class="lang">MN</div><div style="font-size:40px;line-height:1.4;color:var(--mute)">Аналог ба дижитал дохио —<br>ялгаа нь юу вэ?</div></div>
+  </main>
+  <footer><div class="handle">01 / 06</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · COMM</div><div class="meta">02 / 06</div></header>
+  <main>
+    <div><div style="font-size:60px;font-weight:800;letter-spacing:-.03em">한 줄 정의</div><div class="en" style="margin-top:6px">Definition · Тодорхойлолт</div></div>
+    <div class="panel" style="border-left:6px solid var(--blue)">
+      <div class="mono blue" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">ANALOG · 아날로그 · АНАЛОГ</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">값이 끊김 없이 이어지는 <b class="blue">연속</b> 신호. 범위 안의 어떤 값이든 가질 수 있음</div>
+      <div class="en">A continuous signal that can take any value in a range.</div>
+      <div class="mn">Тодорхой мужид ямар ч утга авч болох тасралтгүй дохио.</div>
+    </div>
+    <div class="panel" style="border-left:6px solid var(--cyan)">
+      <div class="mono cyan" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">DIGITAL · 디지털 · ДИЖИТАЛ</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">정해진 몇 개의 값만 갖는 <b class="cyan">이산</b> 신호. 대표적으로 0과 1</div>
+      <div class="en">A discrete signal with only a limited set of values, like 0 and 1.</div>
+      <div class="mn">Зөвхөн цөөн тогтсон утгатай (0 ба 1) салангид дохио.</div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-size:34px;font-weight:700">아날로그 = <span class="blue">연속</span> · 디지털 = <span class="cyan">이산(불연속)</span></div>
+      <div class="en" style="margin-top:6px">Analog is continuous · Digital is discrete</div>
+    </div>
+  </main>
+  <footer><div class="handle">#015</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · COMM</div><div class="meta">03 / 06</div></header>
+  <main>
+    <div>
+      <div style="font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1.25"><span class="blue">경사로</span> = 아날로그 · <span class="cyan">계단</span> = 디지털</div>
+      <div class="en" style="margin-top:8px">Ramp = analog · Stairs = digital</div>
+      <div class="mn">Налуу зам = аналог · Шат = дижитал</div>
+    </div>
+    <div style="border:2px solid var(--blue);border-radius:28px;padding:26px 30px;background:rgba(9,132,227,.07)">
+      <div class="mono blue" style="font-size:24px;font-weight:700;letter-spacing:.08em;margin-bottom:14px">ANALOG · 부드러운 파형 · Smooth wave</div>
+      <svg width="860" height="160" viewBox="-10 0 860 160"><line x1="0" y1="80" x2="840" y2="80" stroke="rgba(245,246,250,.2)" stroke-width="2" stroke-dasharray="8 8"/><polyline fill="none" stroke="#0984E3" stroke-width="6" stroke-linejoin="round" points="0,80 10,71 20,62 30,54 40,46 50,39 60,33 70,28 80,24 90,22 100,20 110,20 120,22 130,24 140,28 150,33 160,39 170,46 180,54 190,62 200,71 210,80 220,89 230,98 240,106 250,114 260,121 270,127 280,132 290,136 300,138 310,140 320,140 330,138 340,136 350,132 360,127 370,121 380,114 390,106 400,98 410,89 420,80 430,71 440,62 450,54 460,46 470,39 480,33 490,28 500,24 510,22 520,20 530,20 540,22 550,24 560,28 570,33 580,39 590,46 600,54 610,62 620,71 630,80 640,89 650,98 660,106 670,114 680,121 690,127 700,132 710,136 720,138 730,140 740,140 750,138 760,136 770,132 780,127 790,121 800,114 810,106 820,98 830,89 840,80"/></svg>
+      <div style="font-size:25px;text-align:center;color:var(--mute);margin-top:8px">▲ 목소리·온도처럼 값이 <b>무한히</b> · Voice, temperature · Дуу хоолой, температур</div>
+    </div>
+    <div style="border:2px solid var(--cyan);border-radius:28px;padding:26px 30px;background:rgba(0,206,201,.06)">
+      <div class="mono cyan" style="font-size:24px;font-weight:700;letter-spacing:.08em;margin-bottom:14px">DIGITAL · 0 / 1 계단 · Steps</div>
+      <svg width="860" height="160" viewBox="-10 0 860 160"><polyline fill="none" stroke="#00CEC9" stroke-width="6" stroke-linejoin="miter" points="0,30 105,30 105,130 210,130 210,30 315,30 420,30 420,130 525,130 630,130 630,30 735,30 735,130 840,130"/>
+        <g font-family="JBM" font-size="30" font-weight="700" fill="rgba(245,246,250,.7)" text-anchor="middle"><text x="52" y="80">1</text><text x="157" y="80">0</text><text x="262" y="80">1</text><text x="367" y="80">1</text><text x="472" y="80">0</text><text x="577" y="80">0</text><text x="682" y="80">1</text><text x="787" y="80">0</text></g></svg>
+      <div style="font-size:25px;text-align:center;color:var(--mute);margin-top:8px">▲ 컴퓨터는 <b>0과 1</b>만 · Only 0 and 1 · Зөвхөн 0 ба 1</div>
+    </div>
+  </main>
+  <footer><div class="handle">#015</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · COMM</div><div class="meta">04 / 06</div></header>
+  <main>
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">아날로그 → 디지털 (PCM)</div><div class="en" style="margin-top:6px">Analog to digital in Python · Python-оор хөрвүүлэх</div></div>
+    <div class="panel" style="background:var(--code);padding:32px 38px">
+<pre class="mono" style="font-size:25px;line-height:1.6;color:var(--white)"><span class="blue">import</span> math
+fs, L = <span class="cyan">8</span>, <span class="cyan">8</span>   <span style="color:var(--dim)"># 8번 표본화, 3비트=8단계</span>
+<span class="blue">for</span> n <span class="blue">in</span> range(fs):
+    x = math.sin(<span class="cyan">2</span>*math.pi*n/fs)  <span style="color:var(--dim)"># ① 표본화</span>
+    q = round((x+<span class="cyan">1</span>)/<span class="cyan">2</span>*(L-<span class="cyan">1</span>))      <span style="color:var(--dim)"># ② 양자화</span>
+    print(n, q, f<span class="cyan">"{q:03b}"</span>)       <span style="color:var(--dim)"># ③ 부호화</span>
+<span style="color:var(--dim)"># 0 4 100 / 1 6 110 / 2 7 111 ...</span></pre>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">①</span> <b>표본화</b>: 시간을 일정 간격으로 끊어 값을 읽음</div><div class="mn" style="margin-left:40px">EN: Sampling · MN: Түүвэрлэлт — тогтмол хугацаанд утга авна</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">②</span> <b>양자화</b>: 읽은 값을 정해진 단계로 반올림</div><div class="mn" style="margin-left:40px">EN: Quantization · MN: Квантчлал — тогтсон түвшинд дугуйлна</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">③</span> <b>부호화</b>: 단계 번호를 2진수(0·1)로</div><div class="mn" style="margin-left:40px">EN: Encoding · MN: Кодчилол — хоёртын тоо болгоно</div></div>
+    </div>
+  </main>
+  <footer><div class="handle">#015</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · COMM</div><div class="meta">05 / 06</div></header>
+  <main style="gap:20px">
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">여기서 꼭 헷갈린다</div><div class="en" style="margin-top:6px">Check points · Анхаарах зүйлс</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">01</span>&nbsp; 잡음에 강한 디지털 <span class="en" style="font-size:24px;font-weight:500">· Noise</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">디지털도 잡음은 생기지만 <b>0/1만 구분</b>하면 원래대로 복원</div><div class="mn" style="font-size:24px">Дижитал дохиог 0/1-ээр ялгаад сэргээхэд амар</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">02</span>&nbsp; 나이퀴스트 정리 <span class="en" style="font-size:24px;font-weight:500">· Nyquist</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">표본화 주파수 ≥ <b class="cyan">최고 주파수 × 2</b> (CD: 44.1kHz)</div><div class="mn" style="font-size:24px">Түүвэрлэх давтамж ≥ хамгийн их давтамж × 2</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">03</span>&nbsp; 양자화 오차 <span class="en" style="font-size:24px;font-weight:500">· Quantization Error</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">비트 수를 늘리면 <b>작아지지만 0은 아님</b></div><div class="mn" style="font-size:24px">Бит нэмбэл алдаа багасна, гэхдээ 0 болохгүй</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">04</span>&nbsp; 데이터 ≠ 신호 <span class="en" style="font-size:24px;font-weight:500">· Data vs Signal</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">디지털 데이터도 <b>아날로그 신호</b>로 전송 가능 (모뎀)</div><div class="mn" style="font-size:24px">Дижитал өгөгдлийг аналог дохиогоор дамжуулж болно</div></div>
+  </main>
+  <footer><div class="handle">#015</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · COMM</div><div class="meta">06 / 06</div></header>
+  <main class="center" style="gap:30px">
+    <div class="lang" style="font-size:26px">QUIZ · 4지선다</div>
+    <div style="font-size:58px;font-weight:800;line-height:1.3;letter-spacing:-.03em">아날로그 신호를 디지털로 바꾸는<br><span class="cyan">PCM</span>의 올바른 순서는?</div>
+    <div><div class="en">What is the correct order of PCM steps?</div><div class="mn">PCM-ийн зөв дараалал аль нь вэ?</div></div>
+    <div style="display:flex;flex-direction:column;gap:16px;font-size:34px;font-weight:700;text-align:left">
+      <div class="panel" style="padding:18px 28px">① 양자화 → 표본화 → 부호화</div>
+      <div class="panel" style="padding:18px 28px">② 표본화 → 양자화 → 부호화</div>
+      <div class="panel" style="padding:18px 28px">③ 부호화 → 표본화 → 양자화</div>
+      <div class="panel" style="padding:18px 28px">④ 표본화 → 부호화 → 양자화</div>
+    </div>
+    <div><div style="font-size:30px;font-weight:700">💬 댓글로 정답 남기기 · 정답은 내일 스토리</div><div class="mn" style="margin-top:4px">Answer in the comments · Хариултаа коммент дээр үлдээгээрэй</div></div>
+  </main>
+  <footer><div class="handle">🔖 Save · 저장 · Хадгалах</div>{LOGO}</footer>
+</section>
