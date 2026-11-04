@@ -1,0 +1,29 @@
+🇰🇷 AI는 글자를 어떻게 숫자로 이해할까?
+⠀
+토큰화는 문장을 모델이 다루는 작은 단위(토큰)로 나누는 것이고,
+임베딩은 각 토큰을 의미를 담은 실수 벡터로 바꾸는 거예요.
+⠀
+👉 문장 → 토큰 → ID → 벡터! 학습된 임베딩에서는 뜻이 비슷한 단어끼리 벡터도 가까워요.
+⠀
+⠀
+🇺🇸 How does AI turn text into numbers it can understand?
+⠀
+Tokenization splits text into small units called tokens.
+Embedding maps each token to a vector of real numbers that carries meaning.
+⠀
+👉 Text → Tokens → IDs → Vectors. In learned embeddings, similar words end up close together.
+⠀
+⠀
+🇲🇳 AI текстийг хэрхэн тоо болгож ойлгодог вэ?
+⠀
+Токенчлол бол текстийг токен гэх жижиг нэгжүүдэд хуваах үйл явц.
+Эмбеддинг бол токен бүрийг утга агуулсан бодит тоон вектор болгох арга.
+⠀
+👉 Текст → Токен → ID → Вектор. Сургасан эмбеддингт ойролцоо утгатай үгс ойрхон байрладаг.
+⠀
+⠀
+✅ 어제 퀴즈 정답: ② 표본화 → 양자화 → 부호화 — 시간을 끊고, 크기를 단계로 맞추고, 2진수로 바꿔요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #NLPlenlab #Embeddinglenlab
