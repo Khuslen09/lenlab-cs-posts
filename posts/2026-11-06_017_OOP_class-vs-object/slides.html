@@ -1,0 +1,120 @@
+<!-- #017 OOP · Class vs Object — body only; build.py wraps it with templates/card-template.html -->
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · OOP</div><div class="meta">#017 · 2026.11.06</div></header>
+  <main class="center">
+    <div><div class="lang">EN</div><div style="font-family:JBM;font-weight:700;font-size:64px;line-height:1.15">Class <span class="blue">vs</span> Object</div></div>
+    <div><div class="lang">KO</div><div style="font-size:84px;font-weight:800;line-height:1.22;letter-spacing:-.03em"><span class="blue">클래스</span>와 <span class="cyan">객체</span>,<br>차이 설명할 수 있어?</div></div>
+    <div><div class="lang">MN</div><div style="font-size:40px;line-height:1.4;color:var(--mute)">Класс ба объект —<br>ялгааг нь тайлбарлаж чадах уу?</div></div>
+  </main>
+  <footer><div class="handle">01 / 06</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · OOP</div><div class="meta">02 / 06</div></header>
+  <main>
+    <div><div style="font-size:60px;font-weight:800;letter-spacing:-.03em">한 줄 정의</div><div class="en" style="margin-top:6px">Definition · Тодорхойлолт</div></div>
+    <div class="panel" style="border-left:6px solid var(--blue)">
+      <div class="mono blue" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">CLASS · 클래스 · КЛАСС</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">객체의 <b class="blue">설계도</b>. 필드(상태)·메서드(행동) 정의</div>
+      <div class="en">A blueprint that defines fields (state) and methods (behavior).</div>
+      <div class="mn">Талбар (төлөв) ба метод (үйлдэл)-ийг тодорхойлсон зураг төсөл.</div>
+    </div>
+    <div class="panel" style="border-left:6px solid var(--cyan)">
+      <div class="mono cyan" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">OBJECT · 객체 · ОБЪЕКТ</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px"><b class="cyan">new</b>로 메모리에 만든 실체. 각자 자기 값을 가짐</div>
+      <div class="en">A real thing created from a class with new, holding its own values.</div>
+      <div class="mn">Классаас new-ээр санах ойд бодитоор үүсгэсэн, өөрийн утгатай зүйл.</div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-size:34px;font-weight:700">클래스 = <span class="blue">틀</span> 1개 · 객체 = <span class="cyan">실체</span> 여러 개</div>
+      <div class="en" style="margin-top:6px">One class, many objects · Нэг класс, олон объект</div>
+    </div>
+  </main>
+  <footer><div class="handle">#017</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · OOP</div><div class="meta">03 / 06</div></header>
+  <main>
+    <div>
+      <div style="font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1.25"><span class="blue">붕어빵 틀</span> = 클래스 · <span class="cyan">붕어빵</span> = 객체</div>
+      <div class="en" style="margin-top:8px">Mold = class · Fish-shaped breads = objects</div>
+      <div class="mn">Хэв = класс · Хэвээр хийсэн боов = объект</div>
+    </div>
+    <div style="border:2px solid var(--blue);border-radius:28px;padding:30px;background:rgba(9,132,227,.07);display:flex;flex-direction:column;gap:18px">
+      <div class="mono blue" style="font-size:24px;font-weight:700;letter-spacing:.08em">CLASS · 틀 하나 · One mold</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <div class="panel" style="padding:20px;text-align:center;border-radius:16px"><div class="mono" style="font-size:28px;font-weight:700">flavor</div><div style="font-size:24px;color:var(--mute);margin-top:4px">필드 · Field · Талбар</div></div>
+        <div class="panel" style="padding:20px;text-align:center;border-radius:16px"><div class="mono" style="font-size:28px;font-weight:700">eat()</div><div style="font-size:24px;color:var(--mute);margin-top:4px">메서드 · Method · Метод</div></div>
+      </div>
+      <div style="font-size:25px;text-align:center;color:var(--mute)">▼ <b class="mono">new</b> 할 때마다 하나씩 · One per new · new бүрт нэг</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+        <div style="border:2px solid var(--cyan);border-radius:16px;padding:18px;text-align:center"><div class="cyan" style="font-size:26px;font-weight:700">객체 1</div><div class="mono" style="font-size:22px;color:var(--mute);margin-top:6px">flavor =<br>"팥"</div></div>
+        <div style="border:2px solid var(--cyan);border-radius:16px;padding:18px;text-align:center"><div class="cyan" style="font-size:26px;font-weight:700">객체 2</div><div class="mono" style="font-size:22px;color:var(--mute);margin-top:6px">flavor =<br>"슈크림"</div></div>
+        <div style="border:2px solid var(--cyan);border-radius:16px;padding:18px;text-align:center"><div class="cyan" style="font-size:26px;font-weight:700">객체 3</div><div class="mono" style="font-size:22px;color:var(--mute);margin-top:6px">flavor =<br>"피자"</div></div>
+      </div>
+      <div style="font-size:25px;text-align:center;color:var(--mute)">▲ 모양은 같고 <b>값은 각자</b> · Same shape, own values · Хэлбэр ижил, утга өөр</div>
+    </div>
+  </main>
+  <footer><div class="handle">#017</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · OOP</div><div class="meta">04 / 06</div></header>
+  <main>
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">Java로 객체 만들기</div><div class="en" style="margin-top:6px">Creating objects in Java · Java-д объект үүсгэх</div></div>
+    <div class="panel" style="background:var(--code);padding:32px 38px">
+<pre class="mono" style="font-size:26px;line-height:1.6;color:var(--white)"><span class="blue">class</span> Car {
+  String color;                 <span style="color:var(--dim)">// 필드 · field</span>
+  Car(String color) { <span class="blue">this</span>.color = color; }
+  void drive() {                <span style="color:var(--dim)">// 메서드 · method</span>
+    System.out.println(color + <span class="cyan">" car drives"</span>);
+  }
+}
+Car a = <span class="blue">new</span> Car(<span class="cyan">"red"</span>);    <span style="color:var(--dim)">// 객체 1</span>
+Car b = <span class="blue">new</span> Car(<span class="cyan">"blue"</span>);   <span style="color:var(--dim)">// 객체 2</span>
+a.drive();  <span style="color:var(--dim)">// red car drives</span></pre>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">①</span> 클래스 <b>Car 1개</b>로 객체 a, b <b>2개</b>를 생성</div><div class="mn" style="margin-left:40px">EN: One class, two objects · MN: Нэг классаас 2 объект</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">②</span> <b>new</b> + 생성자가 객체를 만들고 필드 값을 초기화</div><div class="mn" style="margin-left:40px">EN: new + constructor builds it · MN: new ба конструктор үүсгэнэ</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">③</span> 같은 drive()라도 <b>객체마다 자기 color</b>를 사용</div><div class="mn" style="margin-left:40px">EN: Each uses its own color · MN: Объект бүр өөрийн color-ыг ашиглана</div></div>
+    </div>
+  </main>
+  <footer><div class="handle">#017</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · OOP</div><div class="meta">05 / 06</div></header>
+  <main style="gap:20px">
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">여기서 꼭 헷갈린다</div><div class="en" style="margin-top:6px">Check points · Анхаарах зүйлс</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">01</span>&nbsp; 객체 vs 인스턴스 <span class="en" style="font-size:24px;font-weight:500">· Object vs Instance</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">같은 실체. <b>Car의 인스턴스</b>처럼 클래스와의 관계를 말할 때 인스턴스</div><div class="mn" style="font-size:24px">Ижил зүйл; класстай холбоог онцлоход instance гэнэ</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">02</span>&nbsp; 정의 ≠ 생성 <span class="en" style="font-size:24px;font-weight:500">· new</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">class만 쓰면 객체는 0개. <b>new</b> 해야 힙에 생성</div><div class="mn" style="font-size:24px">Класс бичихэд объект үүсэхгүй, new хийхэд heap-д үүснэ</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">03</span>&nbsp; 변수 = 참조 <span class="en" style="font-size:24px;font-weight:500">· Reference</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">변수는 객체 자체가 아니라 객체를 <b class="cyan">가리키는 참조</b></div><div class="mn" style="font-size:24px">Хувьсагч нь объект биш, объект руу заах лавлагаа</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">04</span>&nbsp; static은 클래스 소속 <span class="en" style="font-size:24px;font-weight:500">· static</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">static 필드는 <b>모든 객체가 공유</b>하는 클래스 변수</div><div class="mn" style="font-size:24px">static талбарыг бүх объект хуваалцдаг</div></div>
+  </main>
+  <footer><div class="handle">#017</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · OOP</div><div class="meta">06 / 06</div></header>
+  <main class="center" style="gap:30px">
+    <div class="lang" style="font-size:26px">QUIZ · 4지선다</div>
+    <div style="font-size:58px;font-weight:800;line-height:1.3;letter-spacing:-.03em">다음 코드의 <span class="cyan">출력 결과</span>는?</div>
+    <div><div class="en">What does this code print?</div><div class="mn">Энэ код юу хэвлэх вэ?</div></div>
+    <div class="panel" style="background:var(--code);padding:26px 36px;text-align:left">
+<pre class="mono" style="font-size:28px;line-height:1.6;color:var(--white)">Dog a = <span class="blue">new</span> Dog(<span class="cyan">"Bori"</span>);
+Dog b = a;
+b.name = <span class="cyan">"Coco"</span>;
+System.out.println(a.name);</pre>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;text-align:left">
+      <div class="panel" style="padding:20px 24px;border-radius:20px"><div class="mono" style="font-size:32px;font-weight:700">① Bori</div></div>
+      <div class="panel" style="padding:20px 24px;border-radius:20px"><div class="mono" style="font-size:32px;font-weight:700">② Coco</div></div>
+      <div class="panel" style="padding:20px 24px;border-radius:20px"><div class="mono" style="font-size:32px;font-weight:700">③ null</div></div>
+      <div class="panel" style="padding:20px 24px;border-radius:20px"><div style="font-size:29px;font-weight:700">④ 컴파일 오류</div><div class="en" style="font-size:21px;margin-top:6px">Compile error</div><div class="mn" style="font-size:21px">Хөрвүүлэлтийн алдаа</div></div>
+    </div>
+    <div><div style="font-size:30px;font-weight:700">💬 댓글로 정답 남기기 · 정답은 내일 스토리</div><div class="mn" style="margin-top:4px">Answer in the comments · Хариултаа коммент дээр үлдээгээрэй</div></div>
+  </main>
+  <footer><div class="handle">🔖 Save · 저장 · Хадгалах</div>{LOGO}</footer>
+</section>

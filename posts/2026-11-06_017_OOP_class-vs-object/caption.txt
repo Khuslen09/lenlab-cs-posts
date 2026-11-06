@@ -1,0 +1,29 @@
+🇰🇷 클래스 vs 객체, 차이 설명할 수 있어?
+⠀
+클래스는 필드(상태)와 메서드(행동)를 정의한 '설계도'이고,
+객체는 그 클래스로 new 해서 메모리에 실제로 만든 '실체'예요.
+⠀
+👉 클래스는 틀 1개, 객체는 new 할 때마다 하나씩! 변수에는 객체가 아니라 참조가 담겨요.
+⠀
+⠀
+🇺🇸 Class vs Object — can you explain the difference?
+⠀
+A class is a blueprint that defines fields (state) and methods (behavior).
+An object is a real instance created from that class with new.
+⠀
+👉 One class, a new object every time you call new. Variables hold references, not the objects themselves.
+⠀
+⠀
+🇲🇳 Класс ба объект — ялгааг нь тайлбарлаж чадах уу?
+⠀
+Класс бол талбар (төлөв) ба метод (үйлдэл)-ийг тодорхойлсон зураг төсөл.
+Объект бол тэр классаас new-ээр санах ойд бодитоор үүсгэсэн зүйл.
+⠀
+👉 Нэг класс, new бүрт нэг шинэ объект. Хувьсагч объектыг биш, түүн рүү заах лавлагааг хадгална.
+⠀
+⠀
+✅ 어제 퀴즈 정답: X — 원-핫은 모든 단어 사이 거리가 똑같고, 뜻의 가까움은 임베딩이 담아요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #OOPlenlab #Classlenlab
