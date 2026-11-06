@@ -1,0 +1,29 @@
+🇰🇷 래스터 vs 벡터 그래픽, 확대하면 왜 다를까?
+⠀
+래스터는 픽셀(점)마다 색을 저장한 격자 이미지이고,
+벡터는 점·선·곡선 같은 도형을 수학식으로 저장한 이미지예요.
+⠀
+👉 확대하면 래스터는 계단처럼 깨지고, 벡터는 늘 매끈해요! 사진은 래스터, 로고·아이콘·폰트는 벡터.
+⠀
+⠀
+🇺🇸 Raster vs Vector graphics — why do they look different when you zoom in?
+⠀
+A raster image is a grid of pixels, each storing a color.
+A vector image stores shapes like points, lines and curves as math.
+⠀
+👉 Zoom in and raster gets blocky, while vector stays smooth. Photos are raster; logos, icons and fonts are vector.
+⠀
+⠀
+🇲🇳 Растер ба вектор график — томруулахад яагаад өөр вэ?
+⠀
+Растер зураг бол пиксел бүр өнгөө хадгалдаг пикселийн тор.
+Вектор зураг бол цэг, шугам, муруй зэрэг дүрсийг математик томьёогоор хадгалдаг.
+⠀
+👉 Томруулахад растер шатлан эвдэрч, вектор үргэлж гөлгөр хэвээр. Гэрэл зураг растер, лого, дүрс тэмдэг, фонт вектор.
+⠀
+⠀
+✅ 어제 퀴즈 정답: ② Coco — b = a는 객체 복사가 아니라 같은 객체를 가리키게 할 뿐이에요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #CGlenlab #Vectorlenlab
