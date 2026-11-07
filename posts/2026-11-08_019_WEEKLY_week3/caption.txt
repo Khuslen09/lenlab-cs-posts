@@ -1,0 +1,29 @@
+🇰🇷 3주차 개념 6개, 다 기억나요?
+⠀
+이번 주에 배운 6개 개념(빅오 표기법, 메모리 구조, 아날로그·디지털 신호, 토큰화·임베딩, 클래스·객체, 래스터·벡터)을
+한 장 치트시트와 퀴즈 5문제로 복습해요.
+⠀
+👉 제일 헷갈리는 것: 함수 안 static 변수는 스택이 아니라 데이터 영역에 있어서 함수가 끝나도 값이 남아요!
+⠀
+⠀
+🇺🇸 Week 3 review — do you still remember all 6 concepts?
+⠀
+This week's 6 concepts (Big-O notation, memory layout, analog vs digital signals, tokenization and embedding, class vs object, raster vs vector)
+in one cheat sheet and 5 quiz questions.
+⠀
+👉 Most confused: a static local variable lives in the data segment, not the stack, so it keeps its value after the function returns!
+⠀
+⠀
+🇲🇳 3-р долоо хоногийн 6 ойлголтоо санаж байна уу?
+⠀
+Энэ долоо хоногийн 6 ойлголт (Big-O тэмдэглэгээ, санах ойн бүтэц, аналог ба дижитал дохио, токенчлол ба эмбеддинг, класс ба объект, растер ба вектор)-ыг
+нэг товч тойм болон 5 асуултаар давтъя.
+⠀
+👉 Хамгийн их андуурдаг: функц доторх static хувьсагч стект биш, data хэсэгт хадгалагдаж, функц дууссан ч утгаа хадгална!
+⠀
+⠀
+✅ 어제 퀴즈 정답: ③ SVG — SVG는 도형을 수학식으로 저장하는 벡터라 아무리 확대해도 깨지지 않아요.
+💬 몇 문제 맞혔는지 댓글로! · How many did you get? · Хэдийг нь зөв хариулсан бэ?
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #WEEKLYlenlab #Week3lenlab
