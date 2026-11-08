@@ -1,0 +1,129 @@
+<!-- #020 DISC · Propositions & Logical Operators — body only; build.py wraps it with templates/card-template.html -->
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DISC</div><div class="meta">#020 · 2026.11.09</div></header>
+  <main class="center">
+    <div><div class="lang">EN</div><div style="font-family:JBM;font-weight:700;font-size:64px;line-height:1.15">Propositions <span class="blue">&amp;</span> Logic</div></div>
+    <div><div class="lang">KO</div><div style="font-size:84px;font-weight:800;line-height:1.22;letter-spacing:-.03em"><span class="blue">명제</span>와 <span class="cyan">논리 연산</span>,<br>진리표 그릴 수 있어?</div></div>
+    <div><div class="lang">MN</div><div style="font-size:40px;line-height:1.4;color:var(--mute)">Хэллэг ба логик үйлдэл —<br>үнэний хүснэгтийг зурж чадах уу?</div></div>
+  </main>
+  <footer><div class="handle">01 / 06</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DISC</div><div class="meta">02 / 06</div></header>
+  <main>
+    <div><div style="font-size:60px;font-weight:800;letter-spacing:-.03em">한 줄 정의</div><div class="en" style="margin-top:6px">Definition · Тодорхойлолт</div></div>
+    <div class="panel" style="border-left:6px solid var(--blue)">
+      <div class="mono blue" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">PROPOSITION · 명제 · ХЭЛЛЭГ</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px"><b class="blue">참(T)</b> 또는 거짓(F) 중 하나로 판별되는 문장<br><span style="font-size:30px;color:var(--mute)">2 + 3 = 5 → 명제 · x &gt; 3 → 명제 아님</span></div>
+      <div class="en">A statement that is either true or false, never both.</div>
+      <div class="mn">Үнэн эсвэл худал гэдэг нь тодорхой өгүүлбэр.</div>
+    </div>
+    <div class="panel" style="border-left:6px solid var(--cyan)">
+      <div class="mono cyan" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">OPERATORS · 논리 연산자</div>
+      <div class="mono" style="font-size:32px;line-height:1.6;margin-bottom:12px">¬ NOT · ∧ AND · ∨ OR<br>→ 조건(함의) · ↔ 쌍조건</div>
+      <div class="en">Connectives that build compound propositions.</div>
+      <div class="mn">Нийлмэл хэллэг байгуулдаг логик холбоосууд.</div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-size:34px;font-weight:700">명제 = <span class="blue">T/F 판별</span> 가능 · 연산자 = 명제를 <span class="cyan">합성</span></div>
+      <div class="en" style="margin-top:6px">Propositions are T or F · Operators combine them</div>
+    </div>
+  </main>
+  <footer><div class="handle">#020</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DISC</div><div class="meta">03 / 06</div></header>
+  <main style="gap:24px">
+    <div>
+      <div style="font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1.25"><span class="blue">AND</span> = 직렬 · <span class="cyan">OR</span> = 병렬 스위치</div>
+      <div class="en" style="margin-top:8px">AND = switches in series · OR = in parallel</div>
+      <div class="mn">AND = цуваа холболт · OR = зэрэгцээ холболт</div>
+    </div>
+    <div style="border:2px solid var(--blue);border-radius:28px;padding:30px;background:rgba(9,132,227,.07);display:flex;flex-direction:column;gap:18px">
+      <div class="mono blue" style="font-size:24px;font-weight:700;letter-spacing:.08em">p ∧ q · SERIES · 직렬</div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:14px;font-size:30px">
+        <div class="panel mono" style="padding:16px 22px;border-radius:16px">전원</div><div style="color:var(--mute)">──</div>
+        <div class="mono blue" style="border:2px solid var(--blue);border-radius:16px;padding:16px 28px;font-weight:700">p</div><div style="color:var(--mute)">──</div>
+        <div class="mono blue" style="border:2px solid var(--blue);border-radius:16px;padding:16px 28px;font-weight:700">q</div><div style="color:var(--mute)">──</div>
+        <div style="font-size:44px">💡</div>
+      </div>
+      <div style="font-size:26px;text-align:center;color:var(--mute)">▲ <b>둘 다</b> 켜져야 불이 켜짐 · Both ON · Хоёулаа асаалттай</div>
+    </div>
+    <div style="border:2px solid var(--cyan);border-radius:28px;padding:30px;display:flex;flex-direction:column;gap:18px">
+      <div class="mono cyan" style="font-size:24px;font-weight:700;letter-spacing:.08em">p ∨ q · PARALLEL · 병렬</div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:14px;font-size:30px">
+        <div class="panel mono" style="padding:16px 22px;border-radius:16px">전원</div><div style="color:var(--mute)">─┤</div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div class="mono cyan" style="border:2px solid var(--cyan);border-radius:16px;padding:12px 28px;font-weight:700">p</div>
+          <div class="mono cyan" style="border:2px solid var(--cyan);border-radius:16px;padding:12px 28px;font-weight:700">q</div>
+        </div>
+        <div style="color:var(--mute)">├─</div>
+        <div style="font-size:44px">💡</div>
+      </div>
+      <div style="font-size:26px;text-align:center;color:var(--mute)">▲ <b>하나만</b> 켜져도 불이 켜짐 · Either ON · Аль нэг нь асаалттай</div>
+    </div>
+    <div class="panel" style="padding:24px 32px;display:flex;align-items:center;gap:26px">
+      <div class="mono" style="font-size:40px;font-weight:700">¬p</div>
+      <div><div style="font-size:30px">NOT = 값을 <b>뒤집기</b> · T ↔ F</div><div class="mn" style="font-size:24px">EN: flips the value · MN: утгыг эсрэгээр нь солино</div></div>
+    </div>
+  </main>
+  <footer><div class="handle">#020</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DISC</div><div class="meta">04 / 06</div></header>
+  <main style="gap:22px">
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">Python으로 진리표</div><div class="en" style="margin-top:6px">Truth table in Python · Python-д үнэний хүснэгт</div></div>
+    <div class="panel" style="background:var(--code);padding:28px 36px">
+<pre class="mono" style="font-size:25px;line-height:1.55;color:var(--white)"><span class="blue">def</span> implies(p, q):      <span class="cyan"># p → q</span>
+    <span class="blue">return</span> (<span class="blue">not</span> p) <span class="blue">or</span> q
+
+<span class="blue">for</span> p <span class="blue">in</span> (True, False):
+    <span class="blue">for</span> q <span class="blue">in</span> (True, False):
+        print(p, q, p <span class="blue">and</span> q, p <span class="blue">or</span> q, implies(p, q))</pre>
+    </div>
+    <div class="panel mono" style="padding:20px 36px;font-size:26px;line-height:1.55">
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);color:var(--mute)"><div>p</div><div>q</div><div>p∧q</div><div>p∨q</div><div>p→q</div></div>
+      <div style="display:grid;grid-template-columns:repeat(5,1fr)"><div>T</div><div>T</div><div>T</div><div>T</div><div>T</div></div>
+      <div style="display:grid;grid-template-columns:repeat(5,1fr)"><div>T</div><div>F</div><div>F</div><div>T</div><div class="cyan" style="font-weight:700">F</div></div>
+      <div style="display:grid;grid-template-columns:repeat(5,1fr)"><div>F</div><div>T</div><div>F</div><div>T</div><div>T</div></div>
+      <div style="display:grid;grid-template-columns:repeat(5,1fr)"><div>F</div><div>F</div><div>F</div><div>F</div><div>T</div></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div><div style="font-size:30px"><span class="cyan" style="font-weight:700">①</span> Python: ¬ = <b>not</b>, ∧ = <b>and</b>, ∨ = <b>or</b></div><div class="mn" style="margin-left:40px">EN: not · and · or keywords · MN: not · and · or түлхүүр үгс</div></div>
+      <div><div style="font-size:30px"><span class="cyan" style="font-weight:700">②</span> → 연산자는 없어서 <b>(not p) or q</b>로 표현</div><div class="mn" style="margin-left:40px">EN: p → q equals (not p) or q · MN: p → q = (not p) or q</div></div>
+    </div>
+  </main>
+  <footer><div class="handle">#020</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DISC</div><div class="meta">05 / 06</div></header>
+  <main style="gap:20px">
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">여기서 꼭 헷갈린다</div><div class="en" style="margin-top:6px">Check points · Анхаарах зүйлс</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">01</span>&nbsp; p가 거짓이면 <span class="en" style="font-size:24px;font-weight:500">· Vacuous truth</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">p → q는 p가 F면 q와 상관없이 <b class="cyan">항상 T</b></div><div class="mn" style="font-size:24px">p худал бол p → q үргэлж үнэн</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">02</span>&nbsp; OR는 둘 다 참도 OK <span class="en" style="font-size:24px;font-weight:500">· Inclusive OR</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">p ∨ q는 둘 다 T여도 T. 하나만 T일 때는 <b>XOR</b></div><div class="mn" style="font-size:24px">OR хоёулаа үнэн байсан ч үнэн. Зөвхөн нэг нь бол XOR</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">03</span>&nbsp; 역 ≠ 대우 <span class="en" style="font-size:24px;font-weight:500">· Converse vs Contrapositive</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">p → q ≡ <b>¬q → ¬p</b>(대우). 역 q → p는 다를 수 있음</div><div class="mn" style="font-size:24px">p → q ≡ ¬q → ¬p (контрапозитив), q → p биш</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">04</span>&nbsp; 드모르간 법칙 <span class="en" style="font-size:24px;font-weight:500">· De Morgan</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)"><b>¬(p ∧ q) ≡ ¬p ∨ ¬q</b> · NOT을 넣으면 ∧ ↔ ∨</div><div class="mn" style="font-size:24px">NOT-ыг дотогш оруулахад AND ↔ OR солигдоно</div></div>
+  </main>
+  <footer><div class="handle">#020</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DISC</div><div class="meta">06 / 06</div></header>
+  <main class="center" style="gap:30px">
+    <div class="lang" style="font-size:26px">QUIZ · 4지선다</div>
+    <div style="font-size:58px;font-weight:800;line-height:1.3;letter-spacing:-.03em"><span class="cyan">p → q</span>와 항상 진릿값이<br>같은(동치인) 것은?</div>
+    <div><div class="en">Which is logically equivalent to p → q?</div><div class="mn">p → q-тэй логик эквивалент нь аль вэ?</div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;font-size:34px;font-weight:700;text-align:left">
+      <div class="panel mono" style="padding:20px 28px">① q → p</div>
+      <div class="panel mono" style="padding:20px 28px">② ¬p → ¬q</div>
+      <div class="panel mono" style="padding:20px 28px">③ ¬q → ¬p</div>
+      <div class="panel mono" style="padding:20px 28px">④ p ∧ ¬q</div>
+    </div>
+    <div><div style="font-size:30px;font-weight:700">💬 댓글로 정답 남기기 · 정답은 내일 스토리</div><div class="mn" style="margin-top:4px">Answer in the comments · Хариултаа коммент дээр үлдээгээрэй</div></div>
+  </main>
+  <footer><div class="handle">🔖 Save · 저장 · Хадгалах</div>{LOGO}</footer>
+</section>

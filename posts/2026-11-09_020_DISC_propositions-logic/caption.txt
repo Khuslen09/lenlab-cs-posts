@@ -1,0 +1,29 @@
+🇰🇷 명제와 논리 연산, 진리표 그릴 수 있어요?
+⠀
+명제는 참(T) 또는 거짓(F) 중 하나로 판별되는 문장이고,
+¬(NOT)·∧(AND)·∨(OR)·→(조건)·↔(쌍조건) 같은 논리 연산자로 명제를 합성해요.
+⠀
+👉 p → q는 p가 거짓이면 항상 참! 그리고 대우 ¬q → ¬p와 언제나 동치예요.
+⠀
+⠀
+🇺🇸 Propositions and logical operators — can you draw the truth table?
+⠀
+A proposition is a statement that is either true or false.
+Operators like NOT, AND, OR, → (implication) and ↔ (biconditional) combine propositions.
+⠀
+👉 p → q is always true when p is false, and it is always equivalent to its contrapositive ¬q → ¬p.
+⠀
+⠀
+🇲🇳 Хэллэг ба логик үйлдэл — үнэний хүснэгтийг зурж чадах уу?
+⠀
+Хэллэг (proposition) бол үнэн эсвэл худал гэдэг нь тодорхой өгүүлбэр.
+NOT, AND, OR, → (импликаци), ↔ зэрэг логик үйлдлээр хэллэгүүдийг нийлүүлдэг.
+⠀
+👉 p худал бол p → q үргэлж үнэн. Мөн ¬q → ¬p (контрапозитив)-тай үргэлж эквивалент.
+⠀
+⠀
+✅ 어제 복습 퀴즈 정답: ② X ④ ④ ② — 빅오는 상수·낮은 차수를 버리고, 힙 메모리는 free 전까지 남아요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #DISClenlab #Logiclenlab
