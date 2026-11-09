@@ -1,0 +1,29 @@
+🇰🇷 CPU는 어떻게 프로세스를 갈아탈까? 컨텍스트 스위칭!
+⠀
+컨텍스트 스위칭은 실행 중인 프로세스의 상태(PC·레지스터 등)를 PCB에 저장하고,
+다음 프로세스의 상태를 PCB에서 복원해 CPU를 넘기는 과정이에요.
+⠀
+👉 전환하는 동안은 쓸모 있는 일이 0인 오버헤드! 같은 프로세스의 스레드끼리는 주소 공간을 공유해서 더 가벼워요.
+⠀
+⠀
+🇺🇸 How does the CPU jump between processes? Context switching!
+⠀
+A context switch saves the running process's state (PC, registers, etc.) into its PCB
+and restores the next process's state from its PCB before handing over the CPU.
+⠀
+👉 No useful work happens during the switch — it is pure overhead. Threads of the same process share the address space, so switching between them is lighter.
+⠀
+⠀
+🇲🇳 CPU процессуудын хооронд хэрхэн шилждэг вэ? Контекст солих (context switching)!
+⠀
+Ажиллаж буй процессын төлөвийг (PC, регистр гэх мэт) PCB-д хадгалж,
+дараагийн процессын төлөвийг PCB-ээс нь сэргээн CPU-г шилжүүлэх үйл явц юм.
+⠀
+👉 Шилжих үед ашигтай ажил хийгдэхгүй тул энэ нь нэмэлт зардал (overhead). Нэг процессын урсгалууд хаягийн орон зайгаа хуваалцдаг тул тэдгээрийн хооронд шилжих нь хөнгөн.
+⠀
+⠀
+✅ 어제 퀴즈 정답: ③ ¬q → ¬p — 대우는 원래 명제와 항상 동치, 역(q → p)·이(¬p → ¬q)는 아니에요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #OSlenlab #ContextSwitchlenlab

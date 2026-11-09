@@ -1,0 +1,105 @@
+<!-- #021 OS · Context Switching — body only; build.py wraps it with templates/card-template.html -->
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · OS</div><div class="meta">#021 · 2026.11.10</div></header>
+  <main class="center">
+    <div><div class="lang">EN</div><div style="font-family:JBM;font-weight:700;font-size:64px;line-height:1.15">Context <span class="blue">Switching</span></div></div>
+    <div><div class="lang">KO</div><div style="font-size:84px;font-weight:800;line-height:1.22;letter-spacing:-.03em">CPU는 어떻게<br><span class="blue">프로세스</span>를 <span class="cyan">갈아탈까</span>?</div></div>
+    <div><div class="lang">MN</div><div style="font-size:40px;line-height:1.4;color:var(--mute)">CPU процессуудын хооронд<br>хэрхэн шилждэг вэ?</div></div>
+  </main>
+  <footer><div class="handle">01 / 06</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · OS</div><div class="meta">02 / 06</div></header>
+  <main>
+    <div><div style="font-size:60px;font-weight:800;letter-spacing:-.03em">한 줄 정의</div><div class="en" style="margin-top:6px">Definition · Тодорхойлолт</div></div>
+    <div class="panel" style="border-left:6px solid var(--blue)">
+      <div class="mono blue" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">CONTEXT SWITCH · 컨텍스트 스위칭</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">지금 프로세스 상태를 <b class="blue">저장</b>하고 다음 프로세스 상태를 <b class="blue">복원</b>해 CPU를 넘기는 것</div>
+      <div class="en">Saving the state of the running process and restoring the next one's.</div>
+      <div class="mn">Ажиллаж буй процессын төлөвийг хадгалж, дараагийнхыг сэргээх.</div>
+    </div>
+    <div class="panel" style="border-left:6px solid var(--cyan)">
+      <div class="mono cyan" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">CONTEXT · PCB에 저장</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">PC·레지스터·상태 등. 프로세스마다 <b class="cyan">PCB</b>에 보관</div>
+      <div class="en">PC, registers, state, memory info — kept in each PCB.</div>
+      <div class="mn">PC, регистр, төлөв, санах ойн мэдээлэл — PCB-д хадгална.</div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-size:34px;font-weight:700">책갈피 꽂고(<span class="blue">저장</span>) → 다른 책 펼치기(<span class="cyan">복원</span>)</div>
+      <div class="en" style="margin-top:6px">Bookmark one book, open another</div>
+    </div>
+  </main>
+  <footer><div class="handle">#021</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · OS</div><div class="meta">03 / 06</div></header>
+  <main style="gap:22px">
+    <div>
+      <div style="font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1.25">P1 → <span class="cyan">P2</span> 전환 과정</div>
+      <div class="en" style="margin-top:8px">How the CPU switches from P1 to P2</div>
+      <div class="mn">P1-ээс P2 руу шилжих явц</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div style="border:2px solid var(--blue);border-radius:20px;padding:20px 28px;background:rgba(9,132,227,.07)"><div style="font-size:32px;font-weight:700"><span class="blue mono">P1</span> 실행 중</div><div class="mn" style="font-size:24px">Running · Ажиллаж байна</div></div>
+      <div style="font-size:26px;text-align:center;color:var(--mute)">▼ 인터럽트 · 시스템 콜 (타이머, I/O 대기)</div>
+      <div class="panel" style="padding:20px 28px;border-radius:20px"><div style="font-size:30px;font-weight:700"><span class="mono">①</span> P1 상태 → <b>PCB1</b>에 저장</div><div class="mn" style="font-size:24px">Save state into PCB1 · PCB1-д хадгална</div></div>
+      <div class="panel" style="padding:20px 28px;border-radius:20px"><div style="font-size:30px;font-weight:700"><span class="mono">②</span> <b>PCB2</b>에서 P2 상태 복원</div><div class="mn" style="font-size:24px">Reload state from PCB2 · PCB2-оос сэргээнэ</div></div>
+      <div style="font-size:26px;text-align:center;color:var(--mute)">▲ ①② 동안 CPU는 쉬는 셈 = <b>오버헤드</b> · Overhead</div>
+      <div style="border:2px solid var(--cyan);border-radius:20px;padding:20px 28px"><div style="font-size:32px;font-weight:700"><span class="cyan mono">P2</span> 실행 시작</div><div class="mn" style="font-size:24px">Running · Ажиллаж эхэлнэ</div></div>
+    </div>
+  </main>
+  <footer><div class="handle">#021</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · OS</div><div class="meta">04 / 06</div></header>
+  <main>
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">직접 세어 보기 (Linux)</div><div class="en" style="margin-top:6px">Counting switches in Python · Python-оор тоолох</div></div>
+    <div class="panel" style="background:var(--code);padding:32px 38px">
+<pre class="mono" style="font-size:25px;line-height:1.6;color:var(--white)"><span class="blue">import</span> os, time
+<span class="blue">def</span> ctx():
+    <span class="blue">with</span> open(<span class="cyan">f"/proc/{os.getpid()}/status"</span>) <span class="blue">as</span> f:
+        d = dict(l.split(<span class="cyan">":"</span>, 1) <span class="blue">for</span> l <span class="blue">in</span> f)
+    <span class="blue">return</span> int(d[<span class="cyan">"voluntary_ctxt_switches"</span>])
+before = ctx()
+<span class="blue">for</span> _ <span class="blue">in</span> range(100):
+    time.sleep(0.001)  <span style="color:var(--dim)"># CPU 양보</span>
+print(ctx() - before)  <span style="color:var(--dim)"># 약 100</span></pre>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">①</span> sleep·I/O 대기 → 스스로 CPU 양보 (<b>voluntary</b>)</div><div class="mn" style="margin-left:40px">EN: Waiting gives up the CPU · MN: Хүлээхдээ CPU-г өөрөө өгнө</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">②</span> 타임 슬라이스 끝 → OS가 뺏음 (<b>선점</b>)</div><div class="mn" style="margin-left:40px">EN: Time slice ends, OS preempts · MN: Хугацаа дуусвал OS булаана</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">③</span> 전환을 결정·수행하는 건 <b>커널</b>(스케줄러)</div><div class="mn" style="margin-left:40px">EN: The kernel does the switch · MN: Шилжилтийг цөм (kernel) хийнэ</div></div>
+    </div>
+  </main>
+  <footer><div class="handle">#021</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · OS</div><div class="meta">05 / 06</div></header>
+  <main style="gap:20px">
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">여기서 꼭 헷갈린다</div><div class="en" style="margin-top:6px">Check points · Анхаарах зүйлс</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">01</span>&nbsp; 전환 = 순수 비용 <span class="en" style="font-size:24px;font-weight:500">· Pure Overhead</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">저장·복원하는 동안 <b>쓸모 있는 일은 0</b> → 너무 잦으면 느려짐</div><div class="mn" style="font-size:24px">Шилжих үед ашигтай ажил хийгдэхгүй</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">02</span>&nbsp; 스레드 전환이 더 가벼움 <span class="en" style="font-size:24px;font-weight:500">· Thread Switch</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">같은 프로세스면 <b class="cyan">주소 공간 공유</b> → 페이지 테이블 교체 X</div><div class="mn" style="font-size:24px">Нэг процессын урсгалууд хаягийн орон зайгаа хуваалцана</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">03</span>&nbsp; 숨은 비용 <span class="en" style="font-size:24px;font-weight:500">· Cache &amp; TLB</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">새 프로세스는 <b>캐시·TLB</b>가 차가움 → 한동안 느림</div><div class="mn" style="font-size:24px">Кэш ба TLB дахин дүүрэх хүртэл удаан</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">04</span>&nbsp; 모드 전환 ≠ 컨텍스트 스위칭 <span class="en" style="font-size:24px;font-weight:500">· Mode Switch</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">시스템 콜로 커널 모드에 들어가도 <b>프로세스는 그대로</b>일 수 있음</div><div class="mn" style="font-size:24px">Kernel горимд орох нь процесс солих гэсэн үг биш</div></div>
+  </main>
+  <footer><div class="handle">#021</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · OS</div><div class="meta">06 / 06</div></header>
+  <main class="center" style="gap:30px">
+    <div class="lang" style="font-size:26px">QUIZ · O / X</div>
+    <div style="font-size:58px;font-weight:800;line-height:1.3;letter-spacing:-.03em">같은 프로세스의 스레드끼리<br>전환할 때도 <span class="cyan">페이지 테이블</span>을<br>바꿔야 한다.</div>
+    <div><div class="en">Switching between threads of the same process requires changing the page table.</div><div class="mn">Нэг процессын урсгалуудын хооронд шилжихэд хуудасны хүснэгтийг солих шаардлагатай.</div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:10px">
+      <div style="border:3px solid var(--blue);border-radius:28px;height:200px;display:flex;align-items:center;justify-content:center;font-size:130px;font-weight:800;color:var(--blue)">O</div>
+      <div style="border:3px solid var(--cyan);border-radius:28px;height:200px;display:flex;align-items:center;justify-content:center;font-size:130px;font-weight:800;color:var(--cyan)">X</div>
+    </div>
+    <div><div style="font-size:30px;font-weight:700">💬 댓글로 정답 남기기 · 정답은 내일 스토리</div><div class="mn" style="margin-top:4px">Answer in the comments · Хариултаа коммент дээр үлдээгээрэй</div></div>
+  </main>
+  <footer><div class="handle">🔖 Save · 저장 · Хадгалах</div>{LOGO}</footer>
+</section>
