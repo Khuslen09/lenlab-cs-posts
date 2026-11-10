@@ -1,0 +1,117 @@
+<!-- #022 CLOUD · IaaS vs PaaS vs SaaS — body only; build.py wraps it with templates/card-template.html -->
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · CLOUD</div><div class="meta">#022 · 2026.11.11</div></header>
+  <main class="center">
+    <div><div class="lang">EN</div><div style="font-family:JBM;font-weight:700;font-size:64px;line-height:1.15">IaaS <span class="blue">vs</span> PaaS <span class="blue">vs</span> SaaS</div></div>
+    <div><div class="lang">KO</div><div style="font-size:80px;font-weight:800;line-height:1.22;letter-spacing:-.03em">클라우드, <span class="blue">어디까지</span><br>빌려 쓰는 걸까?</div></div>
+    <div><div class="lang">MN</div><div style="font-size:40px;line-height:1.4;color:var(--mute)">Үүлэн тооцоолол (cloud) —<br>хаана хүртэл нь түрээсэлдэг вэ?</div></div>
+  </main>
+  <footer><div class="handle">01 / 06</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · CLOUD</div><div class="meta">02 / 06</div></header>
+  <main style="gap:18px">
+    <div><div style="font-size:60px;font-weight:800;letter-spacing:-.03em">한 줄 정의</div><div class="en" style="margin-top:6px">Definition · Тодорхойлолт</div></div>
+    <div class="panel" style="border-left:6px solid var(--blue);padding:22px 32px">
+      <div class="mono blue" style="font-size:24px;font-weight:700;letter-spacing:.1em;margin-bottom:6px">IaaS · Infrastructure as a Service</div>
+      <div style="font-size:31px;line-height:1.4;margin-bottom:6px">서버·저장소·네트워크를 빌림. <b class="blue">OS부터 위</b>는 내가 관리</div>
+      <div class="en">Rent servers, storage, network. You manage the OS and up.</div>
+      <div class="mn">Сервер, сүлжээ түрээслэнэ. OS-оос дээшхийг өөрөө удирдана.</div>
+    </div>
+    <div class="panel" style="border-left:6px solid var(--white);padding:22px 32px">
+      <div class="mono" style="font-size:24px;font-weight:700;letter-spacing:.1em;margin-bottom:6px">PaaS · Platform as a Service</div>
+      <div style="font-size:31px;line-height:1.4;margin-bottom:6px">코드를 돌릴 플랫폼을 빌림. <b>앱과 데이터</b>만 내가 관리</div>
+      <div class="en">A platform for your code. You manage only app + data.</div>
+      <div class="mn">Код ажиллуулах платформ. Зөвхөн апп, өгөгдлөө удирдана.</div>
+    </div>
+    <div class="panel" style="border-left:6px solid var(--cyan);padding:22px 32px">
+      <div class="mono cyan" style="font-size:24px;font-weight:700;letter-spacing:.1em;margin-bottom:6px">SaaS · Software as a Service</div>
+      <div style="font-size:31px;line-height:1.4;margin-bottom:6px">완성된 소프트웨어를 인터넷으로 <b class="cyan">그냥 사용</b></div>
+      <div class="en">Just use finished software over the internet.</div>
+      <div class="mn">Бэлэн програмыг интернэтээр шууд ашиглана.</div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-size:34px;font-weight:700">I → P → S로 갈수록 <span class="blue">내가 관리할 몫</span>이 줄어듦</div>
+      <div class="en" style="margin-top:6px">From I to P to S, you manage less and less.</div>
+    </div>
+  </main>
+  <footer><div class="handle">#022</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · CLOUD</div><div class="meta">03 / 06</div></header>
+  <main style="gap:24px">
+    <div>
+      <div style="font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1.25">누가 <span class="blue">어디까지</span> 관리할까?</div>
+      <div class="en" style="margin-top:8px">Who manages what?</div>
+      <div class="mn">Хэн юуг нь удирдах вэ?</div>
+    </div>
+    <div class="panel" style="padding:28px 30px">
+      <div style="display:grid;grid-template-columns:250px repeat(4,1fr);gap:12px">
+        <div></div><div class="mono" style="font-size:22px;font-weight:700;text-align:center;color:var(--mute)">On-prem</div><div class="mono blue" style="font-size:24px;font-weight:700;text-align:center">IaaS</div><div class="mono" style="font-size:24px;font-weight:700;text-align:center">PaaS</div><div class="mono cyan" style="font-size:24px;font-weight:700;text-align:center">SaaS</div>
+        <div style="display:flex;flex-direction:column;justify-content:center"><div style="font-size:27px;font-weight:700">앱</div><div class="mono" style="font-size:19px;color:var(--dim)">App</div></div><div style="height:64px;border-radius:12px;background:var(--blue)"></div><div style="height:64px;border-radius:12px;background:var(--blue)"></div><div style="height:64px;border-radius:12px;background:var(--blue)"></div><div style="height:64px;border-radius:12px;background:var(--panel);border:2px solid var(--line)"></div>
+        <div style="display:flex;flex-direction:column;justify-content:center"><div style="font-size:27px;font-weight:700">데이터</div><div class="mono" style="font-size:19px;color:var(--dim)">Data</div></div><div style="height:64px;border-radius:12px;background:var(--blue)"></div><div style="height:64px;border-radius:12px;background:var(--blue)"></div><div style="height:64px;border-radius:12px;background:var(--blue)"></div><div style="height:64px;border-radius:12px;background:var(--panel);border:2px solid var(--line)"></div>
+        <div style="display:flex;flex-direction:column;justify-content:center"><div style="font-size:27px;font-weight:700">런타임</div><div class="mono" style="font-size:19px;color:var(--dim)">Runtime</div></div><div style="height:64px;border-radius:12px;background:var(--blue)"></div><div style="height:64px;border-radius:12px;background:var(--blue)"></div><div style="height:64px;border-radius:12px;background:var(--panel);border:2px solid var(--line)"></div><div style="height:64px;border-radius:12px;background:var(--panel);border:2px solid var(--line)"></div>
+        <div style="display:flex;flex-direction:column;justify-content:center"><div style="font-size:27px;font-weight:700">운영체제</div><div class="mono" style="font-size:19px;color:var(--dim)">OS</div></div><div style="height:64px;border-radius:12px;background:var(--blue)"></div><div style="height:64px;border-radius:12px;background:var(--blue)"></div><div style="height:64px;border-radius:12px;background:var(--panel);border:2px solid var(--line)"></div><div style="height:64px;border-radius:12px;background:var(--panel);border:2px solid var(--line)"></div>
+        <div style="display:flex;flex-direction:column;justify-content:center"><div style="font-size:27px;font-weight:700">가상화</div><div class="mono" style="font-size:19px;color:var(--dim)">Virtualization</div></div><div style="height:64px;border-radius:12px;background:var(--blue)"></div><div style="height:64px;border-radius:12px;background:var(--panel);border:2px solid var(--line)"></div><div style="height:64px;border-radius:12px;background:var(--panel);border:2px solid var(--line)"></div><div style="height:64px;border-radius:12px;background:var(--panel);border:2px solid var(--line)"></div>
+        <div style="display:flex;flex-direction:column;justify-content:center"><div style="font-size:27px;font-weight:700">하드웨어</div><div class="mono" style="font-size:19px;color:var(--dim)">Servers · Network</div></div><div style="height:64px;border-radius:12px;background:var(--blue)"></div><div style="height:64px;border-radius:12px;background:var(--panel);border:2px solid var(--line)"></div><div style="height:64px;border-radius:12px;background:var(--panel);border:2px solid var(--line)"></div><div style="height:64px;border-radius:12px;background:var(--panel);border:2px solid var(--line)"></div>
+      </div>
+    </div>
+    <div style="display:flex;gap:40px;justify-content:center;font-size:27px">
+      <div style="display:flex;align-items:center;gap:12px"><div style="width:34px;height:34px;border-radius:8px;background:var(--blue)"></div><b>내가 관리</b> · You</div>
+      <div style="display:flex;align-items:center;gap:12px"><div style="width:34px;height:34px;border-radius:8px;background:var(--panel);border:2px solid var(--line)"></div><b>업체가 관리</b> · Provider</div>
+    </div>
+    <div class="mn" style="text-align:center">Цэнхэр = та өөрөө · Саарал = үйлчилгээ үзүүлэгч</div>
+  </main>
+  <footer><div class="handle">#022</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · CLOUD</div><div class="meta">04 / 06</div></header>
+  <main style="gap:24px">
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">피자로 보면 한눈에</div><div class="en" style="margin-top:6px">Pizza as a Service · Пиццагаар жишээлбэл</div></div>
+    <div class="panel" style="background:var(--code);padding:26px 32px;display:grid;grid-template-columns:150px 1fr 1fr;row-gap:22px;column-gap:20px;align-items:center">
+      <div class="mono" style="font-size:22px;color:var(--dim)">MODEL</div><div style="font-size:22px;color:var(--dim)">피자 · Pizza</div><div style="font-size:22px;color:var(--dim)">예시 · Example</div>
+      <div class="mono" style="font-size:28px;font-weight:700;color:var(--mute)">On-prem</div><div style="font-size:29px">집에서 다 직접 만들기</div><div class="mono" style="font-size:24px;color:var(--mute)">자체 서버실</div>
+      <div class="mono blue" style="font-size:28px;font-weight:700">IaaS</div><div style="font-size:29px">사 와서 <b>집 오븐</b>에 굽기</div><div class="mono" style="font-size:24px">AWS EC2</div>
+      <div class="mono" style="font-size:28px;font-weight:700">PaaS</div><div style="font-size:29px">배달시켜 <b>내 식탁</b>에서</div><div class="mono" style="font-size:24px">Heroku<br>Google App Engine</div>
+      <div class="mono cyan" style="font-size:28px;font-weight:700">SaaS</div><div style="font-size:29px">식당에 가서 <b>먹기만</b></div><div class="mono" style="font-size:24px">Gmail · Notion</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">①</span> IaaS: 가상 서버를 받아 <b>OS 설정·패치</b>까지 직접</div><div class="mn" style="margin-left:40px">EN: You patch the OS yourself · MN: OS-оо өөрөө шинэчилнэ</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">②</span> PaaS: <b>코드만 배포</b>, 서버·런타임은 업체 몫</div><div class="mn" style="margin-left:40px">EN: Just deploy code · MN: Зөвхөн кодоо байршуулна</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">③</span> SaaS: 설치 없이 <b>브라우저로 로그인</b>해서 사용</div><div class="mn" style="margin-left:40px">EN: Log in and use · MN: Нэвтрээд л ашиглана</div></div>
+    </div>
+  </main>
+  <footer><div class="handle">#022</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · CLOUD</div><div class="meta">05 / 06</div></header>
+  <main style="gap:20px">
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">여기서 꼭 헷갈린다</div><div class="en" style="margin-top:6px">Check points · Анхаарах зүйлс</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">01</span>&nbsp; 편리함 ↔ 자유도 <span class="en" style="font-size:24px;font-weight:500">· Trade-off</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">SaaS로 갈수록 편하지만 <b>바꿀 수 있는 것</b>도 줄어듦</div><div class="mn" style="font-size:24px">Хялбар болох тусам хянах эрх багасна</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">02</span>&nbsp; SaaS여도 책임은 남음 <span class="en" style="font-size:24px;font-weight:500">· Shared Responsibility</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)"><b class="cyan">데이터·계정·접근 권한</b> 관리는 항상 사용자 몫</div><div class="mn" style="font-size:24px">Өгөгдөл, бүртгэл, эрхийн удирдлага үргэлж хэрэглэгчийнх</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">03</span>&nbsp; 서비스 모델 ≠ 배포 모델 <span class="en" style="font-size:24px;font-weight:500">· Service vs Deployment</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">IaaS·PaaS·SaaS ≠ <b>퍼블릭·프라이빗·하이브리드</b> (다른 축)</div><div class="mn" style="font-size:24px">Үйлчилгээний загвар ба байршуулалтын загвар өөр</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">04</span>&nbsp; 기준은 하나 <span class="en" style="font-size:24px;font-weight:500">· One Question</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">헷갈리면 <b>누가 OS를 관리하나?</b>부터 물어보기</div><div class="mn" style="font-size:24px">Эргэлзвэл: OS-ыг хэн удирддаг вэ?</div></div>
+  </main>
+  <footer><div class="handle">#022</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · CLOUD</div><div class="meta">06 / 06</div></header>
+  <main class="center" style="gap:30px">
+    <div class="lang" style="font-size:26px">QUIZ · 4지선다</div>
+    <div style="font-size:56px;font-weight:800;line-height:1.3;letter-spacing:-.03em">개발자는 <span class="cyan">코드만 배포</span>하고<br>서버·OS·런타임은 업체가<br>관리하는 모델은?</div>
+    <div><div class="en">You only deploy code; the provider manages servers, OS and runtime. Which model?</div><div class="mn">Хөгжүүлэгч зөвхөн кодоо байршуулж, сервер·OS·runtime-ийг үйлчилгээ үзүүлэгч удирддаг загвар аль вэ?</div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;font-size:34px;font-weight:700;text-align:left">
+      <div class="panel mono" style="padding:20px 28px">① IaaS</div>
+      <div class="panel mono" style="padding:20px 28px">② PaaS</div>
+      <div class="panel mono" style="padding:20px 28px">③ SaaS</div>
+      <div class="panel mono" style="padding:20px 28px">④ On-premises</div>
+    </div>
+    <div><div style="font-size:30px;font-weight:700">💬 댓글로 정답 남기기 · 정답은 내일 스토리</div><div class="mn" style="margin-top:4px">Answer in the comments · Хариултаа коммент дээр үлдээгээрэй</div></div>
+  </main>
+  <footer><div class="handle">🔖 Save · 저장 · Хадгалах</div>{LOGO}</footer>
+</section>

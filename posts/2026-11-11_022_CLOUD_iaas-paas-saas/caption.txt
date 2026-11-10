@@ -1,0 +1,29 @@
+🇰🇷 IaaS vs PaaS vs SaaS, 클라우드는 어디까지 빌려 쓰는 걸까?
+⠀
+IaaS는 서버·저장소·네트워크를 빌려 OS부터 위를 직접 관리하고,
+PaaS는 코드만 올리면 플랫폼이 돌려 주고, SaaS는 완성된 소프트웨어를 그냥 써요.
+⠀
+👉 헷갈리면 누가 OS를 관리하나?부터! IaaS는 나, PaaS·SaaS는 업체예요.
+⠀
+⠀
+🇺🇸 IaaS vs PaaS vs SaaS — how much of the cloud are you renting?
+⠀
+IaaS rents you servers, storage and network, and you manage the OS and up.
+PaaS runs the code you deploy, and SaaS is finished software you just use.
+⠀
+👉 Ask who manages the OS: you in IaaS, the provider in PaaS and SaaS.
+⠀
+⠀
+🇲🇳 IaaS, PaaS, SaaS — үүлэн тооцооллын хаана хүртэл нь түрээсэлдэг вэ?
+⠀
+IaaS-д сервер, хадгалах сан, сүлжээг түрээсэлж, OS-оос дээшхийг өөрөө удирдана.
+PaaS таны байршуулсан кодыг ажиллуулж, SaaS бол шууд ашигладаг бэлэн програм юм.
+⠀
+👉 OS-ыг хэн удирддаг вэ гэж асуу: IaaS-д та өөрөө, PaaS ба SaaS-д үйлчилгээ үзүүлэгч.
+⠀
+⠀
+✅ 어제 퀴즈 정답: X — 같은 프로세스의 스레드는 주소 공간을 공유해서 레지스터·스택 포인터만 바꾸면 돼요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #CLOUDlenlab #CloudServicelenlab
