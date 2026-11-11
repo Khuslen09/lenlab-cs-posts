@@ -1,0 +1,29 @@
+🇰🇷 CNN과 합성곱, 컴퓨터는 사진을 어떻게 볼까?
+⠀
+합성곱은 작은 필터를 이미지 위로 한 칸씩 밀면서 겹친 칸끼리 곱해 더하는 연산이고,
+CNN은 이 합성곱층으로 엣지·모양 같은 특징을 뽑아 이미지를 분류하는 신경망이에요.
+⠀
+👉 출력 크기는 (N−F+2P)/S + 1! 필터 값은 사람이 아니라 학습으로 정해져요.
+⠀
+⠀
+🇺🇸 CNN and convolution — how does a computer see a picture?
+⠀
+Convolution slides a small filter over the image, multiplying overlapping cells and summing them.
+A CNN uses these conv layers to extract features like edges and shapes to classify images.
+⠀
+👉 Output size is (N−F+2P)/S + 1, and the filter values are learned, not hand-picked.
+⠀
+⠀
+🇲🇳 CNN ба конволюц — компьютер зургийг хэрхэн хардаг вэ?
+⠀
+Конволюц бол жижиг шүүлтүүрийг зураг дээгүүр гулсуулж, давхцсан нүднүүдийг үржүүлээд нэмдэг үйлдэл.
+CNN нь конволюцын давхаргаар ирмэг, хэлбэр зэрэг шинжийг ялгаж зургийг ангилдаг нейрон сүлжээ юм.
+⠀
+👉 Гаралтын хэмжээ = (N−F+2P)/S + 1. Шүүлтүүрийн утгыг хүн биш, сургалт тодорхойлно.
+⠀
+⠀
+✅ 어제 퀴즈 정답: ② PaaS — 앱과 데이터만 내가 관리하고 서버·OS·런타임은 업체가 맡아요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #CVlenlab #CNNlenlab
