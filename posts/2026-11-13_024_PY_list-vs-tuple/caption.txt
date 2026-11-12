@@ -1,0 +1,29 @@
+🇰🇷 리스트 vs 튜플, 언제 뭘 써야 할까?
+⠀
+리스트는 추가·삭제·수정이 가능한 가변(mutable) 시퀀스,
+튜플은 한 번 만들면 원소를 바꿀 수 없는 불변(immutable) 시퀀스예요.
+⠀
+👉 바뀌는 데이터는 리스트, 좌표·날짜처럼 고정된 묶음은 튜플! 원소 1개 튜플은 (1,)처럼 쉼표 필수예요.
+⠀
+⠀
+🇺🇸 List vs Tuple — when should you use which?
+⠀
+A list is a mutable sequence you can add to, remove from and change.
+A tuple is an immutable sequence whose items cannot be changed once created.
+⠀
+👉 Use a list for changing data and a tuple for fixed groups like coordinates. A one-item tuple needs a comma: (1,).
+⠀
+⠀
+🇲🇳 Жагсаалт (list) ба кортеж (tuple) — алийг нь хэзээ ашиглах вэ?
+⠀
+List бол нэмэх, устгах, өөрчлөх боломжтой хувьсах (mutable) дараалал.
+Tuple бол нэг үүсгэсний дараа элементийг нь өөрчлөх боломжгүй (immutable) дараалал.
+⠀
+👉 Өөрчлөгдөх өгөгдөлд list, координат шиг тогтмол багцад tuple. Нэг элементтэй tuple-д таслал заавал: (1,).
+⠀
+⠀
+✅ 어제 퀴즈 정답: ② 4×4 — (6−3+0)/1 + 1 = 4, 필터가 가로·세로로 4번씩 들어가요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #PYlenlab #Tuplelenlab
