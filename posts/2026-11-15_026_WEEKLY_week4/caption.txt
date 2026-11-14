@@ -1,0 +1,29 @@
+🇰🇷 첫 달 개념 22개, 다 기억나요?
+⠀
+4주 동안 배운 22개 개념을 한 장 치트시트로 모으고,
+이번 주 4문제 + 2주차 1문제, 퀴즈 5개로 복습해요.
+⠀
+👉 많이 틀리는 TOP 3: 스레드는 Stack을 공유하지 않음 · p→q는 대우(¬q→¬p)와만 동치 · 튜플 안 리스트는 바뀜!
+⠀
+⠀
+🇺🇸 Month 1 review — do you still remember all 22 concepts?
+⠀
+All 22 concepts from the first 4 weeks in one cheat sheet,
+plus 5 quiz questions: 4 from this week and 1 from week 2.
+⠀
+👉 Top 3 mistakes: threads do not share the stack · p→q is equivalent only to its contrapositive ¬q→¬p · a list inside a tuple can still change!
+⠀
+⠀
+🇲🇳 Эхний сарын 22 ойлголтоо санаж байна уу?
+⠀
+4 долоо хоногт үзсэн 22 ойлголтыг нэг товч тоймд нэгтгэж,
+энэ долоо хоногийн 4 асуулт + 2-р долоо хоногийн 1 асуултаар давтъя.
+⠀
+👉 Хамгийн их андуурдаг 3: урсгалууд Stack-аа хуваалцдаггүй · p→q зөвхөн ¬q→¬p-тэй эквивалент · tuple доторх list өөрчлөгдөж болно!
+⠀
+⠀
+✅ 어제 퀴즈 정답: ① 256 bits — 입력 크기와 상관없이 SHA-256 출력은 항상 256비트(16진수 64자)예요.
+💬 몇 문제 맞혔는지 댓글로! · How many did you get? · Хэдийг нь зөв хариулсан бэ?
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #WEEKLYlenlab #Month1lenlab
