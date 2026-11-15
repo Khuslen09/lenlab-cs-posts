@@ -1,0 +1,29 @@
+🇰🇷 스택 vs 큐, 꺼내는 순서 말할 수 있어요?
+⠀
+스택은 한쪽 끝(top)으로만 넣고 빼서 나중에 넣은 것이 먼저 나오는 LIFO 구조,
+큐는 뒤로 넣고 앞에서 빼서 먼저 넣은 것이 먼저 나오는 FIFO 구조예요.
+⠀
+👉 DFS·함수 호출·되돌리기는 스택, BFS·대기열은 큐! 파이썬 큐는 list.pop(0) 말고 deque를 써요.
+⠀
+⠀
+🇺🇸 Stack vs Queue — can you tell which comes out first?
+⠀
+A stack adds and removes only at the top, so the last item in is the first out (LIFO).
+A queue adds at the rear and removes at the front, so the first item in is the first out (FIFO).
+⠀
+👉 DFS, function calls and undo use a stack; BFS and waiting lines use a queue. In Python, use deque instead of list.pop(0).
+⠀
+⠀
+🇲🇳 Стек ба дараалал (queue) — аль нь эхэлж гарахыг хэлж чадах уу?
+⠀
+Стек зөвхөн дээд талаас (top) хийж, гаргадаг тул сүүлд орсон нь эхэлж гарна (LIFO).
+Дараалал араас хийж, урдаас гаргадаг тул эхэлж орсон нь эхэлж гарна (FIFO).
+⠀
+👉 DFS, функцийн дуудлага, Undo-д стек, BFS болон хүлээлгийн дараалалд queue ашигладаг. Python-д list.pop(0) биш deque ашигла.
+⠀
+⠀
+✅ 어제 복습 퀴즈 정답: O ① ③ X ② — 전제가 거짓이면 함의는 참이고, 해시는 되돌릴 수 없는 단방향이에요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #DSlenlab #StackQueuelenlab
