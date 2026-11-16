@@ -1,0 +1,29 @@
+🇰🇷 폰 노이만 구조, 왜 병목이 생길까?
+⠀
+폰 노이만 구조는 명령어와 데이터를 같은 메모리 하나에 저장하고, CPU가 하나씩 가져와 순서대로 실행하는 구조예요.
+덕분에 배선을 바꾸지 않고 프로그램만 바꿔서 다른 일을 시킬 수 있어요.
+⠀
+👉 명령어와 데이터가 같은 통로(버스)를 쓰니까 CPU가 메모리를 기다리는 병목이 생겨요. 메모리를 따로 나누면 하버드 구조!
+⠀
+⠀
+🇺🇸 Von Neumann architecture — why the bottleneck?
+⠀
+Instructions and data are stored in one shared memory, and the CPU fetches and runs them in order.
+So you change the program, not the wiring, to do a new job.
+⠀
+👉 Code and data share one bus, so the CPU waits on memory. Separate memories = Harvard architecture.
+⠀
+⠀
+🇲🇳 Фон Нейманы архитектур — яагаад гацаа (bottleneck) үүсдэг вэ?
+⠀
+Заавар болон өгөгдлийг нэг санах ойд хадгалж, CPU тэдгээрийг нэг нэгээр нь дарааллаар гүйцэтгэдэг бүтэц.
+Тиймээс утас солихгүйгээр зөвхөн програмаа солиод өөр ажил хийлгэж болно.
+⠀
+👉 Заавар, өгөгдөл нэг шугамаар (bus) дамждаг тул CPU санах ойг хүлээдэг. Санах ойг тусад нь хуваавал Харвардын архитектур!
+⠀
+⠀
+✅ 어제 퀴즈 정답: ② Stack 3 · Queue 1 — 스택은 LIFO라 마지막 3이, 큐는 FIFO라 처음 1이 먼저 나와요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #ARCHlenlab #VonNeumannlenlab
