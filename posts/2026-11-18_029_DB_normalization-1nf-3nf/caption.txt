@@ -1,0 +1,29 @@
+🇰🇷 정규화, 테이블을 왜 쪼갤까?
+⠀
+정규화는 중복을 줄이고 삽입·삭제·갱신 이상을 막으려고 테이블을 나누는 과정이에요.
+1NF는 한 칸에 값 하나, 2NF는 부분 함수 종속 제거, 3NF는 이행적 함수 종속 제거예요.
+⠀
+👉 한 테이블에는 키에 대한 사실만! 부분 종속은 복합키일 때 생기고, A→B→C처럼 거쳐 가는 종속은 3NF에서 분리해요.
+⠀
+⠀
+🇺🇸 Normalization — why split tables?
+⠀
+Normalization splits tables to cut redundancy and prevent insert, delete and update anomalies.
+1NF: one value per cell. 2NF: no partial dependency. 3NF: no transitive dependency.
+⠀
+👉 Every column depends on the key, and only the key. Partial dependency needs a composite key; A→B→C chains are split in 3NF.
+⠀
+⠀
+🇲🇳 Нормчлол (normalization) — хүснэгтийг яагаад хуваадаг вэ?
+⠀
+Нормчлол бол давхардлыг багасгаж, нэмэх·устгах·шинэчлэх гажгаас сэргийлэхийн тулд хүснэгтийг хуваах үйл явц.
+1NF — нүд бүрт нэг утга, 2NF — хэсэгчилсэн хамаарлыг арилгах, 3NF — шилжих хамаарлыг арилгах.
+⠀
+👉 Хүснэгт бүрт зөвхөн түлхүүрт хамаарах мэдээлэл! Хэсэгчилсэн хамаарал нийлмэл түлхүүрт үүсдэг, A→B→C хэлбэрийн хамаарлыг 3NF-д салгана.
+⠀
+⠀
+✅ 어제 퀴즈 정답: X — 폰 노이만 구조는 명령어와 데이터를 메모리 하나에 함께 저장해요. 따로 나누는 건 하버드 구조!
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #DBlenlab #Normalizationlenlab

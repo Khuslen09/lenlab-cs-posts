@@ -1,0 +1,117 @@
+<!-- #029 DB · Normalization 1NF–3NF — body only; build.py wraps it with templates/card-template.html -->
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DB</div><div class="meta">#029 · 2026.11.18</div></header>
+  <main class="center">
+    <div><div class="lang">EN</div><div style="font-family:JBM;font-weight:700;font-size:64px;line-height:1.15">Normalization <span class="blue">1NF→3NF</span></div></div>
+    <div><div class="lang">KO</div><div style="font-size:84px;font-weight:800;line-height:1.22;letter-spacing:-.03em"><span class="blue">정규화</span>, 테이블을<br><span class="cyan">왜 쪼갤까?</span></div></div>
+    <div><div class="lang">MN</div><div style="font-size:40px;line-height:1.4;color:var(--mute)">Нормчлол (normalization) —<br>хүснэгтийг яагаад хуваадаг вэ?</div></div>
+  </main>
+  <footer><div class="handle">01 / 06</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DB</div><div class="meta">02 / 06</div></header>
+  <main>
+    <div><div style="font-size:60px;font-weight:800;letter-spacing:-.03em">한 줄 정의</div><div class="en" style="margin-top:6px">Definition · Тодорхойлолт</div></div>
+    <div class="panel" style="border-left:6px solid var(--blue)">
+      <div class="mono blue" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">NORMALIZATION · 정규화 · НОРМЧЛОЛ</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px"><b class="blue">중복</b>을 줄이고 이상 현상을 막도록 테이블을 나누는 과정</div>
+      <div class="en">Splitting tables to cut redundancy and avoid anomalies.</div>
+      <div class="mn">Давхардлыг багасгаж, гажиг үүсэхээс сэргийлэн хүснэгтийг хуваах үйл явц.</div>
+    </div>
+    <div class="panel" style="border-left:6px solid var(--cyan);padding:30px 40px">
+      <div class="mono cyan" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:8px">NORMAL FORMS · 정규형 · ХЭВИЙН ХЭЛБЭР</div>
+      <div style="font-size:32px;line-height:1.6"><b class="mono">1NF</b>&nbsp; 모든 값이 <b>원자값</b> (한 칸에 값 하나)</div>
+      <div class="mn" style="font-size:24px;margin-bottom:2px">Нүд бүрт зөвхөн нэг утга</div>
+      <div style="font-size:32px;line-height:1.6"><b class="mono">2NF</b>&nbsp; <b>부분 함수 종속</b> 제거</div>
+      <div class="mn" style="font-size:24px;margin-bottom:2px">Хэсэгчилсэн хамаарлыг арилгах</div>
+      <div style="font-size:32px;line-height:1.6"><b class="mono">3NF</b>&nbsp; <b>이행적 함수 종속</b> 제거</div>
+      <div class="mn" style="font-size:24px">Шилжих хамаарлыг арилгах</div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-size:34px;font-weight:700">한 테이블에는 <span class="cyan">키에 대한 사실만</span></div>
+      <div class="en" style="margin-top:6px">Every column depends on the key, and only the key</div>
+    </div>
+  </main>
+  <footer><div class="handle">#029</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DB</div><div class="meta">03 / 06</div></header>
+  <main style="gap:22px">
+    <div>
+      <div style="font-size:54px;font-weight:800;letter-spacing:-.03em;line-height:1.25">수강 테이블 <span class="blue">쪼개 보기</span></div>
+      <div class="en" style="margin-top:6px">Splitting an enrollment table · Хүснэгт хуваах жишээ</div>
+    </div>
+    <div class="panel" style="padding:22px 28px;border-radius:18px">
+      <div class="mono" style="font-size:22px;color:var(--mute);margin-bottom:6px">1NF · 수강</div>
+      <div style="font-size:28px"><u class="blue"><b class="blue">학번 · 과목</b></u> · 성적 · 이름 · 학과 · 사무실</div>
+    </div>
+    <div style="font-size:26px;color:var(--mute);text-align:center">▼ <b class="cyan">2NF</b> 이름·학과는 <b>학번</b>에만 종속 → 분리<div class="mn" style="font-size:22px">Partial: name·dept depend only on student ID</div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="panel" style="padding:20px 24px;border-radius:18px"><div class="mono" style="font-size:22px;color:var(--mute);margin-bottom:6px">수강</div><div style="font-size:27px"><u class="blue"><b class="blue">학번 · 과목</b></u> · 성적</div></div>
+      <div class="panel" style="padding:20px 24px;border-radius:18px"><div class="mono" style="font-size:22px;color:var(--mute);margin-bottom:6px">학생</div><div style="font-size:27px"><u class="blue"><b class="blue">학번</b></u> · 이름 · 학과 · 사무실</div></div>
+    </div>
+    <div style="font-size:26px;color:var(--mute);text-align:center">▼ <b class="cyan">3NF</b> 학번 → 학과 → 사무실 → 분리<div class="mn" style="font-size:22px">Transitive: ID → dept → office</div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px">
+      <div style="border:2px solid var(--cyan);border-radius:18px;padding:18px 20px"><div class="mono" style="font-size:22px;color:var(--mute);margin-bottom:6px">수강</div><div style="font-size:25px"><u><b>학번·과목</b></u><br>성적</div></div>
+      <div style="border:2px solid var(--cyan);border-radius:18px;padding:18px 20px"><div class="mono" style="font-size:22px;color:var(--mute);margin-bottom:6px">학생</div><div style="font-size:25px"><u><b>학번</b></u><br>이름 · 학과</div></div>
+      <div style="border:2px solid var(--cyan);border-radius:18px;padding:18px 20px"><div class="mono" style="font-size:22px;color:var(--mute);margin-bottom:6px">학과</div><div style="font-size:25px"><u><b>학과</b></u><br>사무실</div></div>
+    </div>
+    <div style="margin-top:auto"><div style="font-size:30px;font-weight:700">밑줄 = <span class="blue">기본키</span> · 중복된 사무실 정보가 <span class="cyan">한 곳</span>으로</div><div class="mn" style="margin-top:6px">EN: Underline = primary key · MN: Доогуур зураас = анхдагч түлхүүр</div></div>
+  </main>
+  <footer><div class="handle">#029</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DB</div><div class="meta">04 / 06</div></header>
+  <main>
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">SQL로 만든 3NF</div><div class="en" style="margin-top:6px">3NF tables in SQL · SQL дээрх 3NF</div></div>
+    <div class="panel" style="background:var(--code);padding:30px 34px">
+<pre class="mono" style="font-size:25px;line-height:1.6;color:var(--white)"><span class="blue">CREATE TABLE</span> dept (
+  dept <span class="blue">TEXT PRIMARY KEY</span>, office TEXT);
+<span class="blue">CREATE TABLE</span> student (
+  sid <span class="blue">INT PRIMARY KEY</span>, name TEXT,
+  dept TEXT <span class="blue">REFERENCES</span> dept(dept));
+<span class="blue">CREATE TABLE</span> enroll (
+  sid INT <span class="blue">REFERENCES</span> student(sid),
+  course TEXT, grade TEXT,
+  <span class="cyan">PRIMARY KEY (sid, course)</span>);</pre>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">①</span> 사무실 이전 → <b>dept 1행</b>만 수정</div><div class="mn" style="margin-left:40px">EN: One row to update · MN: Зөвхөн нэг мөр засна</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">②</span> 테이블끼리는 <b>외래키</b>로 연결</div><div class="mn" style="margin-left:40px">EN: Linked by foreign keys · MN: Гадаад түлхүүрээр холбогдоно</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">③</span> 대신 조회할 때 <b>JOIN</b>이 필요</div><div class="mn" style="margin-left:40px">EN: Queries need JOINs · MN: Хайлтад JOIN хэрэгтэй</div></div>
+    </div>
+  </main>
+  <footer><div class="handle">#029</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DB</div><div class="meta">05 / 06</div></header>
+  <main style="gap:20px">
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">여기서 꼭 헷갈린다</div><div class="en" style="margin-top:6px">Check points · Анхаарах зүйлс</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">01</span>&nbsp; 이상 현상 3가지 <span class="en" style="font-size:24px;font-weight:500">· Anomalies</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)"><b>삽입 · 삭제 · 갱신</b> 이상 → 정규화로 해결</div><div class="mn" style="font-size:24px">Нэмэх, устгах, шинэчлэх гажгийг нормчлол засна</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">02</span>&nbsp; 부분 종속은 복합키에서 <span class="en" style="font-size:24px;font-weight:500">· Partial</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">키의 <b>일부</b>에만 종속 → 키가 2개 이상 속성일 때</div><div class="mn" style="font-size:24px">Түлхүүрийн зөвхөн нэг хэсэгт хамаарах нь — нийлмэл түлхүүрт</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">03</span>&nbsp; 이행 종속 <span class="en" style="font-size:24px;font-weight:500">· Transitive</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">A → B → C, 키 아닌 속성을 <b>거쳐서</b> 종속</div><div class="mn" style="font-size:24px">Түлхүүр биш шинжээр дамжин хамаарах</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">04</span>&nbsp; 반정규화 <span class="en" style="font-size:24px;font-weight:500">· Denormalization</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">JOIN이 너무 많아 느리면 <b>일부러 합치기</b>도 함</div><div class="mn" style="font-size:24px">JOIN хэт олон бол зориуд нэгтгэх нь бий</div></div>
+  </main>
+  <footer><div class="handle">#029</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DB</div><div class="meta">06 / 06</div></header>
+  <main class="center" style="gap:30px">
+    <div class="lang" style="font-size:26px">QUIZ · 4지선다</div>
+    <div style="font-size:58px;font-weight:800;line-height:1.3;letter-spacing:-.03em"><span class="cyan">이행적 함수 종속</span>(A→B→C)을<br>제거하는 정규화 단계는?</div>
+    <div><div class="en">Which normal form removes transitive dependency (A→B→C)?</div><div class="mn">Шилжих функциональ хамаарлыг (A→B→C) арилгадаг шат аль нь вэ?</div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;text-align:left">
+      <div class="panel" style="padding:20px 24px;border-radius:20px"><div class="mono" style="font-size:30px;font-weight:700">① 1NF</div></div>
+      <div class="panel" style="padding:20px 24px;border-radius:20px"><div class="mono" style="font-size:30px;font-weight:700">② 2NF</div></div>
+      <div class="panel" style="padding:20px 24px;border-radius:20px"><div class="mono" style="font-size:30px;font-weight:700">③ 3NF</div></div>
+      <div class="panel" style="padding:20px 24px;border-radius:20px"><div class="mono" style="font-size:30px;font-weight:700">④ BCNF</div></div>
+    </div>
+    <div><div style="font-size:30px;font-weight:700">💬 댓글로 정답 남기기 · 정답은 내일 스토리</div><div class="mn" style="margin-top:4px">Answer in the comments · Хариултаа коммент дээр үлдээгээрэй</div></div>
+  </main>
+  <footer><div class="handle">🔖 Save · 저장 · Хадгалах</div>{LOGO}</footer>
+</section>
