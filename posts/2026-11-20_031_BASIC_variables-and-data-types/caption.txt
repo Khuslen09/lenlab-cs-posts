@@ -1,0 +1,29 @@
+🇰🇷 변수와 자료형, 정확히 설명할 수 있어?
+⠀
+변수는 값을 저장하는 메모리 공간에 붙인 이름이고,
+자료형은 그 값의 종류(int·float·str·bool)로, 저장 방식과 가능한 연산을 정해요.
+⠀
+👉 같은 + 라도 3 + 4는 7, 문자열 3 + 문자열 4는 34! 연산의 의미는 자료형이 정해요.
+⠀
+⠀
+🇺🇸 Variables & data types — can you explain them precisely?
+⠀
+A variable is a name for a memory location that stores a value.
+A data type is the kind of value (int, float, str, bool) and decides what you can do with it.
+⠀
+👉 3 + 4 gives 7, but the strings 3 and 4 joined give 34. The type decides what + means.
+⠀
+⠀
+🇲🇳 Хувьсагч ба өгөгдлийн төрөл — яг тайлбарлаж чадах уу?
+⠀
+Хувьсагч бол утга хадгалдаг санах ойн байршилд өгсөн нэр.
+Өгөгдлийн төрөл бол утгын төрөл (int, float, str, bool) бөгөөд ямар үйлдэл хийж болохыг тодорхойлно.
+⠀
+👉 3 + 4 нь 7, харин тэмдэгт мөр 3 ба 4-ийг нийлүүлбэл 34. Үйлдлийн утгыг төрөл нь тодорхойлно.
+⠀
+⠀
+✅ 어제 퀴즈 정답: ③ 고객 그룹 나누기 — 라벨 없이 묶는 군집화는 비지도 학습! ①② 지도 학습 · ④ 강화 학습
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #BASIClenlab #DataTypeslenlab
