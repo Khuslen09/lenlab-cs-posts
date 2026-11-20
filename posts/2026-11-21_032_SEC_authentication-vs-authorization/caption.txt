@@ -1,0 +1,29 @@
+🇰🇷 인증 vs 인가, 차이 설명할 수 있어?
+⠀
+인증(Authentication)은 너 누구야?를 확인하는 신원 확인이고,
+인가(Authorization)는 확인된 사용자가 무엇을 할 수 있는지 정하는 권한 확인이에요.
+⠀
+👉 항상 인증 먼저, 인가는 그다음! HTTP 401은 인증 실패, 403은 인가 실패예요.
+⠀
+⠀
+🇺🇸 Authentication vs Authorization — can you explain the difference?
+⠀
+Authentication verifies who you are.
+Authorization decides what a verified user is allowed to do.
+⠀
+👉 Authentication always comes first. HTTP 401 means not authenticated, 403 means not authorized.
+⠀
+⠀
+🇲🇳 Баталгаажуулалт ба эрх олголт — ялгааг нь тайлбарлаж чадах уу?
+⠀
+Баталгаажуулалт (authentication) нь хэрэглэгч хэн болохыг шалгана.
+Эрх олголт (authorization) нь батлагдсан хэрэглэгч юу хийж болохыг тодорхойлно.
+⠀
+👉 Эхлээд баталгаажуулалт, дараа нь эрх олголт. HTTP 401 бол баталгаажуулалт, 403 бол эрхийн алдаа.
+⠀
+⠀
+✅ 어제 퀴즈 정답: ② 222 — 2가 문자열이라 * 3은 3번 반복이에요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #SEClenlab #AuthNAuthZlenlab
