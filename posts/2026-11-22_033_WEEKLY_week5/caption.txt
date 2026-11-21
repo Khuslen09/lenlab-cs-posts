@@ -1,0 +1,29 @@
+🇰🇷 5주차 개념 6개, 다 기억나요?
+⠀
+이번 주에 배운 6개 개념(스택·큐, 폰 노이만 구조, 정규화, 지도·비지도·강화 학습, 변수·자료형, 인증·인가)을
+한 장 치트시트와 퀴즈 5문제로 복습해요.
+⠀
+👉 제일 헷갈리는 것: 인증(누구인지)이 먼저고, 인가(무엇을 할 수 있는지)는 그다음이에요!
+⠀
+⠀
+🇺🇸 Week 5 review — do you still remember all 6 concepts?
+⠀
+This week's 6 concepts (stack vs queue, von Neumann architecture, normalization, supervised / unsupervised / reinforcement learning, variables and data types, authentication vs authorization)
+in one cheat sheet and 5 quiz questions.
+⠀
+👉 Most confused: authentication (who you are) always comes first, then authorization (what you can do)!
+⠀
+⠀
+🇲🇳 5-р долоо хоногийн 6 ойлголтоо санаж байна уу?
+⠀
+Энэ долоо хоногийн 6 ойлголт (стек ба дараалал, Фон Нейманы бүтэц, нормчлол, хяналттай · хяналтгүй · бататгах сургалт, хувьсагч ба өгөгдлийн төрөл, баталгаажуулалт ба эрх олголт)-ыг
+нэг товч тойм болон 5 асуултаар давтъя.
+⠀
+👉 Хамгийн их андуурдаг: эхлээд баталгаажуулалт (хэн бэ), дараа нь эрх олголт (юу хийж болох вэ)!
+⠀
+⠀
+✅ 어제 퀴즈 정답: ③ 일반 회원은 관리자 페이지 접근 불가 — 무엇을 할 수 있는지 정하는 권한 확인이라 인가예요. ①②④는 인증이에요.
+💬 몇 문제 맞혔는지 댓글로! · How many did you get? · Хэдийг нь зөв хариулсан бэ?
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #WEEKLYlenlab #Week5lenlab
