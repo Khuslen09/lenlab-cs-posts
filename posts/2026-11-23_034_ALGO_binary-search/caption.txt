@@ -1,0 +1,29 @@
+🇰🇷 이진 탐색, 왜 절반씩 버릴까요?
+⠀
+이진 탐색은 정렬된 배열에서 가운데 값과 비교해 탐색 범위를 절반씩 줄이는 방법이에요.
+한 번 비교할 때마다 범위가 반으로 줄어서 O(log n), 100만 개도 최대 20번이면 찾아요.
+⠀
+👉 정렬된 배열이 전제! 작으면 lo = mid + 1, 크면 hi = mid - 1, 조건은 lo <= hi.
+⠀
+⠀
+🇺🇸 Binary search — why throw away half each time?
+⠀
+Binary search compares the target with the middle of a sorted array and halves the search range.
+Each comparison cuts the range in half, so it runs in O(log n) — even 1M items take at most 20 checks.
+⠀
+👉 The array must be sorted. If smaller, lo = mid + 1; if larger, hi = mid - 1; loop while lo <= hi.
+⠀
+⠀
+🇲🇳 Хоёртын хайлт (binary search) — яагаад хагасаар нь хасдаг вэ?
+⠀
+Хоёртын хайлт нь эрэмбэлэгдсэн массивын голын утгатай харьцуулж, хайх мужийг хагасаар багасгадаг.
+Харьцуулах бүрт муж хоёр дахин багасах тул O(log n) — сая элементэд ч дээд тал нь 20 удаа шалгана.
+⠀
+👉 Массив заавал эрэмбэлэгдсэн байх ёстой. Бага бол lo = mid + 1, их бол hi = mid - 1, нөхцөл нь lo <= hi.
+⠀
+⠀
+✅ 어제 복습 퀴즈 정답: ③ O ② ③ ② — 신원 확인은 인증, 무엇을 할 수 있는지는 인가예요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #ALGOlenlab #BinarySearchlenlab

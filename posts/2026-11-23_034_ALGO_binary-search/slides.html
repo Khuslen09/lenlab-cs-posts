@@ -1,0 +1,124 @@
+<!-- #034 ALGO · Binary Search — body only; build.py wraps it with templates/card-template.html -->
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · ALGO</div><div class="meta">#034 · 2026.11.23</div></header>
+  <main class="center">
+    <div><div class="lang">EN</div><div style="font-family:JBM;font-weight:700;font-size:64px;line-height:1.15">Binary <span class="blue">Search</span></div></div>
+    <div><div class="lang">KO</div><div style="font-size:84px;font-weight:800;line-height:1.22;letter-spacing:-.03em"><span class="blue">이진 탐색</span>, 왜<br><span class="cyan">절반씩</span> 버릴까?</div></div>
+    <div><div class="lang">MN</div><div style="font-size:40px;line-height:1.4;color:var(--mute)">Хоёртын хайлт (binary search) —<br>яагаад хагасаар нь хасдаг вэ?</div></div>
+  </main>
+  <footer><div class="handle">01 / 06</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · ALGO</div><div class="meta">02 / 06</div></header>
+  <main>
+    <div><div style="font-size:60px;font-weight:800;letter-spacing:-.03em">한 줄 정의</div><div class="en" style="margin-top:6px">Definition · Тодорхойлолт</div></div>
+    <div class="panel" style="border-left:6px solid var(--blue)">
+      <div class="mono blue" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">BINARY SEARCH · 이진 탐색</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px"><b class="blue">정렬된</b> 배열에서 가운데 값과 비교해 범위를 절반씩 줄이는 탐색</div>
+      <div class="en">Halve the search range of a sorted array each step.</div>
+      <div class="mn">Эрэмбэлэгдсэн массивт хайх мужийг хагасаар багасгана.</div>
+    </div>
+    <div class="panel" style="border-left:6px solid var(--cyan)">
+      <div class="mono cyan" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">TIME · 시간 복잡도</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">비교할 때마다 범위가 ½ → <b class="cyan">O(log n)</b>. 100만 개도 최대 20번</div>
+      <div class="en">O(log n) — 1M items in at most 20 checks.</div>
+      <div class="mn">O(log n) — сая элементэд ч дээд тал нь 20 удаа.</div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-size:34px;font-weight:700">선형 탐색 = <span class="blue">O(n)</span> · 이진 탐색 = <span class="cyan">O(log n)</span></div>
+      <div class="en" style="margin-top:6px">Linear search O(n) · Binary search O(log n)</div>
+    </div>
+  </main>
+  <footer><div class="handle">#034</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · ALGO</div><div class="meta">03 / 06</div></header>
+  <main>
+    <div>
+      <div style="font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1.25"><span class="blue">업다운 게임</span>처럼 23 찾기</div>
+      <div class="en" style="margin-top:8px">Like an up-down guessing game: find 23</div>
+      <div class="mn">Дээш-доош таах тоглоом шиг: 23-ыг хайх</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:34px;margin-top:10px">
+      <div>
+        <div class="mono" style="font-size:24px;color:var(--mute);margin-bottom:10px">STEP 1 · mid = 16 &lt; 23 → <b class="blue">UP</b> (오른쪽 · right)</div>
+        <div style="display:grid;grid-template-columns:repeat(10,1fr);gap:8px" class="mono">
+          <div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px">2</div><div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px">5</div><div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px">8</div><div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px">12</div><div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px;border:3px solid var(--blue);font-weight:700">16</div><div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px">23</div><div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px">38</div><div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px">56</div><div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px">72</div><div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px">91</div>
+        </div>
+      </div>
+      <div>
+        <div class="mono" style="font-size:24px;color:var(--mute);margin-bottom:10px">STEP 2 · mid = 56 &gt; 23 → <b class="blue">DOWN</b> (왼쪽 · left)</div>
+        <div style="display:grid;grid-template-columns:repeat(10,1fr);gap:8px" class="mono">
+          <div style="padding:16px 0;text-align:center;font-size:28px;color:var(--dim)">2</div><div style="padding:16px 0;text-align:center;font-size:28px;color:var(--dim)">5</div><div style="padding:16px 0;text-align:center;font-size:28px;color:var(--dim)">8</div><div style="padding:16px 0;text-align:center;font-size:28px;color:var(--dim)">12</div><div style="padding:16px 0;text-align:center;font-size:28px;color:var(--dim)">16</div><div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px">23</div><div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px">38</div><div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px;border:3px solid var(--blue);font-weight:700">56</div><div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px">72</div><div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px">91</div>
+        </div>
+      </div>
+      <div>
+        <div class="mono" style="font-size:24px;color:var(--mute);margin-bottom:10px">STEP 3 · mid = 23 → <b class="cyan">FOUND!</b> (index 5)</div>
+        <div style="display:grid;grid-template-columns:repeat(10,1fr);gap:8px" class="mono">
+          <div style="padding:16px 0;text-align:center;font-size:28px;color:var(--dim)">2</div><div style="padding:16px 0;text-align:center;font-size:28px;color:var(--dim)">5</div><div style="padding:16px 0;text-align:center;font-size:28px;color:var(--dim)">8</div><div style="padding:16px 0;text-align:center;font-size:28px;color:var(--dim)">12</div><div style="padding:16px 0;text-align:center;font-size:28px;color:var(--dim)">16</div><div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px;border:3px solid var(--cyan);font-weight:700;color:var(--cyan)">23</div><div class="panel" style="padding:16px 0;text-align:center;font-size:28px;border-radius:12px">38</div><div style="padding:16px 0;text-align:center;font-size:28px;color:var(--dim)">56</div><div style="padding:16px 0;text-align:center;font-size:28px;color:var(--dim)">72</div><div style="padding:16px 0;text-align:center;font-size:28px;color:var(--dim)">91</div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-size:30px;text-align:center">10칸 하나씩 보면 6번 · 이진 탐색은 <b>3번</b></div>
+      <div class="en" style="text-align:center;margin-top:6px">One by one: 6 checks · Binary search: 3</div><div class="mn" style="text-align:center">Нэг нэгээр 6 удаа · Хоёртын хайлтаар 3 удаа</div>
+    </div>
+  </main>
+  <footer><div class="handle">#034</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · ALGO</div><div class="meta">04 / 06</div></header>
+  <main>
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">Python으로 구현하기</div><div class="en" style="margin-top:6px">Implement in Python · Python дээр бичих</div></div>
+    <div class="panel" style="background:var(--code);padding:30px 34px">
+<pre class="mono" style="font-size:25px;line-height:1.6;color:var(--white)"><span class="blue">def</span> binary_search(arr, target):
+    lo, hi = 0, len(arr) - 1
+    <span class="blue">while</span> lo &lt;= hi:
+        mid = (lo + hi) // 2
+        <span class="blue">if</span> arr[mid] == target: <span class="blue">return</span> mid
+        <span class="blue">elif</span> arr[mid] &lt; target: lo = mid + 1
+        <span class="blue">else</span>: hi = mid - 1
+    <span class="blue">return</span> -1
+nums = [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]
+print(binary_search(nums, 23))  <span style="color:var(--dim)"># </span><span class="cyan">5</span></pre>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">①</span> <b>lo·hi</b> 두 포인터로 남은 범위를 표시</div><div class="mn" style="margin-left:40px">EN: lo and hi mark the range · MN: lo, hi нь үлдсэн мужийг заана</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">②</span> 작으면 <b>lo = mid + 1</b>, 크면 <b>hi = mid - 1</b></div><div class="mn" style="margin-left:40px">EN: Move one side past mid · MN: mid-ийн цаадах тал руу шилжинэ</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">③</span> 범위가 비면(lo &gt; hi) 없음 → <b>-1</b></div><div class="mn" style="margin-left:40px">EN: Empty range means not found · MN: Муж хоосон бол олдсонгүй</div></div>
+    </div>
+  </main>
+  <footer><div class="handle">#034</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · ALGO</div><div class="meta">05 / 06</div></header>
+  <main style="gap:20px">
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">여기서 꼭 헷갈린다</div><div class="en" style="margin-top:6px">Check points · Анхаарах зүйлс</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">01</span>&nbsp; 정렬이 먼저 <span class="en" style="font-size:24px;font-weight:500">· Sorted Only</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">정렬 안 된 배열이면 <b class="cyan">정렬부터</b> (보통 O(n log n))</div><div class="mn" style="font-size:24px">Эрэмбэлээгүй бол эхлээд эрэмбэлэх хэрэгтэй</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">02</span>&nbsp; 배열이어야 빠름 <span class="en" style="font-size:24px;font-weight:500">· Random Access</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">연결 리스트는 가운데로 바로 못 감 → <b>O(log n)</b> 불가</div><div class="mn" style="font-size:24px">Холбоост жагсаалтад гол руу шууд очиж чадахгүй</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">03</span>&nbsp; 경계 조건 <span class="en" style="font-size:24px;font-weight:500">· lo &lt;= hi</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">hi = len−1이면 <b>&lt;=</b>, &lt;로 쓰면 마지막 1칸을 놓침</div><div class="mn" style="font-size:24px">&lt; гэж бичвэл сүүлийн нэг нүдийг алгасна</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">04</span>&nbsp; mid 오버플로 <span class="en" style="font-size:24px;font-weight:500">· Overflow</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">C·Java는 <b>lo + (hi − lo) / 2</b>가 안전</div><div class="mn" style="font-size:24px">C, Java-д (lo+hi)/2 нь int-ээс хэтэрч болно</div></div>
+  </main>
+  <footer><div class="handle">#034</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · ALGO</div><div class="meta">06 / 06</div></header>
+  <main class="center" style="gap:30px">
+    <div class="lang" style="font-size:26px">QUIZ · 4지선다</div>
+    <div style="font-size:56px;font-weight:800;line-height:1.3;letter-spacing:-.03em">[1, 3, 5, 7, 9, 11, 13]에서 9를 찾을 때<br><span class="cyan">두 번째로 확인하는 값</span>은?</div>
+    <div><div class="en">Searching for 9 — which value is checked second?</div><div class="mn">9-ийг хайхад хоёр дахь удаа шалгах утга аль вэ?</div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;text-align:left">
+      <div class="panel" style="padding:20px 24px;border-radius:20px"><div class="mono" style="font-size:34px;font-weight:700">① 7</div></div>
+      <div class="panel" style="padding:20px 24px;border-radius:20px"><div class="mono" style="font-size:34px;font-weight:700">② 9</div></div>
+      <div class="panel" style="padding:20px 24px;border-radius:20px"><div class="mono" style="font-size:34px;font-weight:700">③ 11</div></div>
+      <div class="panel" style="padding:20px 24px;border-radius:20px"><div class="mono" style="font-size:34px;font-weight:700">④ 13</div></div>
+    </div>
+    <div><div style="font-size:30px;font-weight:700">💬 댓글로 정답 남기기 · 정답은 내일 스토리</div><div class="mn" style="margin-top:4px">Answer in the comments · Хариултаа коммент дээр үлдээгээрэй</div></div>
+  </main>
+  <footer><div class="handle">🔖 Save · 저장 · Хадгалах</div>{LOGO}</footer>
+</section>
