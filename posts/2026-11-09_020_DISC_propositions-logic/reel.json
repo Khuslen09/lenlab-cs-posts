@@ -1,0 +1,65 @@
+{
+ "n": 20,
+ "tag": "DISC",
+ "guest": null,
+ "title": "명제와 논리 연산",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "\"비가 오면 우산을 쓴다\"",
+    "언제 *거짓*일까?"
+   ],
+   "v": "비가 오면 우산을 쓴다. 이 말은 언제 거짓일까?",
+   "en": "'If it rains, I'll use an umbrella.' When is that false?"
+  },
+  {
+   "t": "bubble",
+   "who": "leng",
+   "pose": "explain",
+   "b": "명제는 *참 또는 거짓*으로\n딱 판별되는 문장!",
+   "v": "명제는 참이나 거짓으로 딱 판별되는 문장이야. 그리고 연산자로 명제를 합칠 수 있어.",
+   "en": "A proposition is a statement that's clearly true or false — and operators combine them."
+  },
+  {
+   "t": "code",
+   "code": "¬ NOT   ∧ AND   ∨ OR\n→ 조건  ↔ 쌍조건",
+   "v": "낫, 앤드, 오어, 그리고 조건과 쌍조건!",
+   "en": "NOT, AND, OR, plus implication and biconditional!"
+  },
+  {
+   "t": "bubble",
+   "who": "leng",
+   "pose": "surprise",
+   "b": "p → q는\n*p가 거짓이면 무조건 참!*",
+   "v": "여기서 반전! 피이면 큐는, 피가 거짓이면 무조건 참이야. 비가 안 오면 우산을 쓰든 말든 약속을 어긴 게 아니잖아!",
+   "en": "Plot twist: p implies q is always true when p is false. No rain, no broken promise!"
+  },
+  {
+   "t": "point",
+   "text": "p → q ≡ *¬q → ¬p* (대우)",
+   "v": "그리고 피이면 큐는 대우, 큐가 아니면 피가 아니다랑 언제나 같아!",
+   "en": "And p → q is always equivalent to its contrapositive: not q implies not p!"
+  },
+  {
+   "t": "quiz",
+   "q": "p → q 가 *거짓*인 경우는?",
+   "opts": [
+    "p 참, q 참",
+    "p 참, q 거짓",
+    "p 거짓, q 거짓"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 피이면 큐가 거짓이 되는 경우는?",
+   "why": "비 왔는데 *우산 안 씀*!",
+   "why_v": "정답은 2번! 비가 왔는데 우산을 안 쓴 경우만 거짓이야.",
+   "en": "Quiz! When is p → q false?",
+   "why_en": "Number 2! Only when it rained and you skipped the umbrella."
+  },
+  {
+   "t": "outro",
+   "v": "헷갈리는 친구한테 공유해 줘! 내일 또 1분만 줘!",
+   "en": "Share this with a friend who mixes these up! Give me one more minute tomorrow!"
+  }
+ ]
+}

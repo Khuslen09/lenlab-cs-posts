@@ -1,2 +1,5 @@
 _render.html
 __pycache__/
+
+# reels: rendered videos stay local (upload from posts/<folder>/<NNN>-reel.mp4)
+*-reel.mp4

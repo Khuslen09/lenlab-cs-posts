@@ -1,0 +1,77 @@
+{
+ "n": 15,
+ "tag": "COMM",
+ "guest": "chipko",
+ "title": "아날로그 vs 디지털",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "아날로그 vs *디지털*",
+    "정확히 뭐가 달라?"
+   ],
+   "v": "아날로그랑 디지털, 정확히 뭐가 다른지 설명할 수 있어?",
+   "en": "Can you explain exactly how analog and digital differ?"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "아날로그는 *미끄럼틀*,\n디지털은 *계단*!",
+   "v": "아날로그는 미끄럼틀처럼 끊김 없이 이어지고, 디지털은 계단처럼 딱딱 끊겨!",
+   "en": "Analog flows like a slide; digital steps like a staircase!"
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "〰️",
+     "t": "아날로그",
+     "d": "값이 끊김 없이\n이어지는\n*연속* 신호"
+    },
+    {
+     "e": "📶",
+     "t": "디지털",
+     "d": "0과 1처럼\n정해진 값만\n*이산* 신호"
+    }
+   ],
+   "v": "아날로그는 값이 끊김 없는 연속 신호, 디지털은 0과 1처럼 정해진 값만 갖는 이산 신호야.",
+   "en": "Analog is a continuous signal; digital is a discrete signal with set values like 0 and 1."
+  },
+  {
+   "t": "steps",
+   "items": [
+    "① 표본화 — 일정 간격으로 *찍기*",
+    "② 양자화 — 정해진 *눈금에 맞추기*",
+    "③ 부호화 — *0과 1*로 바꾸기"
+   ],
+   "v": "아날로그를 디지털로 바꾸는 피씨엠은 표본화, 양자화, 부호화 순서!",
+   "en": "PCM turns analog into digital: sampling, quantization, then encoding!"
+  },
+  {
+   "t": "point",
+   "text": "표본화는 최고 주파수의\n*2배 이상*으로!",
+   "v": "그리고 표본화는 최고 주파수의 두 배 이상으로 해야 원래 소리를 살릴 수 있어.",
+   "en": "And sample at more than twice the highest frequency to keep the original sound."
+  },
+  {
+   "t": "quiz",
+   "q": "PCM 순서로 맞는 것은?",
+   "opts": [
+    "양자화→표본화→부호화",
+    "표본화→양자화→부호화",
+    "부호화→표본화→양자화"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 피씨엠 변환 순서로 맞는 건?",
+   "why": "찍고 → 맞추고 → *0과 1로*",
+   "why_v": "정답은 2번! 표본화, 양자화, 부호화.",
+   "en": "Quiz! Which is the correct PCM order?",
+   "why_en": "Number 2! Sampling, quantization, encoding."
+  },
+  {
+   "t": "outro",
+   "v": "저장해두고 시험 전에 다시 봐! 매일 1분 컴공, 렝이었어!",
+   "en": "Save this and review it before your exam! One-minute CS every day, I'm Leng!"
+  }
+ ]
+}

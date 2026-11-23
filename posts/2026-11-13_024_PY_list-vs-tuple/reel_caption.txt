@@ -1,0 +1,17 @@
+🇰🇷 파이썬 리스트 vs 튜플, 언제 뭘 써? 🪨
+리스트 = 가변(화이트보드), 튜플 = 불변(비석).
+👉 원소 1개 튜플은 (1,) 쉼표 필수! 튜플 안의 리스트는 바뀔 수 있어요.
+
+🇺🇸 Python list vs tuple — when to use which? 🪨
+List = mutable (whiteboard), tuple = immutable (carved stone).
+👉 A one-element tuple needs a comma: (1,)! A list inside a tuple can still change.
+
+🇲🇳 Python-ий list ба tuple — хэзээ алийг нь ашиглах вэ? 🪨
+List = өөрчлөгддөг (самбар), tuple = өөрчлөгддөггүй (хөшөө).
+👉 Нэг элементтэй tuple-д таслал заавал: (1,)! Tuple доторх list өөрчлөгдөж болно.
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

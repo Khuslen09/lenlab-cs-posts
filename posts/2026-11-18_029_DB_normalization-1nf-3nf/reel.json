@@ -1,0 +1,66 @@
+{
+ "n": 29,
+ "tag": "DB",
+ "guest": "blink",
+ "title": "정규화",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "테이블을",
+    "*왜 쪼개?*"
+   ],
+   "v": "멀쩡한 테이블을 왜 굳이 쪼갤까? 정규화 1분 정리!",
+   "en": "Why split a perfectly good table? Normalization in one minute!"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "한 테이블에\n*다 때려 넣으면* 사고 나!",
+   "v": "한 테이블에 다 때려 넣으면 하나 고칠 때 여기저기 다 고쳐야 해서 사고가 나!",
+   "en": "Cram everything into one table and fixing one thing means fixing it everywhere — chaos!"
+  },
+  {
+   "t": "steps",
+   "items": [
+    "1NF — 한 칸에 *값 하나*",
+    "2NF — *부분 함수 종속* 제거",
+    "3NF — *이행적 함수 종속* 제거"
+   ],
+   "v": "제1정규형은 한 칸에 값 하나, 제2정규형은 부분 종속 제거, 제3정규형은 거쳐 가는 종속 제거!",
+   "en": "1NF: one value per cell. 2NF: remove partial dependencies. 3NF: remove transitive dependencies!"
+  },
+  {
+   "t": "code",
+   "code": "학번 → 학과 → 학과장\n      A → B → C\n→ *3NF에서 분리!*",
+   "v": "학번이 학과를 정하고, 학과가 학과장을 정하는 것처럼 거쳐 가는 종속은 3정규형에서 분리해.",
+   "en": "Student ID decides department, department decides department head — that chain gets split in 3NF."
+  },
+  {
+   "t": "point",
+   "text": "한 테이블에는\n*키에 대한 사실만!*",
+   "v": "정규화 한 줄 요약! 한 테이블에는 키에 대한 사실만 담자.",
+   "en": "One-line summary: a table should hold only facts about its key."
+  },
+  {
+   "t": "quiz",
+   "q": "부분 함수 종속이\n생기는 조건은?",
+   "opts": [
+    "키가 하나일 때",
+    "복합키일 때",
+    "NULL이 있을 때"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 부분 함수 종속은 언제 생길까?",
+   "why": "키 일부에만 종속 → *복합키*",
+   "why_v": "정답은 복합키일 때! 키의 일부에만 종속되니까.",
+   "en": "Quiz! When does a partial dependency happen?",
+   "why_en": "With a composite key! Something depends on only part of the key."
+  },
+  {
+   "t": "outro",
+   "v": "저장해두고 시험 전에 다시 봐! 매일 1분 컴공, 렝이었어!",
+   "en": "Save this and review it before your exam! One-minute CS every day, I'm Leng!"
+  }
+ ]
+}

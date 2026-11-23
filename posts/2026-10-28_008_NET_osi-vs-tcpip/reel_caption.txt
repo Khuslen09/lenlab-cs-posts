@@ -1,0 +1,14 @@
+🇰🇷 OSI 7계층 ↔ TCP/IP 4계층, 어떻게 짝지어질까? 🌐
+위 3개 묶고(응용 = 5·6·7), 아래 2개 묶고(네트워크 접근 = 1·2), 가운데는 1:1!
+
+🇺🇸 How do the 7 OSI layers map to the 4 TCP/IP layers? 🌐
+Group the top three (Application = 5·6·7), group the bottom two (Network Access = 1·2), the middle is 1:1!
+
+🇲🇳 OSI-ийн 7 давхарга TCP/IP-ийн 4 давхаргад хэрхэн харгалздаг вэ? 🌐
+Дээд гурвыг нэгтгэ (хэрэглээ = 5·6·7), доод хоёрыг нэгтгэ (сүлжээнд хандах = 1·2), дунд хэсэг нь 1:1!
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

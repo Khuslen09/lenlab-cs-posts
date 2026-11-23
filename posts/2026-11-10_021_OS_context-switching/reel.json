@@ -1,0 +1,68 @@
+{
+ "n": 21,
+ "tag": "OS",
+ "guest": "chipko",
+ "title": "컨텍스트 스위칭",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "CPU는 하나인데",
+    "*앱 10개가 동시에?*"
+   ],
+   "v": "CPU는 하나인데, 앱 열 개가 어떻게 동시에 돌아갈까?",
+   "en": "One CPU, ten apps at once — how?"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "*책갈피 꽂고*\n다른 책 읽는 거랑 같아!",
+   "v": "책 여러 권을 번갈아 읽을 때 책갈피 꽂아 두는 거랑 똑같아!",
+   "en": "It's just like switching between books with a bookmark!"
+  },
+  {
+   "t": "steps",
+   "items": [
+    "💾 A의 상태(PC·레지스터)를 *PCB에 저장*",
+    "📂 B의 상태를 *PCB에서 복원*",
+    "▶️ CPU를 *B에게 넘김*"
+   ],
+   "v": "지금 프로세스 상태를 피씨비에 저장하고, 다음 프로세스 상태를 꺼내서 씨피유를 넘겨. 이게 컨텍스트 스위칭!",
+   "en": "Save the current process state to its PCB, load the next one's state, and hand over the CPU. That's context switching!"
+  },
+  {
+   "t": "bubble",
+   "who": "leng",
+   "pose": "think",
+   "b": "근데 갈아타는 동안\n*일은 0*이야…",
+   "v": "근데 갈아타는 동안은 쓸모 있는 일을 하나도 못 해. 이걸 오버헤드라고 해.",
+   "en": "But while switching, no useful work gets done. That's called overhead."
+  },
+  {
+   "t": "point",
+   "text": "스레드끼리는 주소 공간 공유\n→ 전환이 *더 가볍다!*",
+   "v": "같은 프로세스의 스레드끼리는 주소 공간을 공유해서 전환이 훨씬 가벼워.",
+   "en": "Threads in the same process share an address space, so switching between them is much lighter."
+  },
+  {
+   "t": "quiz",
+   "q": "컨텍스트 스위칭 때\n상태를 저장하는 곳은?",
+   "opts": [
+    "PCB",
+    "캐시",
+    "하드디스크"
+   ],
+   "ans": 0,
+   "v": "퀴즈! 컨텍스트 스위칭 때 프로세스 상태를 저장하는 곳은?",
+   "why": "프로세스 제어 블록 *PCB*!",
+   "why_v": "정답은 피씨비! 프로세스의 책갈피야.",
+   "en": "Quiz! Where is a process's state saved during a context switch?",
+   "why_en": "The PCB! It's the process's bookmark."
+  },
+  {
+   "t": "outro",
+   "v": "저장 꾹! 팔로우하면 매일 개념 하나씩 떠먹여 줄게!",
+   "en": "Hit save! Follow me and I'll feed you one concept a day!"
+  }
+ ]
+}

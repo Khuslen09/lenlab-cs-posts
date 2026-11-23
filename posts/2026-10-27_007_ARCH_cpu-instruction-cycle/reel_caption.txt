@@ -1,0 +1,17 @@
+🇰🇷 CPU는 명령어를 어떻게 실행할까? ⚡
+인출(Fetch) → 해독(Decode) → 실행(Execute) 무한 반복!
+👉 PC = 다음 명령어의 주소, IR = 지금 실행할 명령어 자체.
+
+🇺🇸 How does a CPU run an instruction? ⚡
+Fetch → Decode → Execute, again and again!
+👉 PC = address of the next instruction; IR = the current instruction itself.
+
+🇲🇳 CPU зааврыг хэрхэн гүйцэтгэдэг вэ? ⚡
+Татах (Fetch) → тайлах (Decode) → гүйцэтгэх (Execute) мөчлөг тасралтгүй давтагдана!
+👉 PC = дараагийн зааврын хаяг, IR = одоо гүйцэтгэж буй заавар өөрөө.
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

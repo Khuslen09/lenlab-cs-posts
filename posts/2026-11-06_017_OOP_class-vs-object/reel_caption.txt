@@ -1,0 +1,17 @@
+🇰🇷 클래스 vs 객체, 붕어빵으로 끝! 🐟
+클래스 = 붕어빵 틀(설계도), 객체 = 찍어 낸 붕어빵(실체).
+👉 틀은 1개, 객체는 new 할 때마다 하나씩! 변수에는 참조가 담겨요.
+
+🇺🇸 Class vs object, explained with a fish-shaped pastry! 🐟
+Class = the mold (blueprint), object = the pastry you bake (the real thing).
+👉 One mold, a new object every time you call new! Variables hold references.
+
+🇲🇳 Класс ба объект — загасан хэлбэрийн боовоор тайлбарлая! 🐟
+Класс = боовны хэв (зураг төсөл), объект = хэвээр хийсэн боов (бодит зүйл).
+👉 Хэв нэг, new хийх бүрт шинэ объект үүснэ! Хувьсагчид объектын лавлагаа (reference) хадгалагдана.
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

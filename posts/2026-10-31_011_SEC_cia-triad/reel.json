@@ -1,0 +1,82 @@
+{
+ "n": 11,
+ "tag": "SEC",
+ "guest": "blink",
+ "title": "보안의 3요소 CIA",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "보안의 3요소 *CIA*",
+    "다 말할 수 있어?"
+   ],
+   "v": "보안의 3요소 씨아이에이! 미국 정보기관 말고, 세 개 다 말할 수 있어?",
+   "en": "The CIA triad of security — not the spy agency! Can you name all three?"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "내 *일기장*으로\n생각해 봐!",
+   "v": "내 일기장으로 생각해 봐! 지켜야 할 게 딱 세 가지야.",
+   "en": "Think of your diary! There are exactly three things to protect."
+  },
+  {
+   "t": "steps",
+   "items": [
+    "🔒 C 기밀성 — *허가된 사람만* 보기",
+    "✍️ I 무결성 — *허가 없이* 안 바뀌게",
+    "🟢 A 가용성 — *필요할 때* 쓸 수 있게"
+   ],
+   "v": "아무나 못 보게 하는 기밀성, 몰래 고쳐지지 않게 하는 무결성, 필요할 때 언제든 볼 수 있게 하는 가용성!",
+   "en": "Confidentiality: no peeking. Integrity: no secret edits. Availability: you can read it whenever you need."
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "👀",
+     "t": "엿보기",
+     "d": "C 깨짐"
+    },
+    {
+     "e": "🔁",
+     "t": "바꿔치기",
+     "d": "I 깨짐"
+    },
+    {
+     "e": "💥",
+     "t": "DDoS",
+     "d": "A 깨짐"
+    }
+   ],
+   "v": "그래서 엿보기는 기밀성, 바꿔치기는 무결성, 디도스로 마비시키기는 가용성을 깨뜨려.",
+   "en": "Snooping breaks confidentiality, tampering breaks integrity, and a DDoS takedown breaks availability."
+  },
+  {
+   "t": "point",
+   "text": "엿보기 *C* · 바꿔치기 *I* · 마비 *A*",
+   "v": "공격 유형만 보고 바로 맞힐 수 있으면 완벽!",
+   "en": "If you can name it just from the attack type, you've nailed it!"
+  },
+  {
+   "t": "quiz",
+   "q": "DDoS 공격이\n깨뜨리는 보안 요소는?",
+   "opts": [
+    "기밀성",
+    "무결성",
+    "가용성"
+   ],
+   "ans": 2,
+   "v": "퀴즈! 디도스 공격은 어떤 보안 요소를 깨뜨릴까?",
+   "why": "서비스를 못 쓰게 → *가용성*",
+   "why_v": "정답은 가용성! 서비스를 못 쓰게 만들잖아.",
+   "en": "Quiz! Which security property does a DDoS attack break?",
+   "why_en": "Availability! It makes the service unusable."
+  },
+  {
+   "t": "outro",
+   "v": "저장해두고 시험 전에 다시 봐! 매일 1분 컴공, 렝이었어!",
+   "en": "Save this and review it before your exam! One-minute CS every day, I'm Leng!"
+  }
+ ]
+}

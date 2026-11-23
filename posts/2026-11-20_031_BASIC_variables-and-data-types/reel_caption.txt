@@ -1,0 +1,17 @@
+🇰🇷 3 + 4 = 7인데 "3" + "4" = 34? 🔤
+변수 = 이름표 붙인 상자, 자료형 = 상자에 든 물건의 종류.
+👉 연산의 의미는 자료형이 정한다!
+
+🇺🇸 3 + 4 = 7, but "3" + "4" = 34? 🔤
+A variable is a labeled box; a data type is the kind of thing inside it.
+👉 The data type decides what an operation means!
+
+🇲🇳 3 + 4 = 7, гэтэл "3" + "4" = 34 яагаад? 🔤
+Хувьсагч = шошготой хайрцаг, өгөгдлийн төрөл = хайрцаг доторх зүйлийн төрөл.
+👉 Үйлдлийн утгыг өгөгдлийн төрөл тодорхойлно!
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

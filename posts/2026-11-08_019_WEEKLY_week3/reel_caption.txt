@@ -1,0 +1,17 @@
+🇰🇷 3주차 개념 6개, 다 기억나? 📚
+빅오 / 메모리 구조 / 아날로그·디지털 / 토큰화·임베딩 / 클래스·객체 / 래스터·벡터
+👉 제일 헷갈리는 것: 함수 안 static 변수는 데이터 영역! 함수가 끝나도 값이 남아요.
+
+🇺🇸 Week 3: do you remember all six? 📚
+Big-O / memory layout / analog·digital / tokens·embeddings / class·object / raster·vector
+👉 Most confusing: a static variable inside a function lives in the data segment — it keeps its value!
+
+🇲🇳 3-р долоо хоногийн 6 ойлголтоо бүгдийг нь санаж байна уу? 📚
+Big-O / санах ойн бүтэц / аналог·дижитал / токен·эмбеддинг / класс·объект / растер·вектор
+👉 Хамгийн их андуурдаг: функц доторх static хувьсагч өгөгдлийн мужид байдаг тул функц дууссан ч утга нь хадгалагдана!
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

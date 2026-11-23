@@ -1,0 +1,17 @@
+🇰🇷 CPU는 하나인데 앱 10개가 동시에? 🔁
+상태(PC·레지스터)를 PCB에 저장 → 다음 프로세스 복원 → CPU 넘기기.
+👉 전환 중엔 유용한 일이 0인 오버헤드! 스레드끼리는 더 가벼워요.
+
+🇺🇸 One CPU, ten apps at once? 🔁
+Save state (PC·registers) to the PCB → restore the next process → hand over the CPU.
+👉 Switching is pure overhead; switching between threads is lighter!
+
+🇲🇳 CPU ганцхан атал 10 апп зэрэг ажиллах уу? 🔁
+Төлөвийг (PC·регистр) PCB-д хадгалах → дараагийн процессыг сэргээх → CPU-г шилжүүлэх.
+👉 Шилжих хооронд ашигтай ажил хийгддэггүй (overhead)! Нэг процессын урсгалуудын хооронд шилжих нь илүү хөнгөн.
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

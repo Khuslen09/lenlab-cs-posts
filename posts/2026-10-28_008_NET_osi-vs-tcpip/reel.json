@@ -1,0 +1,60 @@
+{
+ "n": 8,
+ "tag": "NET",
+ "guest": "blink",
+ "title": "OSI 7계층 vs TCP/IP 4계층",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "OSI 7계층 vs *TCP/IP 4계층*",
+    "어떻게 짝지어질까?"
+   ],
+   "v": "오에스아이 7계층이랑 티씨피 아이피 4계층, 어떻게 짝지어지는지 알아?",
+   "en": "Do you know how the 7 OSI layers map to the 4 TCP/IP layers?"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "OSI는 *교과서 지도*,\nTCP/IP는 *실제 도로*!",
+   "v": "오에스아이는 교과서에 나오는 설명용 지도, 티씨피 아이피는 실제 인터넷이 달리는 진짜 도로야!",
+   "en": "OSI is the textbook map; TCP/IP is the real road the internet drives on!"
+  },
+  {
+   "t": "steps",
+   "items": [
+    "응용 ← OSI *7 · 6 · 5* (응용·표현·세션)",
+    "전송 ← OSI *4* (전송)",
+    "인터넷 ← OSI *3* (네트워크)",
+    "네트워크 접근 ← OSI *2 · 1* (데이터링크·물리)"
+   ],
+   "v": "응용 계층은 오에스아이 5, 6, 7계층을 묶고, 전송은 4계층, 인터넷은 3계층, 네트워크 접근은 1, 2계층이야.",
+   "en": "Application covers OSI 5, 6, 7; Transport is 4; Internet is 3; Network Access is 1 and 2."
+  },
+  {
+   "t": "point",
+   "text": "위 3개 묶고, *아래 2개 묶고*!\n가운데는 1:1",
+   "v": "외우는 팁! 위에 세 개 묶고, 아래 두 개 묶고, 가운데는 일대일!",
+   "en": "Memory tip: group the top three, group the bottom two, the middle maps one-to-one!"
+  },
+  {
+   "t": "quiz",
+   "q": "TCP/IP 응용 계층은\nOSI *5·6·7계층*에 대응한다?",
+   "opts": [
+    "O",
+    "X"
+   ],
+   "ans": 0,
+   "v": "퀴즈! 티씨피 아이피 응용 계층은 오에스아이 5, 6, 7계층에 대응한다?",
+   "why": "세션·표현·응용을 *한 번에*!",
+   "why_v": "정답은 오! 세션, 표현, 응용을 한 번에 묶어.",
+   "en": "Quiz! The TCP/IP application layer maps to OSI layers 5, 6 and 7. True or false?",
+   "why_en": "True! It bundles session, presentation and application."
+  },
+  {
+   "t": "outro",
+   "v": "저장해두고 시험 전에 다시 봐! 매일 1분 컴공, 렝이었어!",
+   "en": "Save this and review it before your exam! One-minute CS every day, I'm Leng!"
+  }
+ ]
+}

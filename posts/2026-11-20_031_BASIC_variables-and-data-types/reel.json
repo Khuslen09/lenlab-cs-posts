@@ -1,0 +1,83 @@
+{
+ "n": 31,
+ "tag": "BASIC",
+ "guest": "blink",
+ "title": "변수와 자료형",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "3 + 4 = 7인데",
+    "*\"3\" + \"4\" = 34?*"
+   ],
+   "v": "삼 더하기 사는 칠인데, 왜 문자 삼 더하기 문자 사는 삼사가 될까?",
+   "en": "3 + 4 is 7, so why is '3' + '4' equal to 34?"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "변수는 *이름표 붙인 상자*,\n자료형은 *상자에 든 물건 종류*!",
+   "v": "변수는 이름표를 붙인 상자, 자료형은 그 상자에 든 물건의 종류야!",
+   "en": "A variable is a labeled box; a data type is the kind of thing inside it!"
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "🔢",
+     "t": "int",
+     "d": "정수"
+    },
+    {
+     "e": "🌊",
+     "t": "float",
+     "d": "실수"
+    },
+    {
+     "e": "🔤",
+     "t": "str",
+     "d": "문자열"
+    },
+    {
+     "e": "✅",
+     "t": "bool",
+     "d": "참/거짓"
+    }
+   ],
+   "v": "정수 인트, 실수 플로트, 문자열 스트링, 참 거짓 불! 자료형이 저장 방식과 할 수 있는 연산을 정해.",
+   "en": "int for integers, float for decimals, str for text, bool for true/false! The type decides storage and allowed operations."
+  },
+  {
+   "t": "code",
+   "code": "3 + 4       # → *7*\n\"3\" + \"4\"   # → *\"34\"*",
+   "v": "그래서 같은 더하기라도 숫자끼리는 덧셈, 문자열끼리는 이어 붙이기가 돼.",
+   "en": "So the same plus adds numbers but joins strings."
+  },
+  {
+   "t": "point",
+   "text": "연산의 의미는\n*자료형*이 정한다!",
+   "v": "연산의 의미는 자료형이 정한다! 이거 하나만 기억해.",
+   "en": "The data type decides what an operation means! Remember just that."
+  },
+  {
+   "t": "quiz",
+   "q": "\"2\" ＊ 3 의 결과는?",
+   "opts": [
+    "6",
+    "\"222\"",
+    "에러"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 파이썬에서 문자열 2 곱하기 3은?",
+   "why": "문자열 × 정수 = *반복*",
+   "why_v": "정답은 문자열 이이이! 문자열 곱하기는 반복이야.",
+   "en": "Quiz! In Python, what is '2' * 3?",
+   "why_en": "'222'! Multiplying a string repeats it."
+  },
+  {
+   "t": "outro",
+   "v": "저장 꾹! 팔로우하면 매일 개념 하나씩 떠먹여 줄게!",
+   "en": "Hit save! Follow me and I'll feed you one concept a day!"
+  }
+ ]
+}

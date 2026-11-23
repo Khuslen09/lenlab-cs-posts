@@ -1,0 +1,63 @@
+{
+ "n": 19,
+ "tag": "WEEKLY",
+ "guest": "chipko",
+ "title": "3주차 복습",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "3주차 개념 6개",
+    "*다 기억나?*"
+   ],
+   "v": "3주차 복습! 개념 여섯 개, 다 기억나?",
+   "en": "Week 3 review! Do you remember all six?"
+  },
+  {
+   "t": "steps",
+   "items": [
+    "⏱️ 빅오 — *증가율의 상한*",
+    "🥞 메모리 — 코드 · 데이터 · *힙 · 스택*",
+    "📶 아날로그 · 디지털 — *연속 vs 이산*",
+    "🔢 토큰화 · *임베딩*",
+    "🐟 클래스 *틀* · 객체 *실체*",
+    "📐 래스터 *픽셀* · 벡터 *수식*"
+   ],
+   "v": "빅오 표기법, 메모리 구조, 아날로그와 디지털, 토큰화와 임베딩, 클래스와 객체, 래스터와 벡터!",
+   "en": "Big-O, memory layout, analog vs digital, tokens and embeddings, classes and objects, raster vs vector!"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "제일 헷갈리는 건\n*static 변수*!",
+   "v": "이번 주 제일 헷갈리는 건 함수 안의 스태틱 변수야!",
+   "en": "This week's trickiest: static variables inside functions!"
+  },
+  {
+   "t": "point",
+   "text": "함수 안 static → *데이터 영역*\n함수가 끝나도 *값이 남아!*",
+   "v": "함수 안에 있어도 스태틱 변수는 스택이 아니라 데이터 영역! 그래서 값이 계속 남아.",
+   "en": "Even inside a function, a static variable lives in the data segment, not the stack — so its value stays."
+  },
+  {
+   "t": "quiz",
+   "q": "3n² + 100n 의 빅오는?",
+   "opts": [
+    "O(n)",
+    "O(n²)",
+    "O(100n)"
+   ],
+   "ans": 1,
+   "v": "마지막 퀴즈! 3 엔 제곱 더하기 100 엔의 빅오는?",
+   "why": "가장 큰 항만 → *O(n²)*",
+   "why_v": "정답은 엔 제곱! 가장 큰 항만 남겨.",
+   "en": "Last quiz! What's the Big-O of 3n² + 100n?",
+   "why_en": "n squared! Keep only the biggest term."
+  },
+  {
+   "t": "outro",
+   "v": "몇 개 맞혔는지 댓글로 알려 줘! 다음 주도 렝이랑 가자!",
+   "en": "Tell me your score! See you next week with Leng!"
+  }
+ ]
+}

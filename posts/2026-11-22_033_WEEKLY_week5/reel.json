@@ -1,0 +1,63 @@
+{
+ "n": 33,
+ "tag": "WEEKLY",
+ "guest": "chipko",
+ "title": "5주차 복습",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "5주차 개념 6개",
+    "*퀴즈로* 확인!"
+   ],
+   "v": "5주차 복습! 개념 여섯 개, 퀴즈로 바로 확인하자!",
+   "en": "Week 5 review! Let's check six concepts with a quiz!"
+  },
+  {
+   "t": "steps",
+   "items": [
+    "🥫 스택 *LIFO* · 큐 *FIFO*",
+    "🗄️ 폰 노이만 — *같은 메모리 · 병목*",
+    "🧹 정규화 — *1NF · 2NF · 3NF*",
+    "🎮 지도 · 비지도 · *강화*",
+    "🔤 변수 · *자료형*",
+    "🪪 인증 → *인가*"
+   ],
+   "v": "스택과 큐, 폰 노이만 구조, 정규화, 지도 비지도 강화 학습, 변수와 자료형, 인증과 인가!",
+   "en": "Stacks and queues, von Neumann architecture, normalization, supervised-unsupervised-reinforcement, variables and types, authentication and authorization!"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "제일 헷갈리는 건\n*인증 vs 인가* 순서!",
+   "v": "이번 주 제일 헷갈리는 건 인증이랑 인가의 순서야!",
+   "en": "This week's most confusing: the order of authentication and authorization!"
+  },
+  {
+   "t": "point",
+   "text": "*인증*(누구인지) 먼저\n→ *인가*(무엇을 할 수 있는지)",
+   "v": "누구인지 확인하는 인증이 먼저, 무엇을 할 수 있는지 정하는 인가가 그다음!",
+   "en": "First authentication — who are you; then authorization — what can you do!"
+  },
+  {
+   "t": "quiz",
+   "q": "BFS에 쓰는 자료구조는?",
+   "opts": [
+    "스택",
+    "큐",
+    "힙"
+   ],
+   "ans": 1,
+   "v": "마지막 퀴즈! 너비 우선 탐색, 비에프에스에 쓰는 자료구조는?",
+   "why": "가까운 것부터 차례로 → *큐*",
+   "why_v": "정답은 큐!",
+   "en": "Last quiz! Which data structure does BFS use?",
+   "why_en": "A queue!"
+  },
+  {
+   "t": "outro",
+   "v": "몇 개 맞혔는지 댓글로 알려 줘! 다음 주도 렝이랑!",
+   "en": "Tell me your score! Next week with Leng too!"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+🇰🇷 첫 달 개념 22개, 많이 틀리는 TOP 3! 🏆
+3위 스레드는 Stack을 공유하지 않음 · 2위 p→q는 대우(¬q→¬p)와만 동치 · 1위 튜플 안 리스트는 바뀜!
+
+🇺🇸 22 concepts in month one — the TOP 3 most missed! 🏆
+#3 threads don't share the stack · #2 p→q equals only its contrapositive (¬q→¬p) · #1 a list inside a tuple can change!
+
+🇲🇳 Эхний сарын 22 ойлголт — хамгийн их алддаг TOP 3! 🏆
+3-р байр: урсгалууд Stack-аа хуваалцдаггүй · 2-р байр: p→q зөвхөн эсрэг урвуу (¬q→¬p)-тайгаа тэнцүү чанартай · 1-р байр: tuple доторх list өөрчлөгдөнө!
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

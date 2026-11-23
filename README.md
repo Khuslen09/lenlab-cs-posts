@@ -7,6 +7,7 @@
 - `brand/` — 로고 (SVG, PNG)
 - `build.py` — `python build.py posts/<폴더> [--fonts <node_modules>]` 로 이미지 렌더 + 겹침/넘침 자동 검사
 - `build_story.py` — `story.html` → `<NNN>-story.png` (1080×1920, 다음 날 스토리에 올리는 퀴즈 정답 카드)
+- `reels/` — 게시물별 9:16 릴스(30~60초). 각 게시물 폴더의 `reel.json`(대본 + 영어 자막)과 `reel_caption.txt`(🇰🇷🇺🇸🇲🇳 캡션)를 `python3 reels/render.py posts/<폴더>`로 렌더 → `<NNN>-reel.mp4`(로컬 전용, 커밋 안 함). 규칙은 `reels/REELS.md`
 
 | # | 날짜 | 과목 | 주제 |
 |---|---|---|---|

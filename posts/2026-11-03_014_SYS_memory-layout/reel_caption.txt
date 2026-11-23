@@ -1,0 +1,17 @@
+🇰🇷 내 변수는 힙에 있을까, 스택에 있을까? 🥞
+코드 / 데이터(전역·static) / 힙(malloc·new) / 스택(지역 변수)
+👉 포인터 p 자체는 스택, p가 가리키는 malloc 공간은 힙!
+
+🇺🇸 Is your variable on the heap or the stack? 🥞
+Code / Data (globals·static) / Heap (malloc·new) / Stack (locals)
+👉 The pointer p itself is on the stack; the malloc'd memory it points to is on the heap!
+
+🇲🇳 Таны хувьсагч heap-д байна уу, stack-д байна уу? 🥞
+Код / Өгөгдөл (глобал·static) / Heap (malloc·new) / Stack (локал хувьсагч)
+👉 p заагч өөрөө stack-д, харин p-ийн заасан malloc санах ой heap-д байна!
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

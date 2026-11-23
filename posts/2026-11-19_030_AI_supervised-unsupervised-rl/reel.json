@@ -1,0 +1,83 @@
+{
+ "n": 30,
+ "tag": "AI",
+ "guest": null,
+ "title": "지도 · 비지도 · 강화학습",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "지도 · 비지도 · 강화",
+    "*한 번에* 구분하는 법"
+   ],
+   "v": "지도 학습, 비지도 학습, 강화 학습! 한 방에 구분하는 법 알려 줄게.",
+   "en": "Supervised, unsupervised, reinforcement learning — here's how to tell them apart instantly."
+  },
+  {
+   "t": "bubble",
+   "who": "leng",
+   "pose": "explain",
+   "b": "*무엇으로* 배우는지만\n보면 돼!",
+   "v": "딱 하나만 보면 돼. 무엇으로 배우냐!",
+   "en": "Just ask one thing: what does it learn from?"
+  },
+  {
+   "t": "steps",
+   "items": [
+    "📝 지도 — *정답(라벨)*으로 배움",
+    "🔍 비지도 — 정답 없이 *구조 찾기*",
+    "🎮 강화 — *보상*을 최대화"
+   ],
+   "v": "정답지를 보고 배우면 지도, 정답 없이 비슷한 것끼리 묶으면 비지도, 게임처럼 점수를 많이 받도록 배우면 강화 학습!",
+   "en": "Learn from an answer key: supervised. Group similar things without answers: unsupervised. Learn to maximize points like a game: reinforcement!"
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "📧",
+     "t": "스팸 분류",
+     "d": "지도"
+    },
+    {
+     "e": "👥",
+     "t": "고객 그룹",
+     "d": "비지도"
+    },
+    {
+     "e": "♟️",
+     "t": "알파고",
+     "d": "강화"
+    }
+   ],
+   "v": "스팸 분류는 지도, 고객 그룹 나누기는 비지도, 알파고는 강화!",
+   "en": "Spam filtering is supervised, customer grouping is unsupervised, AlphaGo is reinforcement!"
+  },
+  {
+   "t": "point",
+   "text": "분류 · 회귀는\n*둘 다 지도 학습!*",
+   "v": "그리고 분류랑 회귀는 둘 다 지도 학습이야!",
+   "en": "And classification and regression are both supervised learning!"
+  },
+  {
+   "t": "quiz",
+   "q": "집값 예측(회귀)은\n어떤 학습?",
+   "opts": [
+    "지도",
+    "비지도",
+    "강화"
+   ],
+   "ans": 0,
+   "v": "퀴즈! 집값을 예측하는 회귀 문제는 어떤 학습일까?",
+   "why": "정답(실제 집값)이 있음 → *지도*",
+   "why_v": "정답은 지도 학습! 실제 집값이라는 정답이 있으니까.",
+   "en": "Quiz! Predicting house prices (regression) is which type?",
+   "why_en": "Supervised! The real prices are the answer key."
+  },
+  {
+   "t": "outro",
+   "v": "헷갈리는 친구한테 공유해 줘! 내일 또 1분만 줘!",
+   "en": "Share this with a friend who mixes these up! Give me one more minute tomorrow!"
+  }
+ ]
+}

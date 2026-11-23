@@ -1,0 +1,84 @@
+{
+ "n": 27,
+ "tag": "DS",
+ "guest": "blink",
+ "title": "스택 vs 큐",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "스택 vs *큐*",
+    "꺼내는 순서 말할 수 있어?"
+   ],
+   "v": "스택이랑 큐, 꺼내는 순서 바로 말할 수 있어?",
+   "en": "Stack vs queue — can you say the order things come out?"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "스택은 *프링글스*,\n큐는 *맛집 줄서기*!",
+   "v": "스택은 프링글스 통! 마지막에 넣은 게 먼저 나와. 큐는 맛집 줄서기! 먼저 온 사람이 먼저 들어가.",
+   "en": "A stack is a Pringles can — last in, first out! A queue is a restaurant line — first come, first served!"
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "🥫",
+     "t": "스택 LIFO",
+     "d": "top으로만\n넣고 빼기\n*나중에 넣은 게 먼저*"
+    },
+    {
+     "e": "🚶",
+     "t": "큐 FIFO",
+     "d": "뒤로 넣고\n앞에서 빼기\n*먼저 넣은 게 먼저*"
+    }
+   ],
+   "v": "스택은 한쪽 끝으로만 넣고 빼는 라이포, 큐는 뒤로 넣고 앞에서 빼는 파이포야.",
+   "en": "A stack adds and removes from one end — LIFO. A queue adds at the back and removes from the front — FIFO."
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "↩️",
+     "t": "스택",
+     "d": "DFS · 함수 호출\n되돌리기 Ctrl+Z"
+    },
+    {
+     "e": "⏳",
+     "t": "큐",
+     "d": "BFS · 대기열\n프린터 작업"
+    }
+   ],
+   "v": "디에프에스, 함수 호출, 되돌리기는 스택! 비에프에스랑 대기열은 큐!",
+   "en": "DFS, function calls and undo use stacks! BFS and waiting lines use queues!"
+  },
+  {
+   "t": "code",
+   "code": "list.pop(0)  # 느림 O(n)\n*deque.popleft()*  # O(1)",
+   "v": "파이썬 꿀팁! 큐는 리스트 팝 영 말고 데크를 써.",
+   "en": "Python tip: for queues, use deque instead of list.pop(0)."
+  },
+  {
+   "t": "quiz",
+   "q": "1, 2, 3을 스택에 넣고\n하나 꺼내면?",
+   "opts": [
+    "1",
+    "2",
+    "3"
+   ],
+   "ans": 2,
+   "v": "퀴즈! 1, 2, 3 순서로 스택에 넣고 하나를 꺼내면?",
+   "why": "LIFO → 마지막에 넣은 *3*!",
+   "why_v": "정답은 3! 마지막에 넣은 게 먼저 나와.",
+   "en": "Quiz! Push 1, 2, 3 onto a stack and pop one. What comes out?",
+   "why_en": "3! The last one in comes out first."
+  },
+  {
+   "t": "outro",
+   "v": "헷갈리는 친구한테 공유해 줘! 내일 또 1분만 줘!",
+   "en": "Share this with a friend who mixes these up! Give me one more minute tomorrow!"
+  }
+ ]
+}

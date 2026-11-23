@@ -1,0 +1,68 @@
+{
+ "n": 28,
+ "tag": "ARCH",
+ "guest": "chipko",
+ "title": "폰 노이만 구조",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "CPU는 빠른데",
+    "컴퓨터는 *왜 기다릴까?*"
+   ],
+   "v": "CPU는 엄청 빠른데, 왜 컴퓨터는 자꾸 기다릴까?",
+   "en": "The CPU is blazing fast — so why does the computer keep waiting?"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "명령어랑 데이터가\n*같은 창고*에 있어!",
+   "v": "폰 노이만 구조에서는 명령어랑 데이터가 같은 창고 하나에 들어 있어!",
+   "en": "In the von Neumann architecture, instructions and data live in the same warehouse!"
+  },
+  {
+   "t": "steps",
+   "items": [
+    "🗄️ 명령어 + 데이터 → *같은 메모리*",
+    "🔁 CPU가 하나씩 가져와 *순서대로 실행*",
+    "💡 배선 대신 *프로그램만 바꾸면* 새 일!"
+   ],
+   "v": "CPU가 메모리에서 하나씩 가져와 순서대로 실행해. 덕분에 배선을 안 바꾸고 프로그램만 바꿔서 다른 일을 시킬 수 있어.",
+   "en": "The CPU fetches them one by one and runs them in order — so you can change the job just by changing the program, not the wiring."
+  },
+  {
+   "t": "bubble",
+   "who": "leng",
+   "pose": "think",
+   "b": "근데 통로가 *하나*라\n길이 막혀!",
+   "v": "문제는 명령어랑 데이터가 같은 통로, 버스를 쓴다는 거야. 그래서 CPU가 메모리를 기다리는 병목이 생겨!",
+   "en": "The problem: instructions and data share one road, the bus. So the CPU waits on memory — a bottleneck!"
+  },
+  {
+   "t": "point",
+   "text": "메모리를 *따로* 나누면\n→ *하버드 구조*",
+   "v": "명령어 메모리와 데이터 메모리를 따로 나누면? 그게 하버드 구조야!",
+   "en": "Split instruction memory and data memory? That's the Harvard architecture!"
+  },
+  {
+   "t": "quiz",
+   "q": "폰 노이만 병목의 원인은?",
+   "opts": [
+    "CPU가 느려서",
+    "같은 버스를 공유해서",
+    "메모리가 너무 커서"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 폰 노이만 병목의 원인은?",
+   "why": "명령어·데이터가 *같은 통로*!",
+   "why_v": "정답은 2번! 같은 버스를 같이 쓰니까.",
+   "en": "Quiz! What causes the von Neumann bottleneck?",
+   "why_en": "Number 2! They share the same bus."
+  },
+  {
+   "t": "outro",
+   "v": "저장 꾹! 팔로우하면 매일 개념 하나씩 떠먹여 줄게!",
+   "en": "Hit save! Follow me and I'll feed you one concept a day!"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+🇰🇷 CPU는 빠른데 컴퓨터는 왜 기다릴까? 🗄️
+명령어와 데이터가 같은 메모리 → 같은 버스 → 병목!
+👉 메모리를 따로 나누면 하버드 구조.
+
+🇺🇸 The CPU is fast — so why does the computer wait? 🗄️
+Instructions and data share one memory → one bus → bottleneck!
+👉 Split the memories and you get the Harvard architecture.
+
+🇲🇳 CPU хурдан атал компьютер яагаад хүлээдэг вэ? 🗄️
+Заавар ба өгөгдөл нэг санах ойд → нэг шин (bus) → гацаа!
+👉 Санах ойг тусад нь хуваавал Харвардын бүтэц болно.
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

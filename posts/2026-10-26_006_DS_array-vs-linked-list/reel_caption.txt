@@ -1,0 +1,17 @@
+🇰🇷 배열 vs 연결 리스트, 언제 뭘 써? 🏢
+배열 = 아파트 호수(인덱스로 바로), 리스트 = 보물찾기 쪽지(따라가기).
+👉 조회는 배열 O(1), 리스트 삽입·삭제 O(1)은 위치를 알 때만!
+
+🇺🇸 Array vs linked list — when to use which? 🏢
+Array = apartment numbers (jump straight in); list = a treasure hunt (follow the notes).
+👉 Lookup is O(1) for arrays; list insert/delete is O(1) only if you already know the spot!
+
+🇲🇳 Массив ба холбоост жагсаалт — хэзээ алийг нь ашиглах вэ? 🏢
+Массив = орон сууцны дугаар (индексээр шууд), жагсаалт = эрдэнэ хайх тэмдэглэл (дараалан дагах).
+👉 Хандалт: массив O(1); жагсаалтын оруулах·устгах O(1) нь байрлалаа мэдэж байвал л!
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

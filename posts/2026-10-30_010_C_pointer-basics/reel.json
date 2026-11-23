@@ -1,0 +1,72 @@
+{
+ "n": 10,
+ "tag": "C",
+ "guest": "chipko",
+ "title": "C 포인터 & 와 *",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "C 포인터",
+    "*&* 랑 *＊* 구분 돼?"
+   ],
+   "v": "C 포인터에서 앰퍼샌드랑 별표, 아직도 헷갈려?",
+   "en": "C pointers: still mixing up & and *?"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "포인터는\n*집 주소 적힌 쪽지*야!",
+   "v": "포인터는 값 대신 집 주소가 적힌 쪽지야! 쪽지를 보고 그 집에 찾아가는 거지.",
+   "en": "A pointer is a note with a house address on it — you read it and go to that house!"
+  },
+  {
+   "t": "code",
+   "code": "int x = 10;\nint ＊p = *&x*;   // x의 주소\n*＊p* = 20;       // x가 20으로!",
+   "v": "앰퍼샌드 엑스로 엑스의 주소를 얻고, 별표 피로 그 주소에 가서 값을 읽거나 바꿔.",
+   "en": "&x gets the address of x, and *p goes to that address to read or change the value."
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "📮",
+     "t": "&",
+     "d": "값 → *주소*\n어디 살아?"
+    },
+    {
+     "e": "🏠",
+     "t": "＊",
+     "d": "주소 → *값*\n찾아가기"
+    }
+   ],
+   "v": "정리하면 앰퍼샌드는 값에서 주소로, 별표는 주소에서 값으로!",
+   "en": "In short: & turns a value into an address, * turns an address into a value!"
+  },
+  {
+   "t": "point",
+   "text": "＊p를 바꾸면\n*가리키는 변수*가 바뀐다!",
+   "v": "그래서 별표 피를 바꾸면, 피가 가리키는 변수 엑스가 바뀌는 거야.",
+   "en": "So changing *p changes x, the variable p points to."
+  },
+  {
+   "t": "quiz",
+   "q": "＊p = 20; 을 하면\n*x 값*이 바뀐다?",
+   "opts": [
+    "O",
+    "X"
+   ],
+   "ans": 0,
+   "v": "퀴즈! 피가 엑스를 가리킬 때 별표 피에 20을 넣으면 엑스가 바뀐다?",
+   "why": "역참조로 *x 자체*를 수정!",
+   "why_v": "정답은 오! 주소로 찾아가서 엑스 자체를 바꾼 거야.",
+   "en": "Quiz! If p points to x, does *p = 20 change x?",
+   "why_en": "True! You went to the address and changed x itself."
+  },
+  {
+   "t": "outro",
+   "v": "저장 꾹! 팔로우하면 매일 개념 하나씩 떠먹여 줄게!",
+   "en": "Hit save! Follow me and I'll feed you one concept a day!"
+  }
+ ]
+}

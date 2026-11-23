@@ -1,0 +1,83 @@
+{
+ "n": 4,
+ "tag": "BASIC",
+ "guest": "blink",
+ "title": "컴파일 vs 인터프리터",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "C는 실행도 안 되는데",
+    "Python은 *왜 돌아가?*"
+   ],
+   "v": "C는 오류 하나면 실행도 안 되는데, 파이썬은 왜 일단 돌아갈까?",
+   "en": "One error and C won't even run — so why does Python start anyway?"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "컴파일은 *책 통번역*,\n인터프리터는 *동시통역*!",
+   "v": "컴파일은 책 한 권을 통째로 번역해 두는 거고, 인터프리터는 동시통역사처럼 한 줄씩 바로바로 통역하는 거야!",
+   "en": "Compiling is translating a whole book in advance; an interpreter is a live interpreter, line by line!"
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "📕",
+     "t": "컴파일 언어",
+     "d": "실행 전에\n전체를 기계어로\n번역 → 실행 파일"
+    },
+    {
+     "e": "🎙️",
+     "t": "인터프리터 언어",
+     "d": "실행하면서\n한 줄씩 번역하고\n바로 실행"
+    }
+   ],
+   "v": "컴파일 언어는 실행 전에 전체를 기계어로 바꿔서 실행 파일을 만들고, 인터프리터 언어는 실행하면서 한 줄씩 번역해.",
+   "en": "Compiled languages turn the whole source into machine code first; interpreted languages translate line by line while running."
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "🛑",
+     "t": "C",
+     "d": "번역 단계에서\n바로 멈춤"
+    },
+    {
+     "e": "🏃",
+     "t": "Python",
+     "d": "오류 줄에\n도착해서야 멈춤"
+    }
+   ],
+   "v": "그래서 C는 오류가 있으면 번역 단계에서 멈추고, 파이썬은 그 줄에 도착해서야 멈춰!",
+   "en": "So C stops at the build step, while Python stops only when it reaches the bad line!"
+  },
+  {
+   "t": "point",
+   "text": "컴파일 = *한 번에 번역*\n인터프리터 = *한 줄씩 번역*",
+   "v": "한 번에 번역이냐, 한 줄씩 번역이냐! 이것만 기억해.",
+   "en": "All at once, or line by line — just remember that."
+  },
+  {
+   "t": "quiz",
+   "q": "Python은 실행 전에\n*전체를 기계어로* 번역한다?",
+   "opts": [
+    "O",
+    "X"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 파이썬은 실행 전에 전체를 기계어로 번역한다?",
+   "why": "Python은 *인터프리터* 방식!",
+   "why_v": "정답은 엑스! 파이썬은 실행하면서 한 줄씩 번역하는 인터프리터 방식이야.",
+   "en": "Quiz! Python translates everything into machine code before running. True or false?",
+   "why_en": "False! Python is interpreted, line by line as it runs."
+  },
+  {
+   "t": "outro",
+   "v": "저장해두고 시험 전에 다시 봐! 매일 1분 컴공, 렝이었어!",
+   "en": "Save this and review it before your exam! One-minute CS every day, I'm Leng!"
+  }
+ ]
+}

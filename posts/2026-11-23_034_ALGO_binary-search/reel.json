@@ -1,0 +1,66 @@
+{
+ "n": 34,
+ "tag": "ALGO",
+ "guest": "blink",
+ "title": "이진 탐색",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "100만 개 중에서",
+    "*20번*만에 찾는 법"
+   ],
+   "v": "백만 개 중에서 딱 스무 번 만에 원하는 걸 찾는 방법이 있다고?",
+   "en": "Find one item among a million in just 20 tries?"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "*업다운 게임*\n해 봤지?",
+   "v": "업다운 게임 해 봤지? 1부터 100 중에 50 부르고, 업이면 위쪽 절반만 보는 거!",
+   "en": "Ever played up-down? Guess 50 out of 100, and if it's 'up', check only the upper half!"
+  },
+  {
+   "t": "steps",
+   "items": [
+    "🎯 가운데 값과 비교",
+    "⬆️ 찾는 값이 크면 → *오른쪽 절반*",
+    "⬇️ 작으면 → *왼쪽 절반*",
+    "🔁 범위가 *절반씩* 줄어듦"
+   ],
+   "v": "정렬된 배열에서 가운데 값과 비교해서, 크면 오른쪽, 작으면 왼쪽! 매번 절반씩 버려.",
+   "en": "In a sorted array, compare with the middle: bigger goes right, smaller goes left. Throw away half every time!"
+  },
+  {
+   "t": "code",
+   "code": "while lo <= hi:\n  mid = (lo + hi) // 2\n  if a[mid] < x: *lo = mid + 1*\n  else:          *hi = mid - 1*",
+   "v": "코드로는 작으면 로우를 미드 더하기 일, 크면 하이를 미드 빼기 일. 조건은 로우가 하이보다 작거나 같을 때!",
+   "en": "In code: if smaller, lo = mid + 1; if bigger, hi = mid − 1; loop while lo ≤ hi!"
+  },
+  {
+   "t": "point",
+   "text": "*O(log n)* — 100만 개도 *최대 20번*\n단, *정렬된 배열*이 전제!",
+   "v": "그래서 오 로그 엔! 단, 반드시 정렬된 배열이어야 해.",
+   "en": "That's O(log n)! But the array must be sorted."
+  },
+  {
+   "t": "quiz",
+   "q": "정렬 안 된 배열에도\n이진 탐색을 쓸 수 있다?",
+   "opts": [
+    "O",
+    "X"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 정렬 안 된 배열에도 이진 탐색을 쓸 수 있다?",
+   "why": "*정렬*이 전제 조건!",
+   "why_v": "정답은 엑스! 정렬이 안 되어 있으면 절반을 버릴 수가 없어.",
+   "en": "Quiz! Binary search works on an unsorted array. True or false?",
+   "why_en": "False! Unsorted, you can't throw away half."
+  },
+  {
+   "t": "outro",
+   "v": "헷갈리는 친구한테 공유해 줘! 내일 또 1분만 줘!",
+   "en": "Share this with a friend who mixes these up! Give me one more minute tomorrow!"
+  }
+ ]
+}

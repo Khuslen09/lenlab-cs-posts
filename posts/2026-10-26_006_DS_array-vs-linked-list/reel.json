@@ -1,0 +1,74 @@
+{
+ "n": 6,
+ "tag": "DS",
+ "guest": "blink",
+ "title": "배열 vs 연결 리스트",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "배열 vs *연결 리스트*",
+    "언제 뭘 써야 해?"
+   ],
+   "v": "배열이랑 연결 리스트, 언제 뭘 써야 하는지 헷갈리지?",
+   "en": "Array vs linked list — not sure when to use which?"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "배열은 *아파트 호수*,\n리스트는 *보물찾기 쪽지*!",
+   "v": "배열은 아파트 호수처럼 번호만 알면 바로 찾아가고, 연결 리스트는 보물찾기처럼 쪽지를 따라가야 해!",
+   "en": "An array is like apartment numbers; a linked list is a treasure hunt where you follow the notes!"
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "🏢",
+     "t": "배열",
+     "d": "연속된 메모리에\n차례로 저장\n인덱스로 바로!"
+    },
+    {
+     "e": "🧩",
+     "t": "연결 리스트",
+     "d": "노드 = 데이터\n+ 다음 주소\n포인터로 이어 붙임"
+    }
+   ],
+   "v": "배열은 연속된 메모리에 차례로 저장해서 인덱스로 바로 꺼내고, 연결 리스트는 데이터와 다음 주소를 담은 노드를 줄줄이 이어 붙여.",
+   "en": "Arrays store items side by side in memory for instant index access; linked lists chain nodes holding data plus the next address."
+  },
+  {
+   "t": "code",
+   "code": "조회      배열 *O(1)*  리스트 O(n)\n삽입·삭제  배열 O(n)   리스트 *O(1)*",
+   "v": "그래서 조회는 배열이 빠르고, 삽입과 삭제는 리스트가 빨라.",
+   "en": "So lookups are faster with arrays, and inserts and deletes are faster with lists."
+  },
+  {
+   "t": "bubble",
+   "who": "leng",
+   "pose": "surprise",
+   "b": "단, 리스트 O(1)은\n*위치를 알 때만!*",
+   "v": "근데 함정! 리스트 삽입이 빠른 건 위치를 이미 알고 있을 때만이야.",
+   "en": "The catch: list inserts are fast only when you already know the position!"
+  },
+  {
+   "t": "quiz",
+   "q": "연결 리스트의\nk번째 접근은 *O(1)*이다?",
+   "opts": [
+    "O",
+    "X"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 연결 리스트에서 k번째 원소 접근은 오 일이다?",
+   "why": "head부터 따라가야 해서 *O(n)*",
+   "why_v": "정답은 엑스! 처음부터 쪽지를 따라가야 해서 오 엔이야.",
+   "en": "Quiz! Accessing the k-th element of a linked list is O(1). True or false?",
+   "why_en": "False! You follow the notes from the head, so it's O(n)."
+  },
+  {
+   "t": "outro",
+   "v": "헷갈리는 친구한테 공유해 줘! 내일 또 1분만 줘!",
+   "en": "Share this with a friend who mixes these up! Give me one more minute tomorrow!"
+  }
+ ]
+}

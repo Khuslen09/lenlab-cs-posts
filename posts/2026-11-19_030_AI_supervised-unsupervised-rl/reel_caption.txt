@@ -1,0 +1,17 @@
+🇰🇷 지도·비지도·강화학습, 한 번에 구분하는 법! 🎮
+정답으로 배우면 지도, 정답 없으면 비지도, 보상으로 배우면 강화.
+👉 분류·회귀는 둘 다 지도 학습!
+
+🇺🇸 Supervised, unsupervised, reinforcement — tell them apart instantly! 🎮
+Learn from labels → supervised; no labels → unsupervised; learn from rewards → reinforcement.
+👉 Classification and regression are both supervised!
+
+🇲🇳 Хяналттай, хяналтгүй, бататгах сургалтыг нэг дор ялгах арга! 🎮
+Зөв хариултаас суралцвал хяналттай, хариултгүй бол хяналтгүй, шагналаас суралцвал бататгах сургалт.
+👉 Ангилал ба регресс хоёулаа хяналттай сургалт!
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스
