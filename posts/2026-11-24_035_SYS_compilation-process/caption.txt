@@ -1,0 +1,29 @@
+🇰🇷 hello.c가 실행 파일이 되기까지 4단계, 말할 수 있어?
+⠀
+전처리로 #include·#define을 풀고, 컴파일로 C를 어셈블리어로 번역해요.
+어셈블로 기계어(.o)를 만들고, 링크로 라이브러리와 묶어 실행 파일이 돼요.
+⠀
+👉 전처리 → 컴파일 → 어셈블 → 링크! undefined reference는 링크 단계 에러예요.
+⠀
+⠀
+🇺🇸 From hello.c to an executable — can you name the 4 steps?
+⠀
+Preprocessing expands #include and #define, then compiling turns C into assembly.
+Assembling makes machine code (.o), and linking joins it with libraries into an executable.
+⠀
+👉 Preprocess → Compile → Assemble → Link! undefined reference is a linker error.
+⠀
+⠀
+🇲🇳 hello.c гүйцэтгэх файл болох 4 үе шатыг хэлж чадах уу?
+⠀
+Урьдчилсан боловсруулалт #include, #define-ийг задалж, хөрвүүлэлт C кодыг ассемблер хэл рүү орчуулна.
+Ассемблер машин код (.o) үүсгэж, холбогч (linker) түүнийг сантай нийлүүлж гүйцэтгэх файл болгоно.
+⠀
+👉 Урьдчилсан боловсруулалт → Хөрвүүлэлт → Ассемблердах → Холбох! undefined reference бол холбох үеийн алдаа.
+⠀
+⠀
+✅ 어제 퀴즈 정답: ③ 11 — 처음 가운데 7보다 9가 커서 오른쪽 [9, 11, 13]으로 가고, 그 가운데 11을 확인해요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #SYSlenlab #Compilationlenlab
