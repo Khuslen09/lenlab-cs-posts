@@ -1,0 +1,17 @@
+🇰🇷 AI는 글자를 어떻게 숫자로 이해할까? 🔢
+문장 → 토큰 → ID → 벡터!
+👉 학습된 임베딩에서는 뜻이 비슷한 단어끼리 벡터도 가까워요.
+
+🇺🇸 How does AI turn words into numbers? 🔢
+Sentence → tokens → IDs → vectors!
+👉 In trained embeddings, words with similar meanings have nearby vectors.
+
+🇲🇳 Хиймэл оюун ухаан үгийг хэрхэн тоо болгож ойлгодог вэ? 🔢
+Өгүүлбэр → токен → ID → вектор!
+👉 Сургагдсан эмбеддингт утга ойролцоо үгсийн векторууд ч ойрхон байдаг.
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

@@ -1,0 +1,82 @@
+{
+ "n": 22,
+ "tag": "CLOUD",
+ "guest": "blink",
+ "title": "IaaS vs PaaS vs SaaS",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "IaaS, PaaS, SaaS",
+    "*피자*로 끝내자"
+   ],
+   "v": "이아스, 파스, 사스. 피자 하나로 끝내 줄게!",
+   "en": "IaaS, PaaS, SaaS — I'll explain it with pizza!"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "주방만 빌릴래?\n*배달* 시킬래?",
+   "v": "피자 먹을 때 주방만 빌릴 수도 있고, 배달시킬 수도 있잖아? 그거야!",
+   "en": "You can rent just a kitchen, or you can order delivery. That's the idea!"
+  },
+  {
+   "t": "steps",
+   "items": [
+    "🏗️ IaaS — 서버만 빌림, *OS부터 내가*",
+    "🍕 PaaS — *코드만 올리면* 돌려 줌",
+    "📱 SaaS — 완성된 SW *그냥 씀*"
+   ],
+   "v": "이아스는 주방만 빌리는 것, 오에스부터 내가 관리해. 파스는 재료만 가져가면 구워 주는 것, 코드만 올리면 돼. 사스는 배달, 완성품을 그냥 써!",
+   "en": "IaaS rents the kitchen — you manage from the OS up. PaaS bakes whatever you bring — just upload code. SaaS is delivery — use the finished product!"
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "☁️",
+     "t": "IaaS",
+     "d": "AWS EC2"
+    },
+    {
+     "e": "🚀",
+     "t": "PaaS",
+     "d": "Heroku"
+    },
+    {
+     "e": "📧",
+     "t": "SaaS",
+     "d": "Gmail"
+    }
+   ],
+   "v": "예를 들면 이씨투는 이아스, 헤로쿠는 파스, 지메일은 사스!",
+   "en": "For example: EC2 is IaaS, Heroku is PaaS, Gmail is SaaS!"
+  },
+  {
+   "t": "point",
+   "text": "헷갈리면 *누가 OS를 관리하나?*\nIaaS = 나 · PaaS·SaaS = *업체*",
+   "v": "헷갈리면 누가 오에스를 관리하나부터 생각해!",
+   "en": "If you're stuck, ask: who manages the OS?"
+  },
+  {
+   "t": "quiz",
+   "q": "앱과 데이터만 내가 관리,\n나머지는 업체가 하는 건?",
+   "opts": [
+    "IaaS",
+    "PaaS",
+    "SaaS"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 앱이랑 데이터만 내가 관리하고, 서버, 오에스, 런타임은 업체가 맡는 건?",
+   "why": "코드만 올리면 끝 → *PaaS*",
+   "why_v": "정답은 파스!",
+   "en": "Quiz! You manage only your app and data; the vendor runs servers, OS and runtime. Which is it?",
+   "why_en": "PaaS!"
+  },
+  {
+   "t": "outro",
+   "v": "저장해두고 시험 전에 다시 봐! 매일 1분 컴공, 렝이었어!",
+   "en": "Save this and review it before your exam! One-minute CS every day, I'm Leng!"
+  }
+ ]
+}

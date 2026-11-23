@@ -1,0 +1,17 @@
+🇰🇷 면접 단골! 프로세스 vs 스레드, 3초 안에 설명 가능? 🧵
+프로세스 = 식당 하나, 스레드 = 그 안의 요리사.
+👉 Code·Data·Heap은 공유, Stack·레지스터(PC)는 스레드마다 따로!
+
+🇺🇸 Interview classic: process vs thread in 3 seconds? 🧵
+Process = a restaurant, threads = the cooks inside it.
+👉 Code·Data·Heap are shared; each thread has its own Stack and registers (PC).
+
+🇲🇳 Ярилцлагын байнгын асуулт: процесс ба урсгалыг 3 секундэд тайлбарлаж чадах уу? 🧵
+Процесс = нэг ресторан, урсгал = түүн доторх тогооч нар.
+👉 Code·Data·Heap-ийг хуваалцана, харин Stack болон регистр (PC) урсгал бүрт тусдаа!
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

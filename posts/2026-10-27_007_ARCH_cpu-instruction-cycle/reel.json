@@ -1,0 +1,76 @@
+{
+ "n": 7,
+ "tag": "ARCH",
+ "guest": "chipko",
+ "title": "CPU 명령어 사이클",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "CPU는 명령어를",
+    "*어떻게* 실행할까?"
+   ],
+   "v": "CPU는 1초에 수십억 번 일하는데, 명령어 하나를 어떻게 처리할까?",
+   "en": "A CPU works billions of times per second — but how does it run one instruction?"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "CPU 안엔 *계산기, 지휘자,\n초고속 메모장*이 있어!",
+   "v": "내 안에는 계산하는 ALU, 명령을 해석하는 제어장치, 초고속 메모장인 레지스터가 있어!",
+   "en": "Inside me there's an ALU for math, a control unit that decodes, and super-fast notepads called registers!"
+  },
+  {
+   "t": "steps",
+   "items": [
+    "📥 인출 Fetch — 명령어 *가져오기*",
+    "🔍 해독 Decode — 무슨 뜻인지 *해석*",
+    "⚡ 실행 Execute — 진짜 *실행*"
+   ],
+   "v": "그리고 명령어는 가져오고, 해석하고, 실행하고! 이 세 단계를 계속 반복해.",
+   "en": "And every instruction goes: fetch, decode, execute — over and over."
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "📍",
+     "t": "PC",
+     "d": "*다음* 명령어의\n주소"
+    },
+    {
+     "e": "📄",
+     "t": "IR",
+     "d": "*지금* 실행할\n명령어 자체"
+    }
+   ],
+   "v": "여기서 헷갈리는 거! 피씨는 다음 명령어의 주소, 아이알은 지금 실행할 명령어 자체야.",
+   "en": "The tricky part: PC holds the address of the next instruction, IR holds the instruction itself."
+  },
+  {
+   "t": "point",
+   "text": "Fetch → Decode → Execute\nPC = *주소*, IR = *명령어*",
+   "v": "인출, 해독, 실행! 피씨는 주소, 아이알은 명령어. 끝!",
+   "en": "Fetch, decode, execute! PC is an address, IR is the instruction. Done!"
+  },
+  {
+   "t": "quiz",
+   "q": "PC에는 지금 실행할\n*명령어 자체*가 있다?",
+   "opts": [
+    "O",
+    "X"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 피씨에는 지금 실행할 명령어 자체가 저장된다?",
+   "why": "명령어 자체는 *IR*에!",
+   "why_v": "정답은 엑스! 피씨는 다음 명령어 주소, 명령어 자체는 아이알에 있어.",
+   "en": "Quiz! The PC stores the instruction being executed. True or false?",
+   "why_en": "False! PC holds the next address; the instruction itself is in IR."
+  },
+  {
+   "t": "outro",
+   "v": "저장 꾹! 팔로우하면 매일 개념 하나씩 떠먹여 줄게!",
+   "en": "Hit save! Follow me and I'll feed you one concept a day!"
+  }
+ ]
+}

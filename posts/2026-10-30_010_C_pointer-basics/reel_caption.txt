@@ -1,0 +1,17 @@
+🇰🇷 C 포인터, &랑 * 구분 돼? 📮
+포인터 = 집 주소가 적힌 쪽지.
+👉 & = 값 → 주소, * = 주소 → 값! *p를 바꾸면 가리키는 변수가 바뀌어요.
+
+🇺🇸 C pointers: can you tell & from *? 📮
+A pointer is a note with a house address on it.
+👉 & = value → address, * = address → value! Change *p and the variable it points to changes.
+
+🇲🇳 C хэлний заагч: & ба * хоёрыг ялгаж чадах уу? 📮
+Заагч = гэрийн хаяг бичсэн тэмдэглэл.
+👉 & = утга → хаяг, * = хаяг → утга! *p-г өөрчилбөл заасан хувьсагч нь өөрчлөгдөнө.
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

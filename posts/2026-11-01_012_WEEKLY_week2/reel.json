@@ -1,0 +1,63 @@
+{
+ "n": 12,
+ "tag": "WEEKLY",
+ "guest": "chipko",
+ "title": "2주차 복습",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "2주차 개념 6개",
+    "*30초* 만에 복습!"
+   ],
+   "v": "2주차 복습! 개념 여섯 개, 30초 만에 털고 가자!",
+   "en": "Week 2 review! Six concepts in 30 seconds — let's go!"
+  },
+  {
+   "t": "steps",
+   "items": [
+    "🏢 배열 *O(1) 조회* · 리스트 *O(1) 삽입*",
+    "⚡ CPU — *인출 → 해독 → 실행*",
+    "🌐 OSI 7 ↔ *TCP/IP 4*",
+    "🧠 퍼셉트론 + *활성화 함수*",
+    "📮 포인터 — *& 주소, ＊ 값*",
+    "🔒 보안 — *C · I · A*"
+   ],
+   "v": "배열과 연결 리스트, CPU 명령어 사이클, 네트워크 계층, 퍼셉트론, 포인터, 그리고 보안의 3요소!",
+   "en": "Arrays vs linked lists, the CPU instruction cycle, network layers, perceptrons, pointers, and the CIA triad!"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "제일 헷갈리는 건\n*PC vs IR*!",
+   "v": "이번 주 최고 난이도는 바로 피씨랑 아이알이야!",
+   "en": "This week's hardest one: PC versus IR!"
+  },
+  {
+   "t": "point",
+   "text": "PC = *다음 명령어의 주소*\nIR = *명령어 자체*",
+   "v": "피씨는 명령어가 아니라 다음 명령어의 주소! 명령어 자체는 아이알에 있어.",
+   "en": "PC isn't the instruction — it's the address of the next one! The instruction itself lives in IR."
+  },
+  {
+   "t": "quiz",
+   "q": "&x 가 돌려주는 것은?",
+   "opts": [
+    "x의 값",
+    "x의 주소",
+    "x의 크기"
+   ],
+   "ans": 1,
+   "v": "마지막 퀴즈! 앰퍼샌드 엑스가 돌려주는 건?",
+   "why": "& = 값 → *주소*",
+   "why_v": "정답은 엑스의 주소!",
+   "en": "Last quiz! What does &x return?",
+   "why_en": "The address of x!"
+  },
+  {
+   "t": "outro",
+   "v": "몇 개 맞혔어? 댓글로 점수 남겨 줘!",
+   "en": "What was your score? Drop it in the comments!"
+  }
+ ]
+}

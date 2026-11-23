@@ -1,0 +1,72 @@
+{
+ "n": 2,
+ "tag": "DB",
+ "guest": "blink",
+ "title": "기본키 vs 외래키",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "기본키 vs *외래키*",
+    "아직도 헷갈려?"
+   ],
+   "v": "기본키랑 외래키, 아직도 헷갈린다면 이 영상 하나로 끝내자!",
+   "en": "Still confusing primary keys and foreign keys? Let's settle it in one video!"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "기본키는 *주민번호*,\n외래키는 *연락처에 적힌 친구 번호*!",
+   "v": "기본키는 내 주민번호, 외래키는 내 연락처에 적어 둔 친구 번호라고 생각해!",
+   "en": "A primary key is your ID number; a foreign key is a friend's number saved in your contacts!"
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "🔑",
+     "t": "기본키 PK",
+     "d": "각 행을\n딱 하나로 식별\n중복·NULL ❌"
+    },
+    {
+     "e": "🔗",
+     "t": "외래키 FK",
+     "d": "다른 테이블의\n기본키를 참조\n두 테이블 연결"
+    }
+   ],
+   "v": "기본키는 각 행을 딱 하나로 구별하는 키라서 중복도, 빈 값도 안 돼. 외래키는 다른 테이블의 기본키를 가리켜서 테이블을 이어 줘.",
+   "en": "A primary key uniquely identifies each row — no duplicates, no NULLs. A foreign key points to another table's primary key to link them."
+  },
+  {
+   "t": "code",
+   "code": "학생(*학번 PK*, 이름)\n수강(과목, *학번 FK*)",
+   "v": "예를 들어 수강 테이블의 학번은 학생 테이블의 학번을 가리키는 외래키야.",
+   "en": "For example, the student ID in the Enrollment table is a foreign key pointing to the Student table."
+  },
+  {
+   "t": "point",
+   "text": "기본키 = *식별*\n외래키 = *연결*",
+   "v": "한 줄 요약! 기본키는 식별, 외래키는 연결. 외래키는 중복돼도 괜찮아!",
+   "en": "In short: primary key = identify, foreign key = connect. Foreign keys may repeat!"
+  },
+  {
+   "t": "quiz",
+   "q": "외래키는\n*NULL*을 넣을 수 없다?",
+   "opts": [
+    "O",
+    "X"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 외래키에는 널 값을 넣을 수 없다. 오, 엑스?",
+   "why": "NULL 금지는 *기본키* 규칙!",
+   "why_v": "정답은 엑스! 널 금지는 기본키 규칙이야. 외래키는 널 허용!",
+   "en": "Quiz! A foreign key can't hold NULL. True or false?",
+   "why_en": "False! The no-NULL rule is for primary keys. Foreign keys allow NULL."
+  },
+  {
+   "t": "outro",
+   "v": "헷갈리는 친구한테 공유해 줘! 내일 또 1분만 줘!",
+   "en": "Share this with a friend who mixes these up! Give me one more minute tomorrow!"
+  }
+ ]
+}

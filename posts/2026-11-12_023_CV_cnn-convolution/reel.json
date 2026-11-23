@@ -1,0 +1,66 @@
+{
+ "n": 23,
+ "tag": "CV",
+ "guest": null,
+ "title": "CNN과 합성곱",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "컴퓨터는 사진을",
+    "*어떻게 볼까?*"
+   ],
+   "v": "컴퓨터는 고양이 사진을 어떻게 고양이라고 알아볼까?",
+   "en": "How does a computer recognize a cat in a photo?"
+  },
+  {
+   "t": "bubble",
+   "who": "leng",
+   "pose": "explain",
+   "b": "*돋보기*로 한 칸씩\n훑어보는 거야!",
+   "v": "작은 돋보기를 사진 위에서 한 칸씩 밀면서 훑어보는 거야. 이게 합성곱!",
+   "en": "It slides a little magnifying glass across the photo, one step at a time. That's convolution!"
+  },
+  {
+   "t": "code",
+   "code": "필터를 한 칸씩 밀면서\n겹친 칸끼리 *곱하고 → 더하기*",
+   "v": "필터를 한 칸씩 밀면서, 겹친 칸끼리 곱하고 다 더해.",
+   "en": "Slide the filter one step at a time, multiply the overlapping cells, and add them all up."
+  },
+  {
+   "t": "steps",
+   "items": [
+    "📏 엣지(선) 찾기",
+    "🔷 모양 찾기",
+    "🐱 *고양이다!* 분류"
+   ],
+   "v": "씨엔엔은 이 합성곱 층으로 선, 모양 같은 특징을 차곡차곡 뽑아서 이미지를 분류해.",
+   "en": "A CNN stacks these layers to pick out edges and shapes, then classifies the image."
+  },
+  {
+   "t": "point",
+   "text": "출력 크기 = *(N − F + 2P) / S + 1*",
+   "v": "시험 단골 공식! 출력 크기는 엔 빼기 에프 더하기 2피, 나누기 에스, 더하기 일!",
+   "en": "Exam favorite: output size = (N − F + 2P) / S + 1!"
+  },
+  {
+   "t": "quiz",
+   "q": "CNN 필터 값은\n*사람이* 직접 정한다?",
+   "opts": [
+    "O",
+    "X"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 씨엔엔의 필터 값은 사람이 직접 정해 준다?",
+   "why": "필터 값은 *학습*으로 정해져!",
+   "why_v": "정답은 엑스! 필터 값은 학습으로 스스로 찾아가.",
+   "en": "Quiz! People set CNN filter values by hand. True or false?",
+   "why_en": "False! The filters are learned during training."
+  },
+  {
+   "t": "outro",
+   "v": "헷갈리는 친구한테 공유해 줘! 내일 또 1분만 줘!",
+   "en": "Share this with a friend who mixes these up! Give me one more minute tomorrow!"
+  }
+ ]
+}

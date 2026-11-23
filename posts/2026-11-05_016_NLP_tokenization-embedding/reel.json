@@ -1,0 +1,70 @@
+{
+ "n": 16,
+ "tag": "NLP",
+ "guest": null,
+ "title": "토큰화와 임베딩",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "AI는 글자를",
+    "*숫자로* 어떻게 이해해?"
+   ],
+   "v": "챗지피티는 글자를 못 읽어. 그럼 어떻게 이해하는 걸까?",
+   "en": "ChatGPT can't actually read letters. So how does it understand?"
+  },
+  {
+   "t": "bubble",
+   "who": "leng",
+   "pose": "explain",
+   "b": "문장을 *레고 조각*으로\n쪼개는 게 먼저야!",
+   "v": "먼저 문장을 레고 조각처럼 작게 쪼개. 이게 토큰화야!",
+   "en": "First it chops the sentence into small Lego pieces. That's tokenization!"
+  },
+  {
+   "t": "steps",
+   "items": [
+    "💬 문장 \"나는 사과가 좋아\"",
+    "✂️ 토큰 [나는] [사과] [가] [좋아]",
+    "🔢 ID [512, 2048, 7, 931]",
+    "📍 벡터 *[0.12, -0.8, 0.33 …]*"
+   ],
+   "v": "문장을 토큰으로 쪼개고, 토큰마다 번호를 붙이고, 그 번호를 의미가 담긴 숫자 벡터로 바꿔. 이게 임베딩!",
+   "en": "Split the sentence into tokens, give each an ID, then turn each ID into a meaningful vector. That's embedding!"
+  },
+  {
+   "t": "bubble",
+   "who": "leng",
+   "pose": "surprise",
+   "b": "*뜻이 비슷하면*\n벡터도 가까워!",
+   "v": "신기한 건, 학습된 임베딩에서는 뜻이 비슷한 단어끼리 벡터도 가까이 모여 있다는 거야.",
+   "en": "Cool part: in trained embeddings, words with similar meanings sit close together."
+  },
+  {
+   "t": "point",
+   "text": "문장 → 토큰 → ID → *벡터*",
+   "v": "문장, 토큰, 아이디, 벡터! 네 단계만 기억해.",
+   "en": "Sentence, tokens, IDs, vectors — just remember those four steps."
+  },
+  {
+   "t": "quiz",
+   "q": "'강아지'와 가장 가까운\n임베딩은?",
+   "opts": [
+    "자동차",
+    "고양이",
+    "계산기"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 강아지라는 단어의 임베딩과 가장 가까운 건?",
+   "why": "뜻이 비슷 → *벡터도 가까움*",
+   "why_v": "정답은 고양이! 둘 다 반려동물이라 의미가 가까워.",
+   "en": "Quiz! Which embedding is closest to 'puppy'?",
+   "why_en": "Kitten! Both are pets, so their meanings are close."
+  },
+  {
+   "t": "outro",
+   "v": "헷갈리는 친구한테 공유해 줘! 내일 또 1분만 줘!",
+   "en": "Share this with a friend who mixes these up! Give me one more minute tomorrow!"
+  }
+ ]
+}

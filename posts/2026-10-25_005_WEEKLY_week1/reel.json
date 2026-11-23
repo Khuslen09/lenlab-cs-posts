@@ -1,0 +1,63 @@
+{
+ "n": 5,
+ "tag": "WEEKLY",
+ "guest": null,
+ "title": "1주차 복습",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "1주차 개념 4개",
+    "*몇 개* 기억나?"
+   ],
+   "v": "1주차 복습 타임! 이번 주 개념 4개, 몇 개나 기억나?",
+   "en": "Week 1 review! How many of these 4 concepts do you remember?"
+  },
+  {
+   "t": "steps",
+   "items": [
+    "🧵 프로세스 · 스레드 — *Stack은 따로*",
+    "🔑 기본키 · 외래키 — *식별 vs 연결*",
+    "🤖 AI ⊃ ML ⊃ *DL*",
+    "📕 컴파일 · 인터프리터 — *한 번에 vs 한 줄씩*"
+   ],
+   "v": "프로세스와 스레드, 기본키와 외래키, 에이아이와 머신러닝과 딥러닝, 그리고 컴파일과 인터프리터! 30초 만에 훑어보자.",
+   "en": "Process & thread, primary & foreign keys, AI-ML-DL, and compiler vs interpreter — a 30-second sweep!"
+  },
+  {
+   "t": "bubble",
+   "who": "leng",
+   "pose": "think",
+   "b": "제일 많이 틀리는 건\n*외래키 규칙*!",
+   "v": "이번 주 제일 많이 틀리는 건 바로 외래키 규칙이야.",
+   "en": "The most-missed one this week: foreign key rules."
+  },
+  {
+   "t": "point",
+   "text": "외래키는 *NULL · 중복 OK*\n금지 규칙은 *기본키만!*",
+   "v": "외래키는 널도, 중복도 오케이! 금지 규칙은 기본키에만 있어.",
+   "en": "Foreign keys can be NULL and can repeat! The strict rules belong only to primary keys."
+  },
+  {
+   "t": "quiz",
+   "q": "스레드마다\n*따로* 갖는 것은?",
+   "opts": [
+    "Code",
+    "Heap",
+    "Stack",
+    "Data"
+   ],
+   "ans": 2,
+   "v": "마지막 퀴즈! 스레드마다 따로 갖는 건 뭘까?",
+   "why": "Stack은 스레드마다 *따로*!",
+   "why_v": "정답은 스택! 나머지는 다 같이 써.",
+   "en": "Last quiz! What does each thread get its own copy of?",
+   "why_en": "The stack! Everything else is shared."
+  },
+  {
+   "t": "outro",
+   "v": "몇 개 맞혔는지 댓글로 알려 줘! 다음 주도 같이 가자!",
+   "en": "Tell me your score in the comments! Let's keep going next week!"
+  }
+ ]
+}

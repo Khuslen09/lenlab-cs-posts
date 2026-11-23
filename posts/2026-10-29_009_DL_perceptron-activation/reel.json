@@ -1,0 +1,64 @@
+{
+ "n": 9,
+ "tag": "DL",
+ "guest": null,
+ "title": "퍼셉트론과 활성화 함수",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "층을 100개 쌓아도",
+    "*1개랑 똑같다고?*"
+   ],
+   "v": "신경망 층을 백 개 쌓아도 한 개랑 똑같아지는 경우가 있다고?",
+   "en": "Stack 100 neural-net layers and it can still act like just one?"
+  },
+  {
+   "t": "bubble",
+   "who": "leng",
+   "pose": "explain",
+   "b": "퍼셉트론은\n*점수 매기는 심사위원*!",
+   "v": "퍼셉트론은 심사위원이야. 항목마다 중요도를 곱해서 점수를 더하고, 기준을 넘으면 합격!",
+   "en": "A perceptron is a judge: weight each score, add them up, pass if it beats the bar!"
+  },
+  {
+   "t": "code",
+   "code": "출력 = f( w₁x₁ + w₂x₂ + *b* )\n        ↑ *활성화 함수*",
+   "v": "입력에 가중치를 곱해서 더하고, 편향을 더한 다음, 활성화 함수를 통과시켜서 출력을 내.",
+   "en": "Multiply inputs by weights, add them, add a bias, then pass it through an activation function."
+  },
+  {
+   "t": "bubble",
+   "who": "leng",
+   "pose": "surprise",
+   "b": "활성화 함수가 없으면?\n*직선만 그릴 수 있어!*",
+   "v": "근데 활성화 함수가 없으면? 아무리 쌓아도 직선 하나밖에 못 그려!",
+   "en": "Without an activation function? No matter how many layers, you only get a straight line!"
+  },
+  {
+   "t": "point",
+   "text": "활성화 함수 = *비선형성*\n없으면 몇 층이든 *선형 1층*",
+   "v": "활성화 함수가 비선형성을 더해 줘서, 신경망이 구불구불한 경계도 배울 수 있는 거야.",
+   "en": "Activation functions add non-linearity, so networks can learn curvy boundaries."
+  },
+  {
+   "t": "quiz",
+   "q": "XOR은 퍼셉트론 *1개*로\n풀 수 있다?",
+   "opts": [
+    "O",
+    "X"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 엑스오알 문제는 퍼셉트론 하나로 풀 수 있다?",
+   "why": "직선 하나로 못 나눠서 *MLP* 필요!",
+   "why_v": "정답은 엑스! 직선 하나로 못 나눠서 다층 퍼셉트론이 필요해.",
+   "en": "Quiz! A single perceptron can solve XOR. True or false?",
+   "why_en": "False! One straight line can't split it — you need a multi-layer perceptron."
+  },
+  {
+   "t": "outro",
+   "v": "헷갈리는 친구한테 공유해 줘! 내일 또 1분만 줘!",
+   "en": "Share this with a friend who mixes these up! Give me one more minute tomorrow!"
+  }
+ ]
+}

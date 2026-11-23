@@ -1,0 +1,17 @@
+🇰🇷 층을 100개 쌓아도 1개랑 똑같다고? 🧠
+퍼셉트론 = 가중합 + 편향 → 활성화 함수.
+👉 활성화 함수가 없으면 몇 층이든 선형 층 하나와 같아요!
+
+🇺🇸 Stack 100 layers and still get just one? 🧠
+Perceptron = weighted sum + bias → activation function.
+👉 Without activation functions, any number of layers equals one linear layer!
+
+🇲🇳 100 давхарга нэмсэн ч нэг давхаргатай адилхан байж болох уу? 🧠
+Перцептрон = жигнэсэн нийлбэр + хазайлт → идэвхжүүлэх функц.
+👉 Идэвхжүүлэх функцгүй бол хичнээн давхарга нэмсэн ч нэг шугаман давхаргатай адил!
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

@@ -1,0 +1,75 @@
+{
+ "n": 18,
+ "tag": "CG",
+ "guest": null,
+ "title": "래스터 vs 벡터",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "로고는 확대해도 매끈한데",
+    "사진은 *왜 깨질까?*"
+   ],
+   "v": "로고는 아무리 확대해도 매끈한데, 사진은 왜 깨질까?",
+   "en": "Logos stay smooth however far you zoom — so why do photos break?"
+  },
+  {
+   "t": "bubble",
+   "who": "leng",
+   "pose": "explain",
+   "b": "래스터는 *모자이크 타일*,\n벡터는 *그리는 방법 레시피*!",
+   "v": "래스터는 모자이크 타일을 붙인 그림이고, 벡터는 어떻게 그릴지 적어 둔 레시피야!",
+   "en": "Raster is a mosaic of tiles; vector is a recipe for how to draw it!"
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "🟥",
+     "t": "래스터",
+     "d": "픽셀마다\n색을 저장한\n*격자* 이미지"
+    },
+    {
+     "e": "📐",
+     "t": "벡터",
+     "d": "점·선·곡선을\n*수학식*으로\n저장한 이미지"
+    }
+   ],
+   "v": "래스터는 점 하나하나에 색을 저장한 격자 이미지, 벡터는 도형을 수학식으로 저장한 이미지야.",
+   "en": "Raster stores a color for every pixel in a grid; vector stores shapes as math."
+  },
+  {
+   "t": "bubble",
+   "who": "leng",
+   "pose": "surprise",
+   "b": "확대하면 래스터는 *계단*,\n벡터는 *늘 매끈*!",
+   "v": "그래서 확대하면 래스터는 계단처럼 깨지고, 벡터는 다시 계산해서 늘 매끈해.",
+   "en": "Zoom in and raster gets jagged, while vector recalculates and stays smooth."
+  },
+  {
+   "t": "point",
+   "text": "사진 = *래스터*\n로고 · 아이콘 · 폰트 = *벡터*",
+   "v": "사진은 래스터, 로고랑 아이콘이랑 폰트는 벡터!",
+   "en": "Photos are raster; logos, icons and fonts are vector!"
+  },
+  {
+   "t": "quiz",
+   "q": "SVG 로고를 10배 확대하면?",
+   "opts": [
+    "계단처럼 깨진다",
+    "매끈하다"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 에스브이지 로고를 열 배 확대하면?",
+   "why": "SVG는 *벡터*!",
+   "why_v": "정답은 매끈하다! 에스브이지는 벡터 형식이야.",
+   "en": "Quiz! What happens when you zoom an SVG logo 10x?",
+   "why_en": "It stays smooth! SVG is a vector format."
+  },
+  {
+   "t": "outro",
+   "v": "저장해두고 시험 전에 다시 봐! 매일 1분 컴공, 렝이었어!",
+   "en": "Save this and review it before your exam! One-minute CS every day, I'm Leng!"
+  }
+ ]
+}

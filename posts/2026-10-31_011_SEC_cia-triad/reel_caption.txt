@@ -1,0 +1,17 @@
+🇰🇷 보안의 3요소 CIA, 다 말할 수 있어? 🔒
+기밀성(C) · 무결성(I) · 가용성(A)
+👉 엿보기는 C, 바꿔치기는 I, DDoS로 마비시키기는 A를 깨뜨려요!
+
+🇺🇸 The CIA security triad — can you name all three? 🔒
+Confidentiality · Integrity · Availability
+👉 Snooping breaks C, tampering breaks I, a DDoS takedown breaks A!
+
+🇲🇳 Мэдээллийн аюулгүй байдлын 3 үндэс CIA — гурвууланг нь хэлж чадах уу? 🔒
+Нууцлал (C) · Бүрэн бүтэн байдал (I) · Хүртээмж (A)
+👉 Чагнах нь C-г, хуурамчаар өөрчлөх нь I-г, DDoS-оор зогсоох нь A-г эвддэг!
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

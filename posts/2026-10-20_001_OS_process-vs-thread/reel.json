@@ -1,0 +1,74 @@
+{
+ "n": 1,
+ "tag": "OS",
+ "guest": "chipko",
+ "title": "프로세스 vs 스레드",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "프로세스 vs *스레드*",
+    "3초 안에 설명 가능?"
+   ],
+   "v": "면접 단골 질문! 프로세스랑 스레드, 3초 안에 설명할 수 있어?",
+   "en": "Classic interview question! Can you explain process vs thread in 3 seconds?"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "프로세스는 *식당 하나*,\n스레드는 그 안의 *요리사*야!",
+   "v": "쉽게 말하면 프로세스는 식당 하나, 스레드는 그 안에서 일하는 요리사들이야!",
+   "en": "Simply put: a process is a restaurant, and threads are the cooks working inside it!"
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "🏭",
+     "t": "프로세스",
+     "d": "OS한테 독립된\n메모리를 받은\n실행 중인 프로그램"
+    },
+    {
+     "e": "🧵",
+     "t": "스레드",
+     "d": "프로세스 안에서\n자원을 같이 쓰는\n실행 흐름"
+    }
+   ],
+   "v": "프로세스는 운영체제한테 자기만의 메모리를 받은 실행 중인 프로그램이고, 스레드는 그 안에서 자원을 나눠 쓰는 실행 흐름이야.",
+   "en": "A process is a running program with its own memory from the OS. A thread is a flow of execution that shares those resources."
+  },
+  {
+   "t": "bubble",
+   "who": "leng",
+   "pose": "think",
+   "b": "그럼 요리사들은\n*뭘 같이* 써?",
+   "v": "그럼 요리사들은 뭘 같이 쓰고, 뭘 따로 쓸까?",
+   "en": "So what do the cooks share, and what do they keep to themselves?"
+  },
+  {
+   "t": "point",
+   "text": "공유: *Code · Data · Heap*\n각자: *Stack · 레지스터(PC)*",
+   "v": "주방이랑 냉장고인 코드, 데이터, 힙은 같이 쓰고! 스택이랑 레지스터는 각자 따로 가져.",
+   "en": "The kitchen and fridge — Code, Data and Heap — are shared! Stack and registers belong to each thread."
+  },
+  {
+   "t": "quiz",
+   "q": "스레드끼리는\n*Stack*을 공유한다?",
+   "opts": [
+    "O",
+    "X"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 스레드끼리는 스택을 공유한다. 오일까 엑스일까?",
+   "why": "Stack은 스레드마다 *따로*!",
+   "why_v": "정답은 엑스! 스택은 스레드마다 따로 있어.",
+   "en": "Quiz! Threads share the stack. True or false?",
+   "why_en": "False! Each thread has its own stack."
+  },
+  {
+   "t": "outro",
+   "v": "저장해두고 시험 전에 다시 봐! 매일 1분 컴공, 렝이었어!",
+   "en": "Save this and review it before your exam! One-minute CS every day, I'm Leng!"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+🇰🇷 해시는 왜 되돌릴 수 없을까? 🔐
+해시 = 믹서기! 어떤 입력이든 고정 길이로, 한 글자만 달라도 완전히 달라져요.
+👉 해시는 암호화가 아니라서 키도, 복호화도 없어요.
+
+🇺🇸 Why can't you reverse a hash? 🔐
+A hash is a blender! Any input → fixed length, and one changed letter changes everything.
+👉 Hashing isn't encryption: no key, no decryption.
+
+🇲🇳 Хэшийг яагаад буцааж болдоггүй вэ? 🔐
+Хэш = хутгуур! Ямар ч оролтыг тогтмол урттай болгож, нэг үсэг өөрчлөгдөхөд үр дүн бүрэн өөр болно.
+👉 Хэш нь шифрлэлт биш — түлхүүр ч, тайлах үйлдэл ч байхгүй.
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

@@ -1,0 +1,67 @@
+{
+ "n": 14,
+ "tag": "SYS",
+ "guest": "chipko",
+ "title": "메모리 구조 힙 vs 스택",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "내 변수는",
+    "*힙*에 있을까, *스택*에 있을까?"
+   ],
+   "v": "내가 만든 변수, 힙에 있을까 스택에 있을까?",
+   "en": "Does your variable live on the heap or the stack?"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "메모리는\n*4층짜리 건물*이야!",
+   "v": "프로그램 메모리는 4개 층으로 나뉜 건물이야!",
+   "en": "Program memory is a building with four floors!"
+  },
+  {
+   "t": "steps",
+   "items": [
+    "📜 코드 — *명령어*",
+    "🗂️ 데이터 — *전역 · static* 변수",
+    "📦 힙 — *malloc · new* (직접 해제)",
+    "🥞 스택 — *지역 변수 · 매개변수*"
+   ],
+   "v": "명령어가 있는 코드, 전역 변수가 사는 데이터, 직접 빌리고 직접 반납하는 힙, 함수 끝나면 자동으로 사라지는 스택!",
+   "en": "Code holds instructions, Data holds globals, Heap is borrowed and returned by you, and the Stack vanishes when a function ends!"
+  },
+  {
+   "t": "code",
+   "code": "int ＊p = malloc(4);\n// p 자체 → *스택*\n// p가 가리키는 곳 → *힙*",
+   "v": "함정 문제 단골! 포인터 피 자체는 스택에, 피가 가리키는 말록 공간은 힙에 있어.",
+   "en": "Trap question favorite: the pointer p itself is on the stack, the malloc'd space it points to is on the heap."
+  },
+  {
+   "t": "point",
+   "text": "힙은 *위로*, 스택은 *아래로* 자란다",
+   "v": "그리고 힙은 위로, 스택은 아래로 자라!",
+   "en": "And the heap grows up while the stack grows down!"
+  },
+  {
+   "t": "quiz",
+   "q": "함수 안의 *static* 변수는\n어디에 있을까?",
+   "opts": [
+    "스택",
+    "힙",
+    "데이터"
+   ],
+   "ans": 2,
+   "v": "퀴즈! 함수 안에 선언한 스태틱 변수는 어디에 있을까?",
+   "why": "static은 *데이터 영역* → 값 유지!",
+   "why_v": "정답은 데이터 영역! 그래서 함수가 끝나도 값이 남아.",
+   "en": "Quiz! Where does a static variable inside a function live?",
+   "why_en": "The data segment! That's why it keeps its value after the function ends."
+  },
+  {
+   "t": "outro",
+   "v": "저장 꾹! 팔로우하면 매일 개념 하나씩 떠먹여 줄게!",
+   "en": "Hit save! Follow me and I'll feed you one concept a day!"
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "n": 24,
+ "tag": "PY",
+ "guest": "blink",
+ "title": "리스트 vs 튜플",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "파이썬 리스트 vs *튜플*",
+    "언제 뭘 써?"
+   ],
+   "v": "파이썬 리스트랑 튜플, 대괄호 소괄호 차이만 있는 게 아니야!",
+   "en": "Python lists vs tuples — it's more than square vs round brackets!"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "리스트는 *화이트보드*,\n튜플은 *새겨진 비석*!",
+   "v": "리스트는 썼다 지웠다 하는 화이트보드, 튜플은 한 번 새기면 못 바꾸는 비석이야!",
+   "en": "A list is a whiteboard you can erase; a tuple is carved in stone!"
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "📝",
+     "t": "리스트 [ ]",
+     "d": "추가·삭제·수정\n가능\n*가변 mutable*"
+    },
+    {
+     "e": "🪨",
+     "t": "튜플 ( )",
+     "d": "만들면\n원소 변경 불가\n*불변 immutable*"
+    }
+   ],
+   "v": "리스트는 추가, 삭제, 수정이 되는 가변, 튜플은 한 번 만들면 원소를 못 바꾸는 불변이야.",
+   "en": "Lists are mutable — add, remove, edit. Tuples are immutable — once made, elements can't change."
+  },
+  {
+   "t": "code",
+   "code": "t = (1)    # 그냥 정수 1\nt = *(1,)*   # 튜플!",
+   "v": "함정 하나! 원소가 하나인 튜플은 꼭 쉼표를 붙여야 해.",
+   "en": "One trap: a one-element tuple needs a comma!"
+  },
+  {
+   "t": "point",
+   "text": "바뀌는 데이터 = *리스트*\n좌표 · 날짜 = *튜플*",
+   "v": "바뀌는 데이터는 리스트, 좌표나 날짜처럼 고정된 묶음은 튜플!",
+   "en": "Changing data goes in lists; fixed bundles like coordinates and dates go in tuples!"
+  },
+  {
+   "t": "quiz",
+   "q": "t = (1, [2, 3])\nt[1].append(4) 가능?",
+   "opts": [
+    "O",
+    "X"
+   ],
+   "ans": 0,
+   "v": "퀴즈! 튜플 안에 있는 리스트에 어펜드 할 수 있을까?",
+   "why": "튜플 안 *리스트는 바뀜*!",
+   "why_v": "정답은 오! 튜플은 불변이지만 그 안의 리스트는 바뀔 수 있어.",
+   "en": "Quiz! Can you append to a list inside a tuple?",
+   "why_en": "Yes! The tuple is immutable, but the list inside can change."
+  },
+  {
+   "t": "outro",
+   "v": "저장 꾹! 팔로우하면 매일 개념 하나씩 떠먹여 줄게!",
+   "en": "Hit save! Follow me and I'll feed you one concept a day!"
+  }
+ ]
+}

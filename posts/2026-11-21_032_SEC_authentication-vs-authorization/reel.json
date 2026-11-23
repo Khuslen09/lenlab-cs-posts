@@ -1,0 +1,83 @@
+{
+ "n": 32,
+ "tag": "SEC",
+ "guest": "blink",
+ "title": "인증 vs 인가",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "401 vs *403*",
+    "차이 알아?"
+   ],
+   "v": "에러 401이랑 403, 차이 알아? 인증이랑 인가만 알면 끝!",
+   "en": "401 vs 403 — know the difference? Learn authentication vs authorization and you're done!"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "인증은 *출입증 확인*,\n인가는 *어느 방까지 갈 수 있나*!",
+   "v": "회사로 치면 인증은 출입증 검사, 인가는 그 사람이 어느 층까지 갈 수 있는지 정하는 거야!",
+   "en": "At a company, authentication is the badge check; authorization is which floors you can access!"
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "🪪",
+     "t": "인증 AuthN",
+     "d": "너 *누구야?*\n신원 확인"
+    },
+    {
+     "e": "🎫",
+     "t": "인가 AuthZ",
+     "d": "뭘 *할 수 있어?*\n권한 확인"
+    }
+   ],
+   "v": "인증은 너 누구야 하고 신원을 확인하는 거고, 인가는 확인된 사람이 무엇을 할 수 있는지 정하는 거야.",
+   "en": "Authentication checks who you are; authorization decides what a verified user can do."
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "🚪",
+     "t": "401",
+     "d": "인증 실패\n누군지 모름"
+    },
+    {
+     "e": "⛔",
+     "t": "403",
+     "d": "인가 실패\n알지만 권한 없음"
+    }
+   ],
+   "v": "그래서 401은 인증 실패, 403은 누군지는 알지만 권한이 없는 인가 실패!",
+   "en": "So 401 is failed authentication; 403 means we know you, but you lack permission."
+  },
+  {
+   "t": "point",
+   "text": "항상 *인증 먼저*,\n인가는 그다음!",
+   "v": "순서는 항상 인증 먼저, 인가는 그다음!",
+   "en": "Always authentication first, then authorization!"
+  },
+  {
+   "t": "quiz",
+   "q": "로그인은 했는데\n관리자 페이지 접근 불가 →",
+   "opts": [
+    "401",
+    "403"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 로그인은 했는데 관리자 페이지에 못 들어가면?",
+   "why": "누군지는 앎, 권한 없음 → *403*",
+   "why_v": "정답은 403! 인가 실패야.",
+   "en": "Quiz! Logged in, but can't open the admin page?",
+   "why_en": "403! That's an authorization failure."
+  },
+  {
+   "t": "outro",
+   "v": "저장해두고 시험 전에 다시 봐! 매일 1분 컴공, 렝이었어!",
+   "en": "Save this and review it before your exam! One-minute CS every day, I'm Leng!"
+  }
+ ]
+}

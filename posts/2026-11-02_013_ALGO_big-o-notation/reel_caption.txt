@@ -1,0 +1,17 @@
+🇰🇷 내 코드, 얼마나 빠른지 말할 수 있어? ⏱️
+3n² + 5n + 2 → 가장 큰 항만 남겨서 O(n²).
+👉 O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ) · 중첩은 곱하고, 차례는 더하기!
+
+🇺🇸 Can you say how fast your code is? ⏱️
+3n² + 5n + 2 → keep the biggest term: O(n²).
+👉 O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ) · nested loops multiply, sequential loops add!
+
+🇲🇳 Кодоо хэр хурдан болохыг хэлж чадах уу? ⏱️
+3n² + 5n + 2 → хамгийн том гишүүнийг л үлдээнэ: O(n²).
+👉 O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ) · давхар давталт бол үржүүлж, дараалсан бол нэмнэ!
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

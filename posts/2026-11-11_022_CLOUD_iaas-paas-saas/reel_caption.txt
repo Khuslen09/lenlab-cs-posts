@@ -1,0 +1,17 @@
+🇰🇷 IaaS, PaaS, SaaS를 피자로! 🍕
+IaaS = 주방만 빌림(OS부터 내가), PaaS = 코드만 올리면 끝, SaaS = 완성품 배달.
+👉 헷갈리면 "누가 OS를 관리하나?"부터!
+
+🇺🇸 IaaS, PaaS, SaaS — explained with pizza! 🍕
+IaaS = rent the kitchen (you manage from the OS up), PaaS = just upload code, SaaS = delivery of the finished product.
+👉 Stuck? Ask "who manages the OS?"
+
+🇲🇳 IaaS, PaaS, SaaS-ийг пиццагаар тайлбарлая! 🍕
+IaaS = зөвхөн гал тогоо түрээслэх (OS-оос дээш өөрөө), PaaS = зөвхөн кодоо байршуулна, SaaS = бэлэн бүтээгдэхүүн хүргэлтээр.
+👉 Андуурвал "OS-ийг хэн удирддаг вэ?" гэдгээс эхэл!
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

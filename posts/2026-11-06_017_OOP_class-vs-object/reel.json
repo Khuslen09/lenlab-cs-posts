@@ -1,0 +1,73 @@
+{
+ "n": 17,
+ "tag": "OOP",
+ "guest": "blink",
+ "title": "클래스 vs 객체",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "클래스 vs *객체*",
+    "붕어빵으로 끝내자"
+   ],
+   "v": "클래스랑 객체, 붕어빵 하나로 끝내 줄게!",
+   "en": "Class vs object — I'll settle it with a fish-shaped pastry!"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "클래스는 *붕어빵 틀*,\n객체는 *붕어빵*!",
+   "v": "클래스는 붕어빵 틀, 객체는 그 틀로 찍어 낸 붕어빵이야!",
+   "en": "A class is the pastry mold; an object is the pastry you bake with it!"
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "📐",
+     "t": "클래스",
+     "d": "필드(상태)와\n메서드(행동)를\n정의한 *설계도*"
+    },
+    {
+     "e": "🐟",
+     "t": "객체",
+     "d": "new 해서\n메모리에 만든\n*실체*"
+    }
+   ],
+   "v": "클래스는 상태와 행동을 정의한 설계도, 객체는 뉴 해서 메모리에 실제로 만든 실체야.",
+   "en": "A class is a blueprint defining state and behavior; an object is the real thing created in memory with new."
+  },
+  {
+   "t": "code",
+   "code": "Car a = *new* Car();\nCar b = *new* Car();\n// 틀 1개, 객체 2개!",
+   "v": "틀은 하나지만, 뉴 할 때마다 객체가 하나씩 새로 생겨.",
+   "en": "One mold, but every new makes a brand-new object."
+  },
+  {
+   "t": "point",
+   "text": "변수에는 객체가 아니라\n*참조(주소)*가 담긴다!",
+   "v": "그리고 고급 포인트! 변수에는 객체 자체가 아니라 객체를 가리키는 참조가 담겨.",
+   "en": "Pro point: a variable holds a reference to the object, not the object itself."
+  },
+  {
+   "t": "quiz",
+   "q": "new를 3번 하면\n객체는 몇 개?",
+   "opts": [
+    "1개",
+    "3개",
+    "0개"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 같은 클래스로 뉴를 세 번 하면 객체는 몇 개?",
+   "why": "new 할 때마다 *하나씩*!",
+   "why_v": "정답은 세 개! 뉴 할 때마다 새 붕어빵이 나와.",
+   "en": "Quiz! Call new on the same class three times — how many objects?",
+   "why_en": "Three! Every new bakes a fresh one."
+  },
+  {
+   "t": "outro",
+   "v": "저장 꾹! 팔로우하면 매일 개념 하나씩 떠먹여 줄게!",
+   "en": "Hit save! Follow me and I'll feed you one concept a day!"
+  }
+ ]
+}

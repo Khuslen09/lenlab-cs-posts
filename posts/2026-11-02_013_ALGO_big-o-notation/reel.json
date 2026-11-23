@@ -1,0 +1,65 @@
+{
+ "n": 13,
+ "tag": "ALGO",
+ "guest": "blink",
+ "title": "빅오 표기법",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "내 코드,",
+    "*얼마나 빠른지* 말할 수 있어?"
+   ],
+   "v": "내 코드가 얼마나 빠른지, 한 마디로 말할 수 있어?",
+   "en": "Can you say how fast your code is in one phrase?"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "빅오는 *손님이 몰릴 때\n줄이 얼마나 길어지나*야!",
+   "v": "빅오는 손님이 몰릴 때 줄이 얼마나 빨리 길어지는지를 보는 거야!",
+   "en": "Big-O is how fast the line grows when customers pour in!"
+  },
+  {
+   "t": "code",
+   "code": "3n² + 5n + 2\n→ 상수·낮은 차수 버리고\n→ *O(n²)*",
+   "v": "입력 엔이 커질 때의 증가율만 봐서, 상수랑 작은 항은 버리고 제일 큰 항만 남겨.",
+   "en": "Look only at the growth rate as n gets big: drop constants and small terms, keep the biggest one."
+  },
+  {
+   "t": "steps",
+   "items": [
+    "O(1) < O(log n) < O(n)",
+    "< O(n log n) < *O(n²)* < *O(2ⁿ)*"
+   ],
+   "v": "오 일이 제일 빠르고, 로그 엔, 엔, 엔 로그 엔, 엔 제곱, 2의 엔 제곱 순으로 느려져.",
+   "en": "O(1) is fastest, then log n, n, n log n, n squared, and 2 to the n."
+  },
+  {
+   "t": "point",
+   "text": "반복문 *중첩*되면 → 곱하기\n*차례로* 오면 → 더하기",
+   "v": "꿀팁! 반복문이 겹쳐 있으면 곱하고, 차례로 나오면 더해.",
+   "en": "Tip: nested loops multiply, loops in a row add."
+  },
+  {
+   "t": "quiz",
+   "q": "for 안에 for (각 n번)\n시간복잡도는?",
+   "opts": [
+    "O(n)",
+    "O(2n)",
+    "O(n²)"
+   ],
+   "ans": 2,
+   "v": "퀴즈! 엔 번 도는 반복문 안에 또 엔 번 도는 반복문. 시간복잡도는?",
+   "why": "중첩 → n × n = *O(n²)*",
+   "why_v": "정답은 엔 제곱! 겹치면 곱하니까.",
+   "en": "Quiz! A loop of n inside another loop of n — what's the time complexity?",
+   "why_en": "n squared! Nested means multiply."
+  },
+  {
+   "t": "outro",
+   "v": "헷갈리는 친구한테 공유해 줘! 내일 또 1분만 줘!",
+   "en": "Share this with a friend who mixes these up! Give me one more minute tomorrow!"
+  }
+ ]
+}

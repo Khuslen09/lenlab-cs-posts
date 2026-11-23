@@ -1,0 +1,17 @@
+🇰🇷 2주차 개념 6개, 30초 복습! ⚡
+배열·리스트 / CPU 사이클 / OSI·TCP/IP / 퍼셉트론 / 포인터 / CIA
+👉 제일 헷갈리는 것: PC는 다음 명령어의 주소, 명령어 자체는 IR!
+
+🇺🇸 Week 2: six concepts in 30 seconds! ⚡
+Arrays·lists / CPU cycle / OSI·TCP/IP / perceptron / pointers / CIA
+👉 Most confusing: PC holds the next instruction's address; the instruction itself is in IR!
+
+🇲🇳 2-р долоо хоног: 6 ойлголтыг 30 секундэд давтъя! ⚡
+Массив·жагсаалт / CPU-ийн мөчлөг / OSI·TCP/IP / перцептрон / заагч / CIA
+👉 Хамгийн их андуурдаг: PC нь дараагийн зааврын хаягийг хадгална, заавар өөрөө IR-д байна!
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

@@ -1,0 +1,72 @@
+{
+ "n": 25,
+ "tag": "CRYPTO",
+ "guest": "blink",
+ "title": "해시 함수",
+ "scenes": [
+  {
+   "t": "hook",
+   "lines": [
+    "해시는",
+    "*왜 되돌릴 수 없을까?*"
+   ],
+   "v": "비밀번호를 해시로 저장하면, 왜 회사도 내 비밀번호를 모를까?",
+   "en": "If passwords are stored as hashes, why doesn't even the company know yours?"
+  },
+  {
+   "t": "bubble",
+   "who": "guest",
+   "b": "해시는 *믹서기*야!\n주스를 다시 과일로 못 돌려!",
+   "v": "해시는 믹서기야! 과일을 갈아서 주스는 만들 수 있지만, 주스를 다시 과일로 못 돌리잖아!",
+   "en": "A hash is a blender! You can make juice from fruit, but never turn juice back into fruit!"
+  },
+  {
+   "t": "code",
+   "code": "\"hello\"  → 2cf24d…*b9824*\n\"hellp\"  → *완전 다름* 7a9c0e…",
+   "v": "해시 함수는 어떤 길이의 입력이든 고정 길이 값으로 바꾸고, 한 글자만 달라도 결과가 완전히 바뀌어.",
+   "en": "A hash function turns input of any length into a fixed-length value, and one letter's change scrambles everything."
+  },
+  {
+   "t": "cards",
+   "items": [
+    {
+     "e": "🔐",
+     "t": "SHA-256",
+     "d": "결과는 항상\n*256비트*\n16진수 64자"
+    },
+    {
+     "e": "🚫",
+     "t": "키 · 복호화",
+     "d": "해시는\n암호화가 *아님*\n되돌리기 없음"
+    }
+   ],
+   "v": "대표적인 SHA 256은 결과가 항상 256비트! 그리고 해시는 암호화가 아니라서 키도, 복호화도 없어.",
+   "en": "SHA-256 always outputs 256 bits! And hashing isn't encryption — no key, no decryption."
+  },
+  {
+   "t": "point",
+   "text": "해시 = *단방향*\n암호화 = *양방향(키 있음)*",
+   "v": "해시는 단방향, 암호화는 키로 되돌릴 수 있는 양방향!",
+   "en": "Hashing is one-way; encryption is two-way with a key!"
+  },
+  {
+   "t": "quiz",
+   "q": "해시값은 *키*만 있으면\n원래 값으로 복호화된다?",
+   "opts": [
+    "O",
+    "X"
+   ],
+   "ans": 1,
+   "v": "퀴즈! 해시값은 키만 있으면 원래 값으로 되돌릴 수 있다?",
+   "why": "해시엔 *키도 복호화도 없어*!",
+   "why_v": "정답은 엑스! 해시에는 키도 복호화도 없어.",
+   "en": "Quiz! With the right key, a hash can be turned back into the original. True or false?",
+   "why_en": "False! Hashes have no key and no decryption."
+  },
+  {
+   "t": "outro",
+   "v": "저장해두고 시험 전에 다시 봐! 매일 1분 컴공, 렝이었어!",
+   "en": "Save this and review it before your exam! One-minute CS every day, I'm Leng!"
+  }
+ ]
+}

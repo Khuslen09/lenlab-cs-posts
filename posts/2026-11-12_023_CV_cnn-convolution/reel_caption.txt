@@ -1,0 +1,17 @@
+🇰🇷 컴퓨터는 사진을 어떻게 볼까? 🐱
+필터를 한 칸씩 밀며 겹친 칸끼리 곱하고 더하기 = 합성곱.
+👉 출력 크기 = (N − F + 2P) / S + 1 · 필터 값은 학습으로 정해져요!
+
+🇺🇸 How does a computer see a picture? 🐱
+Slide a filter, multiply overlapping cells and sum them = convolution.
+👉 Output size = (N − F + 2P) / S + 1 · filter values are learned!
+
+🇲🇳 Компьютер зургийг хэрхэн хардаг вэ? 🐱
+Шүүлтүүрийг нэг нэг нүдээр гулсуулж, давхцсан нүднүүдийг үржүүлээд нэмэх = конволюц.
+👉 Гаралтын хэмжээ = (N − F + 2P) / S + 1 · шүүлтүүрийн утгыг сургалт тодорхойлно!
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

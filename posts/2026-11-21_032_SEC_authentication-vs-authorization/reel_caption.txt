@@ -1,0 +1,17 @@
+🇰🇷 401 vs 403, 차이 알아? 🪪
+인증 = 너 누구야?(신원 확인), 인가 = 뭘 할 수 있어?(권한 확인)
+👉 항상 인증 먼저! 401은 인증 실패, 403은 인가 실패.
+
+🇺🇸 401 vs 403 — know the difference? 🪪
+Authentication = who are you? Authorization = what can you do?
+👉 Authentication always comes first! 401 = authentication failed, 403 = authorization failed.
+
+🇲🇳 401 ба 403 — ялгааг нь мэдэх үү? 🪪
+Баталгаажуулалт (authentication) = чи хэн бэ? Эрх олголт (authorization) = чи юу хийж болох вэ?
+👉 Үргэлж баталгаажуулалт эхэлнэ! 401 = баталгаажуулалт амжилтгүй, 403 = эрх хүрэлцэхгүй.
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스

@@ -1,0 +1,17 @@
+🇰🇷 기본키 vs 외래키, 아직도 헷갈려? 🔑
+기본키 = 각 행을 식별 (중복·NULL ❌), 외래키 = 다른 테이블의 기본키를 참조해 연결.
+👉 기본키는 식별, 외래키는 연결! 외래키는 중복·NULL 가능.
+
+🇺🇸 Still mixing up primary and foreign keys? 🔑
+Primary key = identifies each row (no duplicates, no NULL). Foreign key = references another table's primary key.
+👉 PK identifies, FK connects! Foreign keys may repeat or be NULL.
+
+🇲🇳 Үндсэн түлхүүр ба гадаад түлхүүрийг одоо ч андуурдаг уу? 🔑
+Үндсэн түлхүүр = мөр бүрийг ялгаж таньдаг (давхардал, NULL байж болохгүй). Гадаад түлхүүр = өөр хүснэгтийн үндсэн түлхүүрийг заана.
+👉 PK — ялгаж таних, FK — холбох! Гадаад түлхүүр давхцаж, NULL байж болно.
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스
