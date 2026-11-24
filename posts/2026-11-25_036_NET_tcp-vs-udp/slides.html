@@ -1,0 +1,108 @@
+<!-- #036 NET · TCP vs UDP — body only; build.py wraps it with templates/card-template.html -->
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · NET</div><div class="meta">#036 · 2026.11.25</div></header>
+  <main class="center">
+    <div><div class="lang">EN</div><div style="font-family:JBM;font-weight:700;font-size:64px;line-height:1.15">TCP <span class="blue">vs</span> UDP</div></div>
+    <div><div class="lang">KO</div><div style="font-size:84px;font-weight:800;line-height:1.22;letter-spacing:-.03em"><span class="blue">TCP</span>와 <span class="cyan">UDP</span>,<br>언제 뭘 쓸까?</div></div>
+    <div><div class="lang">MN</div><div style="font-size:40px;line-height:1.4;color:var(--mute)">TCP ба UDP —<br>алийг нь хэзээ ашиглах вэ?</div></div>
+  </main>
+  <footer><div class="handle">01 / 06</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · NET</div><div class="meta">02 / 06</div></header>
+  <main>
+    <div><div style="font-size:60px;font-weight:800;letter-spacing:-.03em">한 줄 정의</div><div class="en" style="margin-top:6px">Definition · Тодорхойлолт</div></div>
+    <div class="panel" style="border-left:6px solid var(--blue)">
+      <div class="mono blue" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">TCP · 연결형 · ХОЛБОЛТТОЙ</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">연결을 맺고 보내는 프로토콜. 데이터가 <b class="blue">빠짐없이, 순서대로</b> 도착하도록 보장</div>
+      <div class="en">Connection-oriented: reliable, in-order delivery.</div>
+      <div class="mn">Холболт тогтоож, өгөгдлийг алдалгүй, дарааллаар нь хүргэнэ.</div>
+    </div>
+    <div class="panel" style="border-left:6px solid var(--cyan)">
+      <div class="mono cyan" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">UDP · 비연결형 · ХОЛБОЛТГҮЙ</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">연결 없이 바로 보내는 프로토콜. 보장은 없지만 <b class="cyan">가볍고 빠름</b></div>
+      <div class="en">Connectionless: no guarantees, but light and fast.</div>
+      <div class="mn">Холболтгүйгээр шууд илгээнэ. Баталгаагүй ч хөнгөн, хурдан.</div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-size:34px;font-weight:700">둘 다 <span class="blue">전송 계층(L4)</span> · 포트 번호로 앱을 구분</div>
+      <div class="en" style="margin-top:6px">Both are transport-layer protocols that use ports</div>
+    </div>
+  </main>
+  <footer><div class="handle">#036</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · NET</div><div class="meta">03 / 06</div></header>
+  <main>
+    <div>
+      <div style="font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1.25"><span class="blue">전화</span> = TCP · <span class="cyan">엽서</span> = UDP</div>
+      <div class="en" style="margin-top:8px">Phone call = TCP · Postcard = UDP</div>
+      <div class="mn">Утасны дуудлага = TCP · Ил захидал = UDP</div>
+    </div>
+    <div style="border:2px solid var(--blue);border-radius:28px;padding:28px;background:rgba(9,132,227,.07);display:flex;flex-direction:column;gap:12px">
+      <div class="mono blue" style="font-size:24px;font-weight:700;letter-spacing:.08em">TCP · 먼저 연결 · Connect first</div>
+      <div class="mono" style="font-size:27px;line-height:1.55">A ── SYN ──────▶ B<br>A ◀── SYN+ACK ── B<br>A ── ACK ──────▶ B<br>A ── DATA ─────▶ B &nbsp;<span style="color:var(--mute)">(ACK 확인)</span></div>
+      <div style="font-size:25px;color:var(--mute)">▲ 3-way handshake · 잃어버리면 재전송 · Resend if lost</div>
+    </div>
+    <div style="border:2px solid var(--cyan);border-radius:28px;padding:28px;display:flex;flex-direction:column;gap:12px">
+      <div class="mono cyan" style="font-size:24px;font-weight:700;letter-spacing:.08em">UDP · 그냥 보냄 · Just send</div>
+      <div class="mono" style="font-size:27px;line-height:1.55">A ── DATA 1 ───▶ B<br>A ── DATA 2 ──✕ &nbsp;<span style="color:var(--mute)">(손실 · lost)</span></div>
+      <div style="font-size:25px;color:var(--mute)">▲ 확인·재전송 없음 · No ACK, no resend</div>
+    </div>
+  </main>
+  <footer><div class="handle">#036</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · NET</div><div class="meta">04 / 06</div></header>
+  <main>
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">Python 소켓으로 보기</div><div class="en" style="margin-top:6px">Sockets in Python · Python сокет</div></div>
+    <div class="panel" style="background:var(--code);padding:32px 38px">
+<pre class="mono" style="font-size:26px;line-height:1.6;color:var(--white)"><span style="color:var(--dim)"># TCP: 연결부터 맺고 보낸다</span>
+t = socket.socket(AF_INET, <span class="blue">SOCK_STREAM</span>)
+t.connect((<span class="cyan">"127.0.0.1"</span>, 9000))
+t.sendall(<span class="cyan">b"hello"</span>)
+
+<span style="color:var(--dim)"># UDP: 연결 없이 바로 보낸다</span>
+u = socket.socket(AF_INET, <span class="blue">SOCK_DGRAM</span>)
+u.sendto(<span class="cyan">b"hello"</span>, (<span class="cyan">"127.0.0.1"</span>, 9001))</pre>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">①</span> <b>SOCK_STREAM</b> = TCP, <b>SOCK_DGRAM</b> = UDP</div><div class="mn" style="margin-left:40px">EN: STREAM is TCP, DGRAM is UDP · MN: STREAM = TCP, DGRAM = UDP</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">②</span> <b>connect()</b> 순간 3-way handshake 진행</div><div class="mn" style="margin-left:40px">EN: connect() runs the handshake · MN: connect() үед handshake хийгдэнэ</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">③</span> 받는 쪽이 없으면 TCP는 에러, UDP는 그냥 전송</div><div class="mn" style="margin-left:40px">EN: No receiver: TCP fails, UDP still sends · MN: Хүлээн авагчгүй бол TCP алдаа, UDP илгээнэ</div></div>
+    </div>
+  </main>
+  <footer><div class="handle">#036</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · NET</div><div class="meta">05 / 06</div></header>
+  <main style="gap:20px">
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">여기서 꼭 헷갈린다</div><div class="en" style="margin-top:6px">Check points · Анхаарах зүйлс</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">01</span>&nbsp; 헤더 크기 <span class="en" style="font-size:24px;font-weight:500">· Header Size</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">TCP 최소 <b>20바이트</b> / UDP 고정 <b class="cyan">8바이트</b></div><div class="mn" style="font-size:24px">TCP толгой хамгийн багадаа 20 байт, UDP 8 байт</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">02</span>&nbsp; 스트림 vs 데이터그램 <span class="en" style="font-size:24px;font-weight:500">· Boundaries</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">TCP는 <b>메시지 경계 없음</b>, UDP는 보낸 단위 그대로</div><div class="mn" style="font-size:24px">TCP мессежийн хил хадгалахгүй, UDP хадгална</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">03</span>&nbsp; 어디에 쓰나 <span class="en" style="font-size:24px;font-weight:500">· Use Cases</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">TCP: 웹·메일·파일 / UDP: <b>DNS·스트리밍·게임</b></div><div class="mn" style="font-size:24px">TCP: веб, имэйл · UDP: DNS, стрим, тоглоом</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">04</span>&nbsp; HTTP/3는 UDP <span class="en" style="font-size:24px;font-weight:500">· QUIC</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">HTTP/3는 <b>UDP 위의 QUIC</b>에서 신뢰성을 직접 구현</div><div class="mn" style="font-size:24px">HTTP/3 нь UDP дээрх QUIC-ээр ажиллана</div></div>
+  </main>
+  <footer><div class="handle">#036</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · NET</div><div class="meta">06 / 06</div></header>
+  <main class="center" style="gap:30px">
+    <div class="lang" style="font-size:26px">QUIZ · 4지선다</div>
+    <div style="font-size:56px;font-weight:800;line-height:1.3;letter-spacing:-.03em"><span class="cyan">UDP</span>에 대한 설명으로<br>옳은 것은?</div>
+    <div><div class="en">Which statement about UDP is correct?</div><div class="mn">UDP-ийн талаарх зөв өгүүлбэр аль нь вэ?</div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;text-align:left">
+      <div class="panel" style="padding:18px 24px;border-radius:20px"><div style="font-size:32px;font-weight:700">① 3-way handshake로 연결</div><div class="en" style="font-size:24px">Connects via handshake</div><div class="mn" style="font-size:22px">Handshake-ээр холбогдоно</div></div>
+      <div class="panel" style="padding:18px 24px;border-radius:20px"><div style="font-size:32px;font-weight:700">② 손실 시 자동 재전송</div><div class="en" style="font-size:24px">Resends lost data</div><div class="mn" style="font-size:22px">Алдагдсаныг дахин илгээнэ</div></div>
+      <div class="panel" style="padding:18px 24px;border-radius:20px"><div style="font-size:32px;font-weight:700">③ 헤더가 8바이트로 가볍다</div><div class="en" style="font-size:24px">Light 8-byte header</div><div class="mn" style="font-size:22px">8 байтын хөнгөн толгой</div></div>
+      <div class="panel" style="padding:18px 24px;border-radius:20px"><div style="font-size:32px;font-weight:700">④ 도착 순서를 보장</div><div class="en" style="font-size:24px">Guarantees order</div><div class="mn" style="font-size:22px">Дарааллыг баталгаажуулна</div></div>
+    </div>
+    <div><div style="font-size:30px;font-weight:700">💬 댓글로 정답 남기기 · 정답은 내일 스토리</div><div class="mn" style="margin-top:4px">Answer in the comments · Хариултаа коммент дээр үлдээгээрэй</div></div>
+  </main>
+  <footer><div class="handle">🔖 Save · 저장 · Хадгалах</div>{LOGO}</footer>
+</section>

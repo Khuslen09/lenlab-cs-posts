@@ -1,0 +1,29 @@
+🇰🇷 TCP vs UDP, 언제 뭘 쓸까?
+⠀
+TCP는 연결을 맺고 데이터를 빠짐없이, 순서대로 보내는 프로토콜이고,
+UDP는 연결 없이 바로 보내서 보장은 없지만 가볍고 빠른 프로토콜이에요.
+⠀
+👉 정확해야 하면 TCP(웹·메일·파일), 빨라야 하면 UDP(DNS·스트리밍·게임)!
+⠀
+⠀
+🇺🇸 TCP vs UDP — which one, and when?
+⠀
+TCP sets up a connection and delivers data reliably and in order.
+UDP sends right away without a connection: no guarantees, but light and fast.
+⠀
+👉 Need accuracy? TCP (web, mail, files). Need speed? UDP (DNS, streaming, games).
+⠀
+⠀
+🇲🇳 TCP ба UDP — алийг нь хэзээ ашиглах вэ?
+⠀
+TCP холболт тогтоож, өгөгдлийг алдалгүй, дарааллаар нь хүргэдэг протокол.
+UDP холболтгүйгээр шууд илгээдэг тул баталгаагүй ч хөнгөн, хурдан.
+⠀
+👉 Нарийвчлал чухал бол TCP (веб, имэйл, файл), хурд чухал бол UDP (DNS, стрим, тоглоом)!
+⠀
+⠀
+✅ 어제 퀴즈 정답: ④ 링크 — 선언만 있으면 컴파일은 통과하고, foo의 실제 코드를 찾는 링커 단계에서 에러가 나요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #NETlenlab #TCPUDPlenlab
