@@ -1,0 +1,111 @@
+<!-- #037 DL · Loss Function — body only; build.py wraps it with templates/card-template.html -->
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DL</div><div class="meta">#037 · 2026.11.26</div></header>
+  <main class="center">
+    <div><div class="lang">EN</div><div style="font-family:JBM;font-weight:700;font-size:64px;line-height:1.15">Loss <span class="blue">Function</span></div></div>
+    <div><div class="lang">KO</div><div style="font-size:84px;font-weight:800;line-height:1.22;letter-spacing:-.03em"><span class="blue">손실 함수</span>,<br>모델은 <span class="cyan">뭘 보고</span> 배울까?</div></div>
+    <div><div class="lang">MN</div><div style="font-size:40px;line-height:1.4;color:var(--mute)">Алдагдлын функц (loss function) —<br>загвар юуг хараад суралцдаг вэ?</div></div>
+  </main>
+  <footer><div class="handle">01 / 06</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DL</div><div class="meta">02 / 06</div></header>
+  <main>
+    <div><div style="font-size:60px;font-weight:800;letter-spacing:-.03em">한 줄 정의</div><div class="en" style="margin-top:6px">Definition · Тодорхойлолт</div></div>
+    <div class="panel" style="border-left:6px solid var(--blue)">
+      <div class="mono blue" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">LOSS · 손실 함수 · АЛДАГДЛЫН ФУНКЦ</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">예측과 정답의 <b class="blue">차이(오차)</b>를 숫자 하나로 나타낸 함수</div>
+      <div class="en">A function that turns the gap between prediction and answer into one number.</div>
+      <div class="mn">Таамаг ба зөв хариултын зөрүүг нэг тоогоор илэрхийлэх функц.</div>
+    </div>
+    <div class="panel" style="border-left:6px solid var(--cyan)">
+      <div class="mono cyan" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">TRAINING · 학습 · СУРГАЛТ</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">손실이 <b class="cyan">작아지는 방향</b>으로 가중치를 조금씩 고치는 과정</div>
+      <div class="en">Adjusting the weights step by step so the loss gets smaller.</div>
+      <div class="mn">Алдагдал багасах чиглэлд жинг бага багаар өөрчлөх үйл явц.</div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-size:34px;font-weight:700">손실 <span class="blue">작을수록</span> = 예측이 정답에 가깝다</div>
+      <div class="en" style="margin-top:6px">Lower loss = prediction closer to the answer</div>
+    </div>
+  </main>
+  <footer><div class="handle">#037</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DL</div><div class="meta">03 / 06</div></header>
+  <main>
+    <div>
+      <div style="font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1.25"><span class="blue">다트 점수판</span> = 손실 함수</div>
+      <div class="en" style="margin-top:8px">The loss is how far the dart lands from the bullseye</div>
+      <div class="mn">Алдагдал = сум төвөөс хэр хол буусан</div>
+    </div>
+    <div style="border:2px solid var(--blue);border-radius:28px;padding:30px;background:rgba(9,132,227,.07);display:flex;flex-direction:column;gap:16px">
+      <div class="mono blue" style="font-size:24px;font-weight:700;letter-spacing:.08em">TRAINING LOOP · 학습 루프 · СУРГАЛТЫН ДАВТАЛТ</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;align-items:center">
+        <div class="panel" style="padding:20px;text-align:center;border-radius:16px"><div class="mono" style="font-size:28px;font-weight:700">x</div><div style="font-size:24px;color:var(--mute);margin-top:4px">입력 · Input</div></div>
+        <div class="panel" style="padding:20px;text-align:center;border-radius:16px"><div class="mono" style="font-size:28px;font-weight:700">Model</div><div style="font-size:24px;color:var(--mute);margin-top:4px">가중치 w</div></div>
+        <div class="panel" style="padding:20px;text-align:center;border-radius:16px"><div class="mono" style="font-size:28px;font-weight:700">ŷ</div><div style="font-size:24px;color:var(--mute);margin-top:4px">예측 · Predict</div></div>
+      </div>
+      <div style="font-size:25px;text-align:center;color:var(--mute)">▼ 예측 ŷ 와 정답 y 비교 · Compare with answer · Харьцуулах</div>
+      <div style="border:2px solid var(--cyan);border-radius:16px;padding:20px;text-align:center"><div class="mono cyan" style="font-size:34px;font-weight:700">Loss = L(ŷ, y)</div><div style="font-size:24px;color:var(--mute);margin-top:6px">얼마나 틀렸나? · How wrong? · Хэр буруу вэ?</div></div>
+      <div style="font-size:25px;text-align:center;color:var(--mute)">▼ 경사 하강법 · Gradient descent · Градиент бууралт</div>
+      <div style="border:2px solid var(--cyan);border-radius:16px;padding:20px;text-align:center"><div style="font-size:30px;font-weight:700"><span class="mono">w</span> 업데이트 → 다시 처음으로 ↺</div><div style="font-size:24px;color:var(--mute);margin-top:6px">Update weights, repeat · Жинг шинэчилж давтана</div></div>
+    </div>
+    <div class="panel" style="padding:24px 30px;display:flex;align-items:center;gap:24px"><div style="font-size:64px">🎯</div><div><div style="font-size:29px">과녁 중심 = <b>정답</b> · 꽂힌 곳 = <b>예측</b> · 거리 = <b class="blue">손실</b></div><div class="mn" style="font-size:23px;margin-top:4px">Center = answer · Dart = prediction · Distance = loss</div></div></div>
+  </main>
+  <footer><div class="handle">#037</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DL</div><div class="meta">04 / 06</div></header>
+  <main>
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">Python으로 손실 계산</div><div class="en" style="margin-top:6px">Computing loss in Python · Python-оор алдагдал тооцох</div></div>
+    <div class="panel" style="background:var(--code);padding:32px 38px">
+<pre class="mono" style="font-size:26px;line-height:1.6;color:var(--white)"><span class="blue">import</span> math
+y, p = [3.0, 5.0], [2.5, 5.5]  <span style="color:var(--dim)"># 정답, 예측</span>
+mse = sum((a-b)**2 <span class="blue">for</span> a, b <span class="blue">in</span> zip(y, p)) / len(y)
+print(mse)                     <span style="color:var(--dim)"># <span class="cyan">0.25</span></span>
+
+<span class="blue">for</span> q <span class="blue">in</span> [0.9, 0.5, 0.1]:      <span style="color:var(--dim)"># 정답 확률</span>
+    print(round(-math.log(q), 3))
+<span style="color:var(--dim)"># <span class="cyan">0.105  0.693  2.303</span></span></pre>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">①</span> <b>MSE</b>: 오차를 제곱해 평균 → 큰 오차에 더 큰 벌점</div><div class="mn" style="margin-left:40px">EN: Squares the errors · MN: Том алдааг илүү шийтгэнэ</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">②</span> <b>교차 엔트로피</b>: −log(정답 확률)</div><div class="mn" style="margin-left:40px">EN: Cross-entropy = −log(p) · MN: Кросс энтропи = −log(p)</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">③</span> 정답 확률이 낮을수록 손실이 <b>급격히</b> 커짐</div><div class="mn" style="margin-left:40px">EN: Low p → loss shoots up · MN: p бага бол алдагдал огцом өснө</div></div>
+    </div>
+  </main>
+  <footer><div class="handle">#037</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DL</div><div class="meta">05 / 06</div></header>
+  <main style="gap:20px">
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">여기서 꼭 헷갈린다</div><div class="en" style="margin-top:6px">Check points · Анхаарах зүйлс</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">01</span>&nbsp; 문제에 맞게 고르기 <span class="en" style="font-size:24px;font-weight:500">· Pick by task</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">회귀 → <b>MSE</b> · 분류 → <b class="cyan">교차 엔트로피</b></div><div class="mn" style="font-size:24px">Регресс → MSE · Ангилал → кросс энтропи</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">02</span>&nbsp; 손실 vs 비용 함수 <span class="en" style="font-size:24px;font-weight:500">· Loss vs Cost</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">보통 손실 = 샘플 1개, 비용 = <b>전체 평균</b> (섞어 쓰기도)</div><div class="mn" style="font-size:24px">Loss = нэг жишээ, cost = бүх жишээний дундаж</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">03</span>&nbsp; 손실 vs 정확도 <span class="en" style="font-size:24px;font-weight:500">· Loss vs Accuracy</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">학습엔 <b>미분 가능한 손실</b>, 정확도는 평가 지표</div><div class="mn" style="font-size:24px">Сургалтад дифференциалчлагдах loss, accuracy бол үнэлгээ</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">04</span>&nbsp; 학습 손실만 보면 위험 <span class="en" style="font-size:24px;font-weight:500">· Overfitting</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">학습 손실 ↓ 검증 손실 ↑ → <b>과적합</b> 신호</div><div class="mn" style="font-size:24px">Сургалтын loss ↓, баталгаажуулалтын loss ↑ → overfitting</div></div>
+  </main>
+  <footer><div class="handle">#037</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · DL</div><div class="meta">06 / 06</div></header>
+  <main class="center" style="gap:30px">
+    <div class="lang" style="font-size:26px">QUIZ · 4지선다</div>
+    <div style="font-size:56px;font-weight:800;line-height:1.3;letter-spacing:-.03em">고양이·개·새를 구분하는<br><span class="cyan">분류</span> 문제에 보통 쓰는 손실 함수는?</div>
+    <div><div class="en">Which loss is usually used to classify cat, dog or bird?</div><div class="mn">Муур, нохой, шувууг ангилахад ихэвчлэн ямар loss хэрэглэдэг вэ?</div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;text-align:left">
+      <div class="panel" style="padding:18px 24px;border-radius:20px"><div style="font-size:32px;font-weight:700">① MSE</div><div class="en" style="font-size:24px">Mean squared error</div><div class="mn" style="font-size:22px">Дундаж квадрат алдаа</div></div>
+      <div class="panel" style="padding:18px 24px;border-radius:20px"><div style="font-size:32px;font-weight:700">② 정확도 (Accuracy)</div><div class="en" style="font-size:24px">Accuracy</div><div class="mn" style="font-size:22px">Нарийвчлал</div></div>
+      <div class="panel" style="padding:18px 24px;border-radius:20px"><div style="font-size:32px;font-weight:700">③ 교차 엔트로피</div><div class="en" style="font-size:24px">Cross-entropy</div><div class="mn" style="font-size:22px">Кросс энтропи</div></div>
+      <div class="panel" style="padding:18px 24px;border-radius:20px"><div style="font-size:32px;font-weight:700">④ 학습률</div><div class="en" style="font-size:24px">Learning rate</div><div class="mn" style="font-size:22px">Сургалтын хурд</div></div>
+    </div>
+    <div><div style="font-size:30px;font-weight:700">💬 댓글로 정답 남기기 · 정답은 내일 스토리</div><div class="mn" style="margin-top:4px">Answer in the comments · Хариултаа коммент дээр үлдээгээрэй</div></div>
+  </main>
+  <footer><div class="handle">🔖 Save · 저장 · Хадгалах</div>{LOGO}</footer>
+</section>

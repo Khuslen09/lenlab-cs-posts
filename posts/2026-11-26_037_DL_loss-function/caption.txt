@@ -1,0 +1,29 @@
+🇰🇷 손실 함수, 모델은 뭘 보고 배울까?
+⠀
+손실 함수는 모델의 예측과 정답의 차이를 숫자 하나로 나타내는 함수이고,
+학습은 이 손실이 작아지는 방향으로 가중치를 조금씩 고치는 과정이에요.
+⠀
+👉 회귀는 MSE, 분류는 교차 엔트로피! 손실이 작을수록 예측이 정답에 가까워요.
+⠀
+⠀
+🇺🇸 Loss function — what does a model learn from?
+⠀
+A loss function turns the gap between the model's prediction and the answer into one number.
+Training means adjusting the weights step by step so that this loss gets smaller.
+⠀
+👉 Regression uses MSE, classification uses cross-entropy. Lower loss = closer to the answer.
+⠀
+⠀
+🇲🇳 Алдагдлын функц (loss function) — загвар юуг хараад суралцдаг вэ?
+⠀
+Алдагдлын функц нь загварын таамаг ба зөв хариултын зөрүүг нэг тоогоор илэрхийлдэг.
+Сургалт бол энэ алдагдал багасах чиглэлд жинг бага багаар өөрчлөх үйл явц юм.
+⠀
+👉 Регресст MSE, ангилалд кросс энтропи! Алдагдал бага байх тусам таамаг зөв хариултад ойр.
+⠀
+⠀
+✅ 어제 퀴즈 정답: ③ 헤더가 8바이트로 가볍다 — 연결·재전송·순서 보장은 TCP의 일이고, UDP는 8바이트 헤더로 가볍게 보내요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #DLlenlab #LossFunctionlenlab
