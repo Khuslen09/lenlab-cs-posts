@@ -1,0 +1,127 @@
+<!-- #038 C · Arrays and Pointers — body only; build.py wraps it with templates/card-template.html -->
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · C</div><div class="meta">#038 · 2026.11.27</div></header>
+  <main class="center">
+    <div><div class="lang">EN</div><div style="font-family:JBM;font-weight:700;font-size:64px;line-height:1.15">Arrays <span class="blue">&amp;</span> Pointers</div></div>
+    <div><div class="lang">KO</div><div style="font-size:84px;font-weight:800;line-height:1.22;letter-spacing:-.03em"><span class="blue">배열</span>과 <span class="cyan">포인터</span>,<br>뭐가 같고 뭐가 달라?</div></div>
+    <div><div class="lang">MN</div><div style="font-size:40px;line-height:1.4;color:var(--mute)">Массив ба заагч (pointer) —<br>юу нь адил, юу нь өөр вэ?</div></div>
+  </main>
+  <footer><div class="handle">01 / 06</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · C</div><div class="meta">02 / 06</div></header>
+  <main>
+    <div><div style="font-size:60px;font-weight:800;letter-spacing:-.03em">한 줄 정의</div><div class="en" style="margin-top:6px">Definition · Тодорхойлолт</div></div>
+    <div class="panel" style="border-left:6px solid var(--blue)">
+      <div class="mono blue" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">ARRAY · 배열 · МАССИВ</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">같은 타입 값들이 메모리에 <b class="blue">연속으로</b> 놓인 묶음</div>
+      <div class="en">Same-type values stored next to each other in memory.</div>
+      <div class="mn">Санах ойд дараалан байрласан ижил төрлийн утгууд.</div>
+    </div>
+    <div class="panel" style="border-left:6px solid var(--cyan)">
+      <div class="mono cyan" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">ARRAY NAME · 배열 이름 · НЭР</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">식에서 쓰면 대부분 <b class="cyan">첫 원소의 주소</b>(&amp;arr[0])로 바뀜</div>
+      <div class="en">In most expressions it turns into the address of the first element.</div>
+      <div class="mn">Ихэнх илэрхийлэлд эхний элементийн хаяг болж хувирна.</div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-size:34px;font-weight:700"><span class="mono blue">arr[i]</span> = <span class="mono cyan">*(arr + i)</span></div>
+      <div class="en" style="margin-top:6px">Indexing is pointer arithmetic · Индекс бол заагчийн арифметик</div>
+    </div>
+  </main>
+  <footer><div class="handle">#038</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · C</div><div class="meta">03 / 06</div></header>
+  <main>
+    <div>
+      <div style="font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1.25"><span class="blue">p + 1</span> = 원소 한 칸 이동</div>
+      <div class="en" style="margin-top:8px">p + 1 moves to the next element, not the next byte</div>
+      <div class="mn">p + 1 нь дараагийн байт биш, дараагийн элемент рүү шилжинэ</div>
+    </div>
+    <div style="border:2px solid var(--blue);border-radius:28px;padding:30px;background:rgba(9,132,227,.07);display:flex;flex-direction:column;gap:18px">
+      <div class="mono blue" style="font-size:24px;font-weight:700;letter-spacing:.08em">int arr[3] = {10, 20, 30};</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+        <div class="panel" style="padding:20px;text-align:center;border-radius:16px"><div class="mono" style="font-size:40px;font-weight:700">10</div><div class="mono" style="font-size:24px;color:var(--mute);margin-top:4px">arr[0]</div></div>
+        <div class="panel" style="padding:20px;text-align:center;border-radius:16px"><div class="mono" style="font-size:40px;font-weight:700">20</div><div class="mono" style="font-size:24px;color:var(--mute);margin-top:4px">arr[1]</div></div>
+        <div class="panel" style="padding:20px;text-align:center;border-radius:16px"><div class="mono" style="font-size:40px;font-weight:700">30</div><div class="mono" style="font-size:24px;color:var(--mute);margin-top:4px">arr[2]</div></div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+        <div class="mono" style="font-size:24px;text-align:center;color:var(--mute)">1000</div>
+        <div class="mono" style="font-size:24px;text-align:center;color:var(--mute)">1004</div>
+        <div class="mono" style="font-size:24px;text-align:center;color:var(--mute)">1008</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+        <div style="border:2px solid var(--cyan);border-radius:16px;padding:16px;text-align:center"><div class="cyan" style="font-size:24px">▲</div><div class="mono cyan" style="font-size:28px;font-weight:700">p</div></div>
+        <div style="border:2px solid var(--cyan);border-radius:16px;padding:16px;text-align:center"><div class="cyan" style="font-size:24px">▲</div><div class="mono cyan" style="font-size:28px;font-weight:700">p + 1</div></div>
+        <div style="border:2px solid var(--cyan);border-radius:16px;padding:16px;text-align:center"><div class="cyan" style="font-size:24px">▲</div><div class="mono cyan" style="font-size:28px;font-weight:700">p + 2</div></div>
+      </div>
+      <div style="font-size:25px;text-align:center;color:var(--mute)">int가 4바이트라면 주소는 <b>4씩</b> 증가 (주소는 예시)<br>If int is 4 bytes, +4 each · int 4 байт бол 4-өөр нэмэгдэнэ</div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-size:34px;font-weight:700">p = arr 이면 <span class="mono cyan">*(p + i)</span> = arr[i]</div>
+      <div class="en" style="margin-top:6px">If p = arr, then *(p + i) is arr[i] · p = arr бол *(p + i) = arr[i]</div>
+    </div>
+  </main>
+  <footer><div class="handle">#038</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · C</div><div class="meta">04 / 06</div></header>
+  <main>
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">C로 직접 써 보기</div><div class="en" style="margin-top:6px">Try it in C · C хэл дээр туршъя</div></div>
+    <div class="panel" style="background:var(--code);padding:30px 34px">
+<pre class="mono" style="font-size:25px;line-height:1.6;color:var(--white)"><span class="blue">int</span> arr[3] = {10, 20, 30};
+<span class="blue">int</span> *p = arr;           <span style="color:var(--dim)">// = &amp;arr[0]</span>
+
+printf(<span class="cyan">"%d\n"</span>, *(p + 1)); <span style="color:var(--dim)">// 20</span>
+printf(<span class="cyan">"%d\n"</span>, p[2]);     <span style="color:var(--dim)">// 30</span>
+printf(<span class="cyan">"%zu\n"</span>, <span class="blue">sizeof</span>(arr)); <span style="color:var(--dim)">// 12</span>
+printf(<span class="cyan">"%zu\n"</span>, <span class="blue">sizeof</span>(p));   <span style="color:var(--dim)">// 8</span>
+p++;    <span style="color:var(--dim)">// OK</span>
+<span style="color:var(--dim)">// arr++;  컴파일 오류</span></pre>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">①</span> 포인터에도 <b>p[2]</b>처럼 인덱스를 쓸 수 있음</div><div class="mn" style="margin-left:40px">EN: Pointers can use [ ] too · MN: Заагчид [ ] хэрэглэж болно</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">②</span> sizeof(arr)는 <b>배열 전체</b>, sizeof(p)는 포인터 크기</div><div class="mn" style="margin-left:40px">EN: Whole array vs one pointer · MN: Бүх массив ба нэг заагч</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">③</span> 결과는 int 4바이트 · 64비트 환경 기준</div><div class="mn" style="margin-left:40px">EN: Assumes 4-byte int, 64-bit · MN: int 4 байт, 64 бит орчинд</div></div>
+    </div>
+  </main>
+  <footer><div class="handle">#038</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · C</div><div class="meta">05 / 06</div></header>
+  <main style="gap:20px">
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">여기서 꼭 헷갈린다</div><div class="en" style="margin-top:6px">Check points · Анхаарах зүйлс</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">01</span>&nbsp; 배열 ≠ 포인터 <span class="en" style="font-size:24px;font-weight:500">· Not the same</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">배열은 원소를 담는 공간, 포인터는 <b>주소 하나</b>를 담는 변수</div><div class="mn" style="font-size:24px">Массив элементүүдийг хадгална, заагч нэг хаяг хадгална</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">02</span>&nbsp; 배열 이름은 못 바꿈 <span class="en" style="font-size:24px;font-weight:500">· No arr++</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)"><b class="mono">p++</b>는 되지만 <b class="mono">arr++</b>, <b class="mono">arr = p</b>는 오류</div><div class="mn" style="font-size:24px">p++ болно, харин arr++ алдаа өгнө</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">03</span>&nbsp; 함수에 넘기면 포인터 <span class="en" style="font-size:24px;font-weight:500">· Decay</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)"><b class="mono">f(int a[])</b>의 a는 사실 <b class="cyan">int *</b> → sizeof(a)는 8</div><div class="mn" style="font-size:24px">Функцэд дамжуулахад массив заагч болж хувирна</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">04</span>&nbsp; 범위 검사 없음 <span class="en" style="font-size:24px;font-weight:500">· No bounds check</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)"><b class="mono">arr[3]</b> 접근도 컴파일됨 → <b>정의되지 않은 동작</b></div><div class="mn" style="font-size:24px">Хязгаараас гарахыг C шалгадаггүй — аюултай</div></div>
+  </main>
+  <footer><div class="handle">#038</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · C</div><div class="meta">06 / 06</div></header>
+  <main class="center" style="gap:30px">
+    <div class="lang" style="font-size:26px">QUIZ · 4지선다</div>
+    <div style="font-size:56px;font-weight:800;line-height:1.3;letter-spacing:-.03em">다음 코드의 출력은?</div>
+    <div class="panel" style="background:var(--code);padding:28px 34px;text-align:left">
+<pre class="mono" style="font-size:30px;line-height:1.6;color:var(--white)"><span class="blue">int</span> a[4] = {1, 2, 3, 4};
+<span class="blue">int</span> *p = a + 1;
+printf(<span class="cyan">"%d"</span>, *(p + 2));</pre>
+    </div>
+    <div><div class="en">What does this code print?</div><div class="mn">Энэ код юу хэвлэх вэ?</div></div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+      <div class="panel" style="padding:22px;border-radius:20px"><div class="mono" style="font-size:44px;font-weight:700">① 2</div></div>
+      <div class="panel" style="padding:22px;border-radius:20px"><div class="mono" style="font-size:44px;font-weight:700">② 3</div></div>
+      <div class="panel" style="padding:22px;border-radius:20px"><div class="mono" style="font-size:44px;font-weight:700">③ 4</div></div>
+      <div class="panel" style="padding:22px;border-radius:20px"><div class="mono" style="font-size:44px;font-weight:700">④ 5</div></div>
+    </div>
+    <div><div style="font-size:30px;font-weight:700">💬 댓글로 정답 남기기 · 정답은 내일 스토리</div><div class="mn" style="margin-top:4px">Answer in the comments · Хариултаа коммент дээр үлдээгээрэй</div></div>
+  </main>
+  <footer><div class="handle">🔖 Save · 저장 · Хадгалах</div>{LOGO}</footer>
+</section>
