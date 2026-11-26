@@ -1,0 +1,17 @@
+🇰🇷 AI 모델은 뭘 보고 배울까? 🎯
+손실 함수 = 예측과 정답의 차이를 숫자 하나로! 다트가 과녁에서 벗어난 거리.
+👉 회귀는 MSE, 분류는 교차 엔트로피! 학습 손실↓ 검증 손실↑ 이면 과적합 신호.
+
+🇺🇸 What does an AI model learn from? 🎯
+Loss function = the gap between prediction and answer as one number — how far the dart lands from the bullseye.
+👉 Regression: MSE, classification: cross-entropy! Training loss ↓ but validation loss ↑ = overfitting.
+
+🇲🇳 Загвар юуг хараад суралцдаг вэ? 🎯
+Алдагдлын функц (loss function) = таамаг ба зөв хариултын зөрүүг нэг тоогоор — сум төвөөс хэр хол буусан.
+👉 Регресст MSE, ангилалд кросс энтропи! Сургалтын loss ↓, баталгаажуулалтын loss ↑ бол overfitting.
+
+💬 정답은 댓글로! · Drop your answer in the comments · Хариултаа коммент дээр үлдээгээрэй
+🔖 저장해두고 시험 전에 다시 보기 · Save for exam review · Шалгалтын өмнө дахин үзэхээр хадгалаарай
+➕ 팔로우하면 매일 1분 컴공 · Follow for a daily CS concept · Өдөр бүр нэг CS ойлголт авахыг хүсвэл дагаарай
+
+#CSlenlab #컴공lenlab #개발공부lenlab #컴퓨터공학 #개발자 #코딩공부 #computerscience #programming #codinglife #reels #릴스
