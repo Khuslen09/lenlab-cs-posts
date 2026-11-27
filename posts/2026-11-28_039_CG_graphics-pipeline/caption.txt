@@ -1,0 +1,29 @@
+🇰🇷 3D 삼각형이 어떻게 화면 픽셀이 될까?
+⠀
+그래픽스 파이프라인은 3D 정점 데이터를 2D 화면 픽셀로 바꾸는 단계별 처리 과정이에요.
+정점 처리 → 도형 조립 → 래스터화 → 프래그먼트 처리 → 출력 병합 순서로 흘러가요.
+⠀
+👉 정점 셰이더는 정점마다, 프래그먼트 셰이더는 프래그먼트마다 실행돼요! 가림 처리는 깊이 테스트(Z-버퍼)가 맡아요.
+⠀
+⠀
+🇺🇸 How does a 3D triangle become pixels on your screen?
+⠀
+The graphics pipeline is the step-by-step process that turns 3D vertex data into 2D screen pixels.
+It flows from vertex processing → primitive assembly → rasterization → fragment processing → output merging.
+⠀
+👉 The vertex shader runs per vertex, the fragment shader runs per fragment! Hidden surfaces are handled by the depth test (Z-buffer).
+⠀
+⠀
+🇲🇳 3D гурвалжин хэрхэн дэлгэцийн пиксел болдог вэ?
+⠀
+Графикийн дамжлага бол 3D оройн өгөгдлийг 2D дэлгэцийн пиксел болгох шат дараалсан процесс.
+Орой боловсруулах → дүрс угсрах → растержуулах → фрагмент боловсруулах → гаралт нэгтгэх гэсэн дарааллаар явна.
+⠀
+👉 Оройн шейдер орой бүрт, фрагмент шейдер фрагмент бүрт ажиллана! Далд гадаргууг гүний шалгалт (Z-buffer) шийднэ.
+⠀
+⠀
+✅ 어제 퀴즈 정답: ③ 4 — p는 a[1]을 가리키니까 *(p + 2)는 a[3], 즉 4예요.
+💬 마지막 장 퀴즈 정답은 댓글로! · Answer the quiz in the comments · Хариултаа коммент дээр
+🔖 저장해두고 시험 전에 다시 보기
+⠀
+#CSlenlab #컴공lenlab #개발공부lenlab #CGlenlab #GraphicsPipelinelenlab

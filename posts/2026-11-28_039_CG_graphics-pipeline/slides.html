@@ -1,0 +1,102 @@
+<!-- #039 CG · Graphics Pipeline — body only; build.py wraps it with templates/card-template.html -->
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · CG</div><div class="meta">#039 · 2026.11.28</div></header>
+  <main class="center">
+    <div><div class="lang">EN</div><div style="font-family:JBM;font-weight:700;font-size:64px;line-height:1.15">The Graphics <span class="blue">Pipeline</span></div></div>
+    <div><div class="lang">KO</div><div style="font-size:84px;font-weight:800;line-height:1.22;letter-spacing:-.03em"><span class="blue">3D 삼각형</span>이<br>어떻게 <span class="cyan">화면 픽셀</span>이 될까?</div></div>
+    <div><div class="lang">MN</div><div style="font-size:40px;line-height:1.4;color:var(--mute)">3D гурвалжин хэрхэн<br>дэлгэцийн пиксел болдог вэ?</div></div>
+  </main>
+  <footer><div class="handle">01 / 06</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · CG</div><div class="meta">02 / 06</div></header>
+  <main>
+    <div><div style="font-size:60px;font-weight:800;letter-spacing:-.03em">한 줄 정의</div><div class="en" style="margin-top:6px">Definition · Тодорхойлолт</div></div>
+    <div class="panel" style="border-left:6px solid var(--blue)">
+      <div class="mono blue" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">PIPELINE · 파이프라인 · ДАМЖЛАГА</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px">3D <b class="blue">정점 데이터</b>를 2D 화면 픽셀로 바꾸는 단계별 처리 과정</div>
+      <div class="en">Step-by-step process: 3D vertices → 2D pixels.</div>
+      <div class="mn">3D оройн өгөгдлийг 2D пиксел болгох шат дараалсан процесс.</div>
+    </div>
+    <div class="panel" style="border-left:6px solid var(--cyan)">
+      <div class="mono cyan" style="font-size:26px;font-weight:700;letter-spacing:.12em;margin-bottom:12px">SHADER · 셰이더 · ШЕЙДЕР</div>
+      <div style="font-size:36px;line-height:1.5;margin-bottom:12px"><b class="cyan">프로그래밍 가능한 단계</b>에서 GPU가 실행하는 작은 프로그램</div>
+      <div class="en">A small GPU program for a programmable stage.</div>
+      <div class="mn">Програмчлах шатанд GPU-ийн ажиллуулдаг жижиг програм.</div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-size:34px;font-weight:700"><span class="blue">정점</span> → 도형 → 프래그먼트 → <span class="cyan">픽셀</span></div>
+      <div class="en" style="margin-top:6px">Vertices → Primitives → Fragments → Pixels</div>
+    </div>
+  </main>
+  <footer><div class="handle">#039</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · CG</div><div class="meta">03 / 06</div></header>
+  <main style="gap:18px">
+    <div>
+      <div style="font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1.25">삼각형 하나의 <span class="blue">여행</span></div>
+      <div class="en" style="margin-top:8px">One triangle's journey · Нэг гурвалжны аялал</div>
+    </div>
+    <div class="panel" style="padding:20px 30px;border-left:6px solid var(--cyan)"><div style="font-size:31px;font-weight:700"><span class="mono cyan">①</span> 정점 처리 <span class="mono" style="font-size:24px;color:var(--mute)">· Vertex Shader</span></div><div style="font-size:26px;color:var(--mute);margin-top:4px">좌표 변환 (모델 → 카메라 → 화면) · Орой боловсруулах</div></div>
+    <div class="panel" style="padding:20px 30px"><div style="font-size:31px;font-weight:700"><span class="mono" style="color:var(--mute)">②</span> 도형 조립 · 클리핑 <span class="mono" style="font-size:24px;color:var(--mute)">· Primitive Assembly</span></div><div style="font-size:26px;color:var(--mute);margin-top:4px">정점 3개 → 삼각형, 화면 밖은 잘라냄 · Дүрс угсрах</div></div>
+    <div class="panel" style="padding:20px 30px"><div style="font-size:31px;font-weight:700"><span class="mono" style="color:var(--mute)">③</span> 래스터화 <span class="mono" style="font-size:24px;color:var(--mute)">· Rasterization</span></div><div style="font-size:26px;color:var(--mute);margin-top:4px">삼각형이 덮는 칸 → 프래그먼트 · Растержуулах</div></div>
+    <div class="panel" style="padding:20px 30px;border-left:6px solid var(--cyan)"><div style="font-size:31px;font-weight:700"><span class="mono cyan">④</span> 프래그먼트 처리 <span class="mono" style="font-size:24px;color:var(--mute)">· Fragment Shader</span></div><div style="font-size:26px;color:var(--mute);margin-top:4px">칸마다 색 계산 (조명·텍스처) · Фрагмент боловсруулах</div></div>
+    <div class="panel" style="padding:20px 30px"><div style="font-size:31px;font-weight:700"><span class="mono" style="color:var(--mute)">⑤</span> 출력 병합 <span class="mono" style="font-size:24px;color:var(--mute)">· Output Merger</span></div><div style="font-size:26px;color:var(--mute);margin-top:4px">깊이 테스트·블렌딩 → 프레임 버퍼 · Гаралт нэгтгэх</div></div>
+    <div style="font-size:25px;text-align:center;color:var(--mute)"><span class="cyan">▌</span> 셰이더로 직접 짜는 단계 · Programmable · Програмчлах шат</div>
+  </main>
+  <footer><div class="handle">#039</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · CG</div><div class="meta">04 / 06</div></header>
+  <main>
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">GLSL 셰이더 두 개</div><div class="en" style="margin-top:6px">Two GLSL shaders · Хоёр GLSL шейдер</div></div>
+    <div class="panel" style="background:var(--code);padding:24px 38px">
+<pre class="mono" style="font-size:26px;line-height:1.5;color:var(--white)"><span style="color:var(--dim)">// ① vertex shader — 정점마다</span>
+<span class="blue">uniform mat4</span> MVP;
+<span class="blue">in vec3</span> aPos;
+<span class="blue">void</span> main() {
+  gl_Position = MVP * vec4(aPos, 1.0); }
+<span style="color:var(--dim)">// ④ fragment shader — 프래그먼트마다</span>
+<span class="blue">out vec4</span> FragColor;
+<span class="blue">void</span> main() {
+  FragColor = vec4(<span class="cyan">0.0, 0.8, 1.0</span>, 1.0); }</pre>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">①</span> <b>MVP 행렬</b>로 정점 좌표 변환</div><div class="mn" style="margin-left:40px">EN: MVP matrix transforms each vertex · MN: MVP матрицаар оройг хувиргана</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">②</span> 프래그먼트 셰이더는 <b>칸마다 색</b>(RGBA)을 출력</div><div class="mn" style="margin-left:40px">EN: Outputs a color per fragment · MN: Фрагмент бүрийн өнгийг гаргана</div></div>
+      <div><div style="font-size:31px"><span class="cyan" style="font-weight:700">③</span> 그 사이 래스터화는 <b>GPU가 고정 기능</b>으로 처리</div><div class="mn" style="margin-left:40px">EN: Rasterization is fixed-function · MN: Растержуулалт тогтмол функц</div></div>
+    </div>
+  </main>
+  <footer><div class="handle">#039</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · CG</div><div class="meta">05 / 06</div></header>
+  <main style="gap:20px">
+    <div><div style="font-size:56px;font-weight:800;letter-spacing:-.03em">여기서 꼭 헷갈린다</div><div class="en" style="margin-top:6px">Check points · Анхаарах зүйлс</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">01</span>&nbsp; 실행 횟수 <span class="en" style="font-size:24px;font-weight:500">· How often</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">정점 셰이더는 <b>정점마다</b>, 프래그먼트 셰이더는 <b class="cyan">프래그먼트마다</b></div><div class="mn" style="font-size:24px">Оройн шейдер орой бүрт, фрагмент шейдер фрагмент бүрт</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">02</span>&nbsp; 프래그먼트 ≠ 픽셀 <span class="en" style="font-size:24px;font-weight:500">· Fragment vs Pixel</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">프래그먼트는 <b>픽셀 후보</b>. 테스트를 통과해야 화면에 남음</div><div class="mn" style="font-size:24px">Фрагмент бол пикселийн нэр дэвшигч, шалгалт давж байж үлдэнэ</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">03</span>&nbsp; 가림 처리 <span class="en" style="font-size:24px;font-weight:500">· Z-buffer</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">깊이 테스트로 <b>더 가까운 것</b>만 남김 → 그리는 순서 무관</div><div class="mn" style="font-size:24px">Гүний шалгалтаар хамгийн ойрыг нь л үлдээнэ</div></div>
+    <div class="panel" style="padding:26px 34px"><div style="font-size:31px;font-weight:700"><span class="cyan mono">04</span>&nbsp; 실시간 렌더링 <span class="en" style="font-size:24px;font-weight:500">· Real-time</span></div><div style="font-size:28px;margin-top:8px;color:var(--mute)">게임처럼 <b>래스터화 기반</b> 실시간 렌더링의 기본 구조</div><div class="mn" style="font-size:24px">Тоглоом шиг растерт суурилсан бодит цагийн рендерийн үндэс</div></div>
+  </main>
+  <footer><div class="handle">#039</div>{LOGO}</footer>
+</section>
+
+<section class="slide">
+  <header><div class="tag">LENLAB <span>| CS</span> · CG</div><div class="meta">06 / 06</div></header>
+  <main class="center" style="gap:30px">
+    <div class="lang" style="font-size:26px">QUIZ · O / X</div>
+    <div style="font-size:60px;font-weight:800;line-height:1.3;letter-spacing:-.03em">프래그먼트 셰이더는<br><span class="cyan">정점마다</span> 한 번씩 실행된다.</div>
+    <div><div class="en">The fragment shader runs once per vertex.</div><div class="mn">Фрагмент шейдер орой бүрт нэг удаа ажилладаг.</div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:10px">
+      <div style="border:3px solid var(--blue);border-radius:28px;height:200px;display:flex;align-items:center;justify-content:center;font-size:130px;font-weight:800;color:var(--blue)">O</div>
+      <div style="border:3px solid var(--cyan);border-radius:28px;height:200px;display:flex;align-items:center;justify-content:center;font-size:130px;font-weight:800;color:var(--cyan)">X</div>
+    </div>
+    <div><div style="font-size:30px;font-weight:700">💬 댓글로 정답 남기기 · 정답은 내일 스토리</div><div class="mn" style="margin-top:4px">Answer in the comments · Хариултаа коммент дээр үлдээгээрэй</div></div>
+  </main>
+  <footer><div class="handle">🔖 Save · 저장 · Хадгалах</div>{LOGO}</footer>
+</section>
